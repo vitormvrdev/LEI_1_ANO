@@ -1,5 +1,3 @@
-name = "pila"
+var = (42)
 
-for i in name:
-    print(i)
-
+print(type(var))
