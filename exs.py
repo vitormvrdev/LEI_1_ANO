@@ -24,4 +24,5 @@ match tip:
         totalBill = totalBill + tipOfBill
         totalBill = totalBill / pplBill
         print("Each person has to pay: " + str(round(totalBill, 2)) + "€")
-        
+    case _:
+        print(f"Esse valor de gorjeta, {tip}, não está dentro do escopo do programa")
