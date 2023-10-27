@@ -5,6 +5,7 @@ pplBill = float(input("How many people to split the bill?\n"))
 tip = int(input("What percentage tip would you like to give? none, 10, 12 or 15\n"))
 tipOfBill = 0.0
 
+
 if tip == 0:
     totalBill = totalBill / pplBill
     print("Each person has to pay: " + str(round(totalBill, 2)) + "€")
