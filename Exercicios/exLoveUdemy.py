@@ -34,14 +34,13 @@ def sum_and_concat_true_love_letters(name1, name2):
 
     return int(result)
 
-name1 = input("Introduce the first number: \n")
-name2 = input("Introduce the second number: \n")
+name1 = input("Introduce the first name: \n")
+name2 = input("Introduce the second name: \n")
 result = sum_and_concat_true_love_letters(name1, name2)
-print(result)
 
 if result < 10:
-    print("Not compatible")
+    print(f"Your result is {result}, which means, you're not compatible.")
 elif result > 10:
-    print("better than nothing")
+    print(f"Your result is {result}, better than nothing.")
 else:
-    print("Very compatible")
+    print(f"Your result is {result}, you're highly compatible.")
