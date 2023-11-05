@@ -44,3 +44,4 @@ elif result > 10:
     print(f"Your result is {result}, better than nothing.")
 else:
     print(f"Your result is {result}, you're highly compatible.")
+ 
