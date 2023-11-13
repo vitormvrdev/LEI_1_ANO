@@ -1,7 +1,10 @@
-print("este é o código")
-
 import random
 
-random_choice = random.randint(1,10)
-print(random_choice)
+heads = 1
+tails = 0 
+random_choice = random.randint(0,1)
 
+if random_choice == heads:
+    print("Cabeçorra!")
+else:
+    print("Caudas!")
