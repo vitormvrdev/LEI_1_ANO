@@ -8,3 +8,4 @@ if random_choice == heads:
     print("Cabeçorra!")
 else:
     print("Caudas!")
+    
