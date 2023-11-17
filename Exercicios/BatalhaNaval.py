@@ -14,7 +14,7 @@ def salvar_leaderboard(leaderboard):
         json.dump(leaderboard, file)
 
 def remover_jogador(leaderboard, nome):
-    if nome in leaderboard:
+    if nome in leaderboard: 
         del leaderboard[nome]
         salvar_leaderboard(leaderboard)
         print(f"O jogador {nome} foi removido da leaderboard.")
