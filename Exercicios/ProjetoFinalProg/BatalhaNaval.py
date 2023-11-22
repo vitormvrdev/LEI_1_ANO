@@ -1,5 +1,6 @@
 import random
 import json
+import BNconfig
 
 def carregar_leaderboard():
     try:
@@ -152,7 +153,7 @@ def jogar_batalha_naval(tamanho_tabuleiro, num_navios):
         elif opcao == "3":
             nome_para_remover = input("Digite o nome do jogador que deseja remover: ")
             remover_jogador(leaderboard, nome_para_remover)
-
+            
         else:
             print("Opção inválida. Tente novamente.")
             continue
@@ -162,8 +163,8 @@ def jogar_batalha_naval(tamanho_tabuleiro, num_navios):
             break
 
 # Configurações do jogo
-tamanho_tabuleiro = 5
-num_navios = 3
+#tamanho_tabuleiro = 5
+#num_navios = 3
 
 # Iniciar o jogo
-jogar_batalha_naval(tamanho_tabuleiro, num_navios)
+jogar_batalha_naval(BNconfig.tamanho_tabuleiro, BNconfig.num_navios)
