@@ -1,6 +1,6 @@
 import time
-from rich import *
-from rich import Console
+import rich
+from rich.console import console
 
 from champion_file import Champion
 
