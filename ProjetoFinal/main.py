@@ -1,6 +1,6 @@
 import time
 import rich
-from rich.console import console
+from rich.console import Console
 
 from champion_file import Champion
 
@@ -71,10 +71,6 @@ def fechar_programa():
     time.sleep(0.4)
     exit()
 
-
-"""
-chmp1 = Champion("Aatrox", "60", "", "", "", "")
-"""
 
 while True:
     banner()
