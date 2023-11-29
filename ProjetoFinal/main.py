@@ -1,6 +1,10 @@
 import time
-from rich import table
+from rich import *
+from rich import Console
 
+from champion_file import Champion
+
+"""
 class Champion:
     def __init__(self, nome, role, hp, ad, ar, mr):
         self.nome = nome
@@ -9,34 +13,71 @@ class Champion:
         self.ad = ad
         self.ar = ar
         self.mr = mr
+"""
+
+console = Console()
+
+console.print("sou gay", style="blue1")
+
+
+def banner():
+    print("+---------------------------------------------+\n"
+          "|                                             |\n"
+          "|             LEAGUE OF LEGENDS               |\n"
+          "|             CHAMPION COMPARER               |\n"
+          "|                                             |\n"
+          "+---------------------------------------------+\n")
+
 
 def separator():
-    print("------------------------")
+    print("_______________________________")
+
+
 def comparacao_entre_champs():
+    pass
+
 
 def pesquisar():
+    champion_instance = Champion("Aatrox", "TOP", 650, 60, 26, 30)
+    print(champion_instance)
+    exit()
+
 
 def alterar_dados():
+    pass
 
 
 def introduzir_champion():
     separator()
     print("Introduza os dados conforme lhe for aparecendo no ecrãn: ")
-
+    i = int(input("Quantos Champions pretende inserir no programa."))
     separator()
 
+
 def gerar_champion():
+    pass
+
 
 def eliminar_champion():
+    pass
 
 
 def export():
+    pass
+
+
+def fechar_programa():
+    print("A fechar o comparador")
+    time.sleep(0.4)
+    exit()
 
 
 """
 chmp1 = Champion("Aatrox", "60", "", "", "", "")
 """
+
 while True:
+    banner()
     separator()
     print("/-----Menu-----/")
     print("1 - Comparação entre Champions")
@@ -66,6 +107,6 @@ while True:
         case "7":
             export()
         case "8":
-            exit()
+            fechar_programa()
         case _:
             print("Escolha um número presente no menu.\n")
