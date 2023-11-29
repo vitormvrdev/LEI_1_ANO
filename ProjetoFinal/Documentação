@@ -1,4 +1,39 @@
 ###
-
-
+Enunciado
+Presidentes EUA ou de Portugal
+Pretende-se um programa para analisar estatisticamente os mandatos dos
+presidentes EUA. Para cada um dos 45 presidentes vamos guardar em vectores (lista),
+o ano de início do mandato, o ano de fim do mandato e o partido.
+Sugestão: quatro vectores (lista) – vecPresidente, vecAnoInicio, vecAnoFim,
+vecPartido. Pode substituir os vetores anteriores com uma estrutura (lista de listas).
+Exemplo para o vector vecPresidente. Deve pesquisar os outros dados
+vecPresidente(1) = “George Washington”
+vecPresidente(2) = “John Adams”
+vecPresidente(3) = “Thomas Jefferson”
+vecPresidente(4) = “James Madison”
+vecPresidente(5) = “James Monroe”
+…………………………………………………………………………………
+vecPresidente(40) = “Ronald Wilson Reagan”
+vecPresidente(41) = “George Herbert Walker Bush”
+vecPresidente(42) = “William Jefferson Clinton (Bill Clinton)”
+vecPresidente(43) = “George Walker Bush”
+vecPresidente(44) = “Barack Hussein Obama II”
+Menu:
+1. Introdução dados
+2. Geração dados (preenchimento dos vectores (lista) de forma automática)
+3. Alterar dados
+4. Eliminar dados
+5. Consultar
+6. Pesquisar (ver dados de um dado presidente)
+7. Media de anos de todos os mandatos
+8. Nº de mandatos de um partido
+9. Partido com mais mandatos
+10. Tabela de mandatos por partido
+11. Guardar em ficheiro
+12. Carregar dados do ficheiro
+13. Sair
+Deve recorrer à modularização do programa a desenvolver, isto é, procedimentos e
+funções.
+Obs: pode / deve definir outras opções, bem como usar outros dados adicionais
+de forma a enriquecer a aplicação.
 ###
