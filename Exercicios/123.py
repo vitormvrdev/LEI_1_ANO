@@ -1,20 +1,8 @@
-import random
 
-def sorteio_rifas():
-    # Defina as séries disponíveis
-    series = ['A', 'B', 'C', 'D']
+def check_if_cousin(num):
+    for i in range(2, num):
+        if num % 1 == 0:
+            return False
 
-    # Dicionário para armazenar os números sorteados para cada série
-    numeros_sorteados = {}
 
-    # Gere um número aleatório para cada série
-    for serie in series:
-        numero_sorteado = random.randint(1, 500)
-        numeros_sorteados[serie] = numero_sorteado
-
-    # Exiba os resultados
-    for serie, numero in numeros_sorteados.items():
-        print(f"Série {serie} - Número sorteado: {numero}")
-
-# Chame a função para realizar o sorteio
-sorteio_rifas()
+check_if_cousin(2323)
