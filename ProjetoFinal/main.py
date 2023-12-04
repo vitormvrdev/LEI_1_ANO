@@ -35,13 +35,33 @@ def ver_partido():
 def eliminar_presidente():
     pass
 def alterar_dados():
+    pass
+def gerar_presidente():
+    pass
+def media_anos_mandato():
+    pass
+def n_mandatos_partidos():
+    pass
+def mais_mandatos():
+    pass
+def fechar_programa():
+    user_in = input("Are you sure you want to leave?(Y/N)").upper()
+    if user_in == "Y":
+        print("A fechar.")
+        time.sleep(0.5)
+        print("A fechar..")
+        time.sleep(0.5)
+        print("A fechar...")
+        time.sleep(1)
+        exit()
+    else:
+        pass
+
 
 while True:
     separator()
     menu_panel()
     separator()
-    console.print
-    user_op = ""
     console.print("[bright_blue][b]1 - [/bright_blue][/b]Visualizar lista de Presidentes", justify="center")
     console.print("[bright_blue][b]2 - [/bright_blue][/b]Introduzir dados na lista", justify="center")
     console.print("[bright_blue][b]3 - [/bright_blue][/b]Comparar presidentes",justify="center")
@@ -50,12 +70,10 @@ while True:
     console.print("[bright_blue][b]4 - [/bright_blue][/b]Eliminar presidente da lista", justify="center")
     console.print("[bright_blue][b]5 - [/bright_blue][/b]Alterar dados de um presidente", justify="center")
     console.print("[bright_blue][b]6 - [/bright_blue][/b]Gerar um presidente.", justify="center")
-    console.print("[bright_blue][b]last - [/bright_blue][/b]Sair do programa",justify="center")
-    console.print("[]")
-
-    """user_op = int(input("Introduza o número correspondente a ação que pretende."))"""
-
-    match user_op:
+    console.print("[bright_blue][b] - [/bright_blue][/b]Sair do programa",justify="center")
+    menu_choice = input("Escolha o número respetivo à ação que pretende no programa: ")
+    print("")
+    match menu_choice:
         case 1:
             ver_lista_presidentes()
         case 2:
@@ -63,6 +81,8 @@ while True:
         case 3:
             comparar_presidentes()
         case 4:
+            buscar_presidente()
+        case "5":
+            fechar_programa()
         case _:
             sair_programa()
-    break
