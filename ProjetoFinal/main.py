@@ -19,16 +19,15 @@ def menu_panel():
 def separator():
     """console.print("[bright_blue][b]_______________________________[/bright_blue][/b]", justify="center")"""
 def introduzir_dados():
-    pass
-def sair_programa():
-    pass
+    separator()
+    console.print(Panel("[b][bright_blue]//________Introdução_de_dados________//[/bright_blue][/b]", style="white"),justify="center")
+    separator()
+
 def ver_lista_presidentes():
     pass
 def comparar_presidentes():
     pass
 def buscar_presidente():
-    pass
-def inserir_novo_presidente():
     pass
 def ver_partido():
     pass
@@ -42,16 +41,16 @@ def media_anos_mandato():
     pass
 def n_mandatos_partidos():
     pass
-def mais_mandatos():
+def mais_mandatos_ordem():
     pass
 def fechar_programa():
-    user_in = input("Are you sure you want to leave?(Y/N)").upper()
-    if user_in == "Y":
-        print("A fechar.")
+    user_in = input("Tem a certeza que pretende sair?(S/N)").upper()
+    if user_in == "":
+        console.print("A fechar[bright_blue][b].[/bright_blue][/b]")
         time.sleep(0.5)
-        print("A fechar..")
+        console.print("A fechar[bright_blue][b]..[/bright_blue][/b]")
         time.sleep(0.5)
-        print("A fechar...")
+        console.print("A fechar[bright_blue][b]...[/bright_blue][/b]")
         time.sleep(1)
         exit()
     else:
@@ -65,24 +64,41 @@ while True:
     console.print("[bright_blue][b]1 - [/bright_blue][/b]Visualizar lista de Presidentes", justify="center")
     console.print("[bright_blue][b]2 - [/bright_blue][/b]Introduzir dados na lista", justify="center")
     console.print("[bright_blue][b]3 - [/bright_blue][/b]Comparar presidentes",justify="center")
-    console.print("[bright_blue][b]3 - [/bright_blue][/b]Pesquisar por presidente",justify="center")
-    console.print("[bright_blue][b]3 - [/bright_blue][/b]Ver por partido",justify="center")
-    console.print("[bright_blue][b]4 - [/bright_blue][/b]Eliminar presidente da lista", justify="center")
-    console.print("[bright_blue][b]5 - [/bright_blue][/b]Alterar dados de um presidente", justify="center")
-    console.print("[bright_blue][b]6 - [/bright_blue][/b]Gerar um presidente.", justify="center")
-    console.print("[bright_blue][b] - [/bright_blue][/b]Sair do programa",justify="center")
+    console.print("[bright_blue][b]4 - [/bright_blue][/b]Pesquisar por presidente",justify="center")
+    console.print("[bright_blue][b]5 - [/bright_blue][/b]Ver por partido",justify="center")
+    console.print("[bright_blue][b]6 - [/bright_blue][/b]Eliminar presidente da lista", justify="center")
+    console.print("[bright_blue][b]7 - [/bright_blue][/b]Alterar dados de um presidente", justify="center")
+    console.print("[bright_blue][b]8 - [/bright_blue][/b]Gerar um presidente.", justify="center")
+    console.print("[bright_blue][b]9 - [/bright_blue][/b]Calcular a média de anos por mandato.", justify="center")
+    console.print("[bright_blue][b]10 - [/bright_blue][/b]Verificar o número de mandatos por partido.", justify="center")
+    console.print("[bright_blue][b]11 - [/bright_blue][/b]Mostrar os mandatos por ordem.", justify="center")
+    console.print("[bright_blue][b]12 - [/bright_blue][/b]Sair do programa",justify="center")
     menu_choice = input("Escolha o número respetivo à ação que pretende no programa: ")
     print("")
     match menu_choice:
-        case 1:
+        case "1":
             ver_lista_presidentes()
-        case 2:
+        case "2":
             introduzir_dados()
-        case 3:
+        case "3":
             comparar_presidentes()
-        case 4:
+        case "4":
             buscar_presidente()
         case "5":
+            ver_partido()
+        case "6":
+            eliminar_presidente()
+        case "7":
+            alterar_dados()
+        case "8":
+            gerar_presidente()
+        case "9":
+            media_anos_mandato()
+        case "10":
+            n_mandatos_partidos()
+        case "11":
+            mais_mandatos_ordem()
+        case "12":
             fechar_programa()
         case _:
-            sair_programa()
+            print("Introduza uma opção dentro do fornecido.")
