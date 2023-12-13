@@ -6,11 +6,6 @@ from rich.panel import Panel
 from rich.align import Align
 from presidentes import presidentes
 
-
-"""
-This script is used to create a list of presidents and what they did best in their time in power
-its also an objective of the task, to search up and insert or delete presidents.
-"""
 console = Console()
 def panel ():
     console.print(Panel("[b][white]US[/b][/white][b][bright_blue] Presidency[/bright_blue][/b]", border_style="red3", height=3, width=50), justify="center")
@@ -38,7 +33,6 @@ def introduzir_dados():
     }
     presidentes.append(presidente)
     print("Presidente adicionado com sucesso.")
-
 def ver_lista_presidentes():
     for presidente in presidentes:
         print(f"{presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
@@ -67,7 +61,7 @@ def guardar_em_ficheiro(nome_arquivo='presidentes.json'):
     print(f"Dados guardados em {nome_arquivo}.")
 def fechar_programa():
     user_in = input("Tem a certeza que pretende sair?(S/N)").upper()
-    if user_in == "":
+    if user_in == "S":
         console.print("A fechar[bright_blue][b].[/bright_blue][/b]")
         time.sleep(0.5)
         console.print("A fechar[bright_blue][b]..[/bright_blue][/b]")
