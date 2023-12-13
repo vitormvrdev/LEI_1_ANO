@@ -1,8 +1,11 @@
 import time
 import rich
+import json
 from rich.console import Console
 from rich.panel import Panel
 from rich.align import Align
+from presidentes import presidentes
+
 
 """
 This script is used to create a list of presidents and what they did best in their time in power
@@ -22,9 +25,24 @@ def introduzir_dados():
     separator()
     console.print(Panel("[b][bright_blue]//________Introdução_de_dados________//[/bright_blue][/b]", style="white"),justify="center")
     separator()
+    nome = input("Nome do Presidente: ")
+    ano_inicio = int(input("Ano de Início do Mandato: "))
+    ano_fim = int(input("Ano de Fim do Mandato: "))
+    partido = input("Partido: ")
+
+    presidente = {
+        "nome": nome,
+        "ano_inicio": ano_inicio,
+        "ano_fim": ano_fim,
+        "partido": partido
+    }
+    presidentes.append(presidente)
+    print("Presidente adicionado com sucesso.")
 
 def ver_lista_presidentes():
-    pass
+    for presidente in presidentes:
+        print(f"{presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
+
 def comparar_presidentes():
     pass
 def buscar_presidente():
@@ -43,6 +61,10 @@ def n_mandatos_partidos():
     pass
 def mais_mandatos_ordem():
     pass
+def guardar_em_ficheiro(nome_arquivo='presidentes.json'):
+    with open(nome_arquivo, 'w') as f:
+        json.dump(presidentes, f)
+    print(f"Dados guardados em {nome_arquivo}.")
 def fechar_programa():
     user_in = input("Tem a certeza que pretende sair?(S/N)").upper()
     if user_in == "":
@@ -72,6 +94,7 @@ while True:
     console.print("[bright_blue][b]9 - [/bright_blue][/b]Calcular a média de anos por mandato.", justify="center")
     console.print("[bright_blue][b]10 - [/bright_blue][/b]Verificar o número de mandatos por partido.", justify="center")
     console.print("[bright_blue][b]11 - [/bright_blue][/b]Mostrar os mandatos por ordem.", justify="center")
+    console.print("[bright_blue][b]11 - [/bright_blue][/b]Guardar em ficheiro.", justify="center")
     console.print("[bright_blue][b]12 - [/bright_blue][/b]Sair do programa",justify="center")
     menu_choice = input("Escolha o número respetivo à ação que pretende no programa: ")
     print("")
