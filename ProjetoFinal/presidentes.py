@@ -3,3 +3,4 @@ presidentes = [
     {"nome": "John Adams", "ano_inicio": 1797, "ano_fim": 1801, "partido": "Federalista"},
     # Adicione mais presidentes conforme necessário...
 ]
+
