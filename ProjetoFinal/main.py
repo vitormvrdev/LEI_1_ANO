@@ -10,11 +10,14 @@ import os
 
 console = Console()
 
+
+def clear_console():
+    os.system('clear')
 def menu_panel(texto):
      #This function creates a panel with options for users to choose from 
-     console.print(Panel(f"[b][bright_blue]" "*10{texto}" "*10[/bright_blue][/b]", style="white", width=30, height=3),justify= "left")
+     console.print(Panel(f"[b][bright_blue]{texto}[/bright_blue][/b]", style="white", width=30, height=3),justify= "center")
 def separator():
-    console.print("[bright_blue][b]_______________________________[/bright_blue][/b]", justify= "left")
+    console.print("[bright_blue][b]________________________________[/bright_blue][/b]", justify= "center")
 def introduzir_dados():
     """separator()"""
     console.print(Panel("[b][bright_blue]//________Introdução_de_dados________//[/bright_blue][/b]", style="white"),justify= "left")
@@ -32,8 +35,9 @@ def introduzir_dados():
     }
     presidentes.append(presidente)
     print("Presidente adicionado com sucesso.")
+    clear_console()
 def ver_lista_presidentes():
-    os.system('clear')
+    clear_console()
     console.print("A carregar lista.")
     time.sleep(0.3)
     console.print("A carregar lista..")
@@ -46,6 +50,7 @@ def ver_lista_presidentes():
         print(f"{presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
     separator()
     input("ENTER p/ continuar...")
+    clear_console()
 
 def comparar_presidentes():
     pass
