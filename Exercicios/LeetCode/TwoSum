@@ -1,20 +1,14 @@
 def two_sum(nums, target):
-    # This dictionary will map each number to its index in the array.
     num_to_index = {}
-    
-    # We loop over the numbers in the array.
     for i, num in enumerate(nums):
-        # We calculate the number needed to add to the current one to reach the target.
         complement = target - num
         
-        # If the complement is in our dictionary, we have found the two numbers.
         if complement in num_to_index:
             return [num_to_index[complement], i]
         
         # We add the current number to our dictionary.
         num_to_index[num] = i
     
-    # According to the problem, there is exactly one solution, so we should not reach this point.
     return []
 nums1 = [2, 7, 11, 15]
 target1 = 9

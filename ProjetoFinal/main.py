@@ -53,22 +53,59 @@ def ver_lista_presidentes():
     clear_console()
 
 def comparar_presidentes():
+    """
+    que presidentes pretende comparar?
+        procurar presidentes escolhidos
+            mostrar info de ambos os presidentes
+            """
     pass
 def pesquisar_presidente():
+    """
+    por que dado pretende pesquisar
+        match case
+
+    """
     pass
 def ver_partido():
+    """
+    por que partido pretende pesquisar?
+        mostrar todos os presidentes desse partido
+    """
     pass
 def eliminar_dados():
+    """
+    mostrar todos os dados de momento no programa
+        perguntar qual entrada quer retirar
+            retirar entrada de dados
+    """
     pass
 def alterar_dados():
+    """
+    mostrar todos os dados do momento no programa
+        perguntar qual entrada de dados quer alterar
+            alterar essa entrada de dados
+    """
     pass
 def gerar_presidente():
+    """
+    o programa vai ao ficheiro presidentes.py
+        randomiza uma das listas e adiciona a lista principal de presidentes
+            ver_lista_presidentes()
+    """
     pass
 def media_anos_mandato():
+    """
+    calcular a média de todos os mandatos na lista
+        animação de "A calcular"
+    """
     pass
 def n_mandatos_partidos():
-    pass
-def mais_mandatos_ordem():
+    """
+    calcular o n de mandatos de cada partido
+        print dos resultados de maior para menor com gráfico
+
+        FALAR COM O MANUEL DATA SCIENCE
+    """
     pass
 def guardar_em_ficheiro(nome_arquivo='presidentes.json'):
     with open(nome_arquivo, 'w') as f:
@@ -102,9 +139,8 @@ while True:
     console.print("[bright_blue][b]8 - [/bright_blue][/b]Gerar um presidente.", justify= "left")
     console.print("[bright_blue][b]9 - [/bright_blue][/b]Calcular a média de anos por mandato.", justify= "left")
     console.print("[bright_blue][b]10 - [/bright_blue][/b]Verificar o número de mandatos por partido.", justify= "left")
-    console.print("[bright_blue][b]11 - [/bright_blue][/b]Mostrar os mandatos por ordem.", justify= "left")
-    console.print("[bright_blue][b]12 - [/bright_blue][/b]Guardar em ficheiro.", justify= "left")
-    console.print("[bright_blue][b]13 - [/bright_blue][/b]Sair do programa",justify= "left")
+    console.print("[bright_blue][b]11 - [/bright_blue][/b]Guardar em ficheiro.", justify= "left")
+    console.print("[bright_blue][b]12 - [/bright_blue][/b]Sair do programa",justify= "left")
     menu_choice = input("Escolha o número respetivo à ação que pretende no programa: ")
     print("")
     match menu_choice:
@@ -129,10 +165,8 @@ while True:
         case "10":
             n_mandatos_partidos()
         case "11":
-            mais_mandatos_ordem()
-        case "12":
             guardar_em_ficheiro()
-        case "13":
+        case "12":
             fechar_programa()
         case _:
             print("Introduza uma opção dentro do fornecido.")
