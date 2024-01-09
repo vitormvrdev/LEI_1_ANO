@@ -51,7 +51,6 @@ def ver_lista_presidentes():
     separator()
     input("ENTER p/ continuar...")
     clear_console()
-
 def comparar_presidentes():
     """
     que presidentes pretende comparar?
@@ -63,7 +62,8 @@ def pesquisar_presidente():
     """
     por que dado pretende pesquisar
         match case
-
+            seleção
+                fim
     """
     pass
 def ver_partido():
@@ -100,7 +100,7 @@ def media_anos_mandato():
     """
     pass
 def n_mandatos_partidos():
-    """
+    """EXTRAAAAA!!!
     calcular o n de mandatos de cada partido
         print dos resultados de maior para menor com gráfico
 
