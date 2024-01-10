@@ -21,4 +21,3 @@ for i in range(20):
 else:
     print(f"Temperaturas positivas: {conta_positivas}")
     print(f"Temperaturas negativas: {conta_negativas}")
-
