@@ -15,7 +15,11 @@ def clear_console():
     os.system('clear')
 def menu_panel(texto):
      #This function creates a panel with options for users to choose from 
-     console.print(Panel(f"[b][bright_blue]{texto}[/bright_blue][/b]", style="white", width=30, height=3),justify= "center")
+    #console.print(Panel(f"[b][bright_blue]{texto}[/bright_blue][/b]", style="white", width=30, height=3),justify= "center")
+    console.print("="*20)
+    console.print(f"{texto:^20}")
+    console.print("-"*20)
+
 def separator():
     console.print("[bright_blue][b]________________________________[/bright_blue][/b]", justify= "center")
 def introduzir_dados():
