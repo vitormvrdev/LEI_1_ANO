@@ -22,7 +22,6 @@ def quant_meses_media(n, vendas_anual):
             contador += 1
     return contador
 
-
 while True:
     try:
         n = int(input("Introduz o caralho o número meu. "))

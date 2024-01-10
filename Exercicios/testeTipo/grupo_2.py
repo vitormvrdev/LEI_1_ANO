@@ -1,5 +1,4 @@
 lista_nums = []
-
 """COMPLICOMETRO    max_value = lista_nums[0]
                     min_value = lista_nums[0]
 
@@ -18,18 +17,15 @@ soma = 0
 media = 0
 j = int(input("Introduza o n de numeros!"))
 for i in range(j):
-        print("Temperatura", i ,":")
-        temp = float(input("Introduza a temperatura: "))
-        lista_nums.append(temp)
-        soma += temp 
-        if temp > max_value:
-            max_value = temp
-        
-        if temp < min_value:
-            min_value = temp
-        media = soma/j
+    temp = float(input(f"Introduza a temperatura{i}: "))
+    lista_nums.append(temp)
+    soma += temp 
+    if temp > max_value:
+        max_value = temp    
+    if temp < min_value:
+        min_value = temp
+    media = soma/j
 
 print(media)
-
 print(max_value) 
 print(min_value) 

@@ -19,7 +19,6 @@ def menu_panel(texto):
     console.print("="*20)
     console.print(f"{texto:^20}")
     console.print("-"*20)
-
 def separator():
     console.print("[bright_blue][b]---------------------[/bright_blue][/b]")
 def introduzir_dados():
@@ -130,9 +129,9 @@ def fechar_programa():
 
 
 while True:
-    #separator()
+    separator()
     menu_panel("Menu")
-    #separator()
+    separator()
     console.print("[bright_blue][b]1 - [/bright_blue][/b]Introduzir dados", justify= "left")
     console.print("[bright_blue][b]2 - [/bright_blue][/b]Ver lista atual", justify= "left")
     console.print("[bright_blue][b]3 - [/bright_blue][/b]Comparar presidentes",justify= "left")

@@ -5,14 +5,12 @@
 # c)resolução abaixo
 
 
-i = 1
 conta_negativas = 0
 conta_positivas = 0
 
 for i in range(20):
     if i <= 20:
-        print("Temperatura", i ,":")
-        temp = int(input("Introduza a temperatura."))
+        temp = float(input(f"Introduza a temperatura {i+1}: "))
         if temp < 0:
             conta_negativas += 1
         else:
