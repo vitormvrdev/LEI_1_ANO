@@ -21,11 +21,11 @@ def menu_panel(texto):
     console.print("-"*20)
 
 def separator():
-    console.print("[bright_blue][b]________________________________[/bright_blue][/b]", justify= "center")
+    console.print("[bright_blue][b]---------------------[/bright_blue][/b]")
 def introduzir_dados():
-    """separator()"""
-    console.print(Panel("[b][bright_blue]//________Introdução_de_dados________//[/bright_blue][/b]", style="white"),justify= "left")
-    """separator()"""
+    separator()
+    menu_panel("Introdução de Dados")
+    separator()
     nome = input("Nome do Presidente: ")
     ano_inicio = int(input("Ano de Início do Mandato: "))
     ano_fim = int(input("Ano de Fim do Mandato: "))
