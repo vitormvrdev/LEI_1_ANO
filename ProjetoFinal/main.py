@@ -10,7 +10,6 @@ import os
 
 console = Console()
 
-
 def clear_console():
     os.system('clear')
 def menu_panel(texto):
@@ -20,24 +19,31 @@ def menu_panel(texto):
     console.print(f"{texto:^20}")
     console.print("-"*20)
 def separator():
-    console.print("[bright_blue][b]---------------------[/bright_blue][/b]")
+    console.print("[bright_blue][b]--------------------[/bright_blue][/b]")
 def introduzir_dados():
     separator()
     menu_panel("Introdução de Dados")
     separator()
-    nome = input("Nome do Presidente: ")
-    ano_inicio = int(input("Ano de Início do Mandato: "))
-    ano_fim = int(input("Ano de Fim do Mandato: "))
-    partido = input("Partido: ")
-
-    presidente = {
-        "nome": nome,
-        "ano_inicio": ano_inicio,
-        "ano_fim": ano_fim,
-        "partido": partido
-    }
-    presidentes.append(presidente)
-    print("Presidente adicionado com sucesso.")
+    n = int(input("Quantos dados vai querer introduzir? \n"))
+    for i in range(n):
+        nome = input("Nome do Presidente: ")
+        ano_inicio = int(input("Ano de Início do Mandato: "))
+        ano_fim = int(input("Ano de Fim do Mandato: "))
+        if ano_inicio > ano_fim:
+            print("O ano de fim, tem de ser maior que o ano inicial.")
+            time.sleep(1)
+            continue
+        partido = input("Partido: ")
+        presidente = {
+            "nome": nome,
+            "ano_inicio": ano_inicio,
+            "ano_fim": ano_fim,
+            "partido": partido
+        }
+        presidentes.append(presidente)
+        print("Presidente adicionado com sucesso.")
+        time.sleep(1)
+        i += 1
     clear_console()
 def ver_lista_presidentes():
     clear_console()
@@ -49,11 +55,14 @@ def ver_lista_presidentes():
     separator()
     menu_panel("Presidentes")
     time.sleep(1)
-    for presidente in presidentes:
-        print(f"{presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
+    if len(presidentes) == 0:
+            print("A lista está vazia, introduza valores na lista.")
+            time.sleep(0.5)
+            separator()
+    else:
+        for i, presidente in enumerate(presidentes, start= 1):
+            print(f"{i}- {presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
     separator()
-    input("ENTER p/ continuar...")
-    clear_console()
 def comparar_presidentes():
     """
     que presidentes pretende comparar?
@@ -76,12 +85,10 @@ def ver_partido():
     """
     pass
 def eliminar_dados():
-    """
-    mostrar todos os dados de momento no programa
-        perguntar qual entrada quer retirar
-            retirar entrada de dados
-    """
-    pass
+    ver_lista_presidentes()
+    num = int(input("Que entrada pretende que seja removida da lista?  "))
+    presidentes.pop(num - 1)
+    input("Entrada removida com êxito.\nENTER p/ continuar...")
 def alterar_dados():
     """
     mostrar todos os dados do momento no programa
@@ -151,6 +158,8 @@ while True:
             introduzir_dados()
         case "2":
             ver_lista_presidentes()
+            input("ENTER p/ continuar...")
+            clear_console()
         case "3":
             comparar_presidentes()
         case "4":
@@ -172,4 +181,4 @@ while True:
         case "12":
             fechar_programa()
         case _:
-            print("Introduza uma opção dentro do fornecido.")
+            print("Por favor, introduza uma opção dentro de 1 a 12.")
