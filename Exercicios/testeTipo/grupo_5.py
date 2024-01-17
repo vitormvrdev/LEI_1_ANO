@@ -67,12 +67,12 @@ def guardar_ficheiro(lista_dados):
     # percorrer toda a lista
     n = len(lista_dados)
 
-    for i in range(n):
-        ficheiro.write(str(lista_dados[i][0]) + ", " +
-                       lista_dados[i][1] + ", " +
-                       str(lista_dados[i][2]) + ", " +
-                       str(lista_dados[i][3]) + ", " +
-                       str(lista_dados[i][4]) + "\n")
+    for i in range(n):  
+        ficheiro.write(str(lista_dados[i][0]) + ", " + 
+                        lista_dados[i][1] + ", " +
+                        str(lista_dados[i][2]) + ", " + 
+                        str(lista_dados[i][3]) + ", " + 
+                        str(lista_dados[i][4]) + "\n")
 
     ficheiro.close()
 

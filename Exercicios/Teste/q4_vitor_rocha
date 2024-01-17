@@ -1,0 +1,60 @@
+lista_barcos = []
+
+def introduzir_dados():
+    
+    while True:
+        print("Regsito nº " + str(len(lista_barcos) + 1))
+        nome_barco = input(" Nome do barco...(vazio termina)......: ")
+        if nome_barco == "":
+            break
+        nome_comandante = input(" Nome do Comandante.............: ")
+        qnt_lugares = int(input("Introduza o número de lugares do Barco.: "))
+
+        registo_barcos = [nome_barco, nome_comandante, qnt_lugares]
+        lista_barcos.append(registo_barcos)
+        print(lista_barcos)
+
+
+def consulta_dados():
+    print("Numero  Nome Barco          Nome Comandante     Lugares")
+    print("-------------------------------------------------------")
+
+    n = len(lista_barcos)
+    print (n)
+
+    for barco in lista_barcos:
+        print(barco[0], barco[1], barco[2])
+    input("Enter p/continuar...:")
+
+def quantidade_lugares():
+    pass
+
+def barco_mais_lugares():
+    pass
+
+
+
+def main ():
+
+    while True:
+
+        print("1 - Introduzir dados")
+        print("2 - Consulta de dados")
+        print("3 - Quantidade de lugares")
+        print("4 - Barco com mais lugares")
+        print("5 - Sair")
+
+        op = input("Introduza a Opção desejada.: ")
+        match op:
+            case "1":
+                introduzir_dados()
+            case "2":
+                consulta_dados()
+            case "3":
+                quantidade_lugares()
+            case "4":
+                barco_mais_lugares()
+            case "5":
+                exit
+
+main()
