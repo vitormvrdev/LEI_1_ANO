@@ -26,7 +26,7 @@ def introduzir_dados():
     separator()
     n = int(input("Quantos dados vai querer introduzir? \n"))
     for i in range(n):
-        nome = input("Nome do Presidente: ")
+        nome = input(f"Nome do Presidente {i + 1}: ")
         ano_inicio = int(input("Ano de Início do Mandato: "))
         ano_fim = int(input("Ano de Fim do Mandato: "))
         if ano_inicio > ano_fim:
