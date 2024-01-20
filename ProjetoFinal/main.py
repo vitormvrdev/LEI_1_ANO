@@ -6,6 +6,7 @@ from rich.panel import Panel
 from rich.align import Align
 from presidentes import presidentes
 import os
+from operator import itemgetter
 
 
 console = Console()
@@ -36,7 +37,7 @@ def introduzir_dados():
                 error_message()
                 print("O número de presidentes a introduzir tem que ser maior que 0.")
                 error_message
-                delay()
+                time.sleep(0.5)
         except ValueError:
             error_message()
             print("Tem que introduzir um número.\nLetras não estão incluidas.")
@@ -48,11 +49,12 @@ def introduzir_dados():
                 try:
                     ano_inicio = int(input("Ano de Início do Mandato: "))
                     if ano_inicio <= 1789:
-                        print("A Revolução Americana aconteceu no ano de 1984\n por isso, o número introduzido tem de ser maior que 1984.")
+                        console.print("A Revolução Americana aconteceu no ano de [bright_red][b]1789[/bright_red][/b]\npor isso, o número introduzido tem de ser maior que [bright_red][b]1789[/bright_red][/b].")
                         error_message()
                         delay()
                     elif ano_inicio >= 1789:
-                        ano_fim = int(input("Ano de Início do Mandato: "))
+                        ano_fim = int(input("Ano de Fim do Mandato: "))
+                        break
                     elif ano_inicio > ano_fim:
                         print("O ano de fim, tem de ser maior que o ano inicial.")
                         error_message()
@@ -60,7 +62,7 @@ def introduzir_dados():
                     time.sleep(1)
                 except ValueError:
                     console.print("[bright_red][b]Os Valores introduzidos estão errados![/bright_red][/b]", justify="left")
-        partido = input("Partido: ")
+            partido = input("Partido: ")
         presidente = {
             "nome": nome,
             "ano_inicio": ano_inicio,
@@ -82,6 +84,7 @@ def ver_lista_presidentes():
     separator()
     menu_panel("Presidentes")
     time.sleep(1)
+
     if len(presidentes) == 0:
             print("A lista está vazia, introduza valores na lista.")
             time.sleep(0.5)
@@ -97,36 +100,94 @@ def pesquisar_presidente():
             seleção
                 fim
     """
+    clear_console()
+    console.print("A carregar lista.")
+    time.sleep(0.3)
+    console.print("A carregar lista..")
+    time.sleep(0.5)
+    console.print("A carregar lista...\n", highlight= False)
+    separator()
+    menu_panel("Presidentes")
+    time.sleep(1)
+    if len(presidentes) == 0:
+            print("A lista está vazia, introduza valores na lista.")
+            time.sleep(0.5)
+            separator()
     
     pass
 def comparar_presidentes():
-    nome_find = input("")
+    clear_console()
+    console.print("A carregar lista.")
+    time.sleep(0.3)
+    console.print("A carregar lista..")
+    time.sleep(0.5)
+    console.print("A carregar lista...\n", highlight= False)
+    separator()
+    menu_panel("Presidentes")
+    time.sleep(1)
+    if len(presidentes) == 0:
+            print("A lista está vazia, introduza valores na lista.")
+            time.sleep(0.5)
+            separator()
     pass
 def ver_partido():
     """
     por que partido pretende pesquisar?
         mostrar todos os presidentes desse partido
-    """
-    partido_user = input("Por que partido pretende pesquisar?")
+    
+    clear_console()
+    console.print("A carregar lista.")
+    time.sleep(0.3)
+    console.print("A carregar lista..")
+    time.sleep(0.5)
+    console.print("A carregar lista...\n", highlight= False)
+    separator()
+    menu_panel("Presidentes")
+    time.sleep(1)
 
     if len(presidentes) == 0:
         print("A lista está vazia, introduza valores na lista.")
-        time.sleep(0.5)
+        time.sleep(2.5)
+        separator()
         return
+    
+
+    partido_user = input("Por que partido pretende pesquisar? ").lower()
+
     for presidente in presidentes:
-        if presidentes ["partido"] == partido_user:
-            print(f"{presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
+        if partido_user == presidentes[presidente["partido"]]:
+            newlist = sorted(presidentes, key=itemgetter('partido'))
+            print(newlist)
+    """
+    user_partido = presidentes(partido="Federalista")
+    itemgetter("partido")(user_partido)
+    print(itemgetter)
+
 def eliminar_dados():
     ver_lista_presidentes()
-    num = int(input("Que entrada pretende que seja removida da lista?  "))
-    presidentes.pop(num - 1)
-    input("Entrada removida com êxito.\nENTER p/ continuar...")
+    if len(presidentes) == 0:
+        print("A lista está vazia introduza dados primeiro.")
+        time.sleep(2.5)
+        separator()
+
+    elif len(presidentes) != 0:
+        num = int(input("Que entrada pretende que seja removida da lista?  "))
+
+        if 0 < num < len(presidentes):
+            presidentes.pop(num - 1)
+            print("Entrada removida com exito.")
+            time.sleep(2)
+            input("\nENTER p/ continuar...")    
+        elif num > len(presidentes):
+            print(f"Número fora do número de entradas, introduza um número entre 1 e {len(presidentes)}")  
 def alterar_dados():
     """
     mostrar todos os dados do momento no programa
-        perguntar qual entrada de dados quer alterar
-            alterar essa entrada de dados
+        w3schools
+            perguntar qual entrada de dados quer alterar
+                alterar essa entrada de dados
     """
+    ver_lista_presidentes()
     pass
 def gerar_presidente():
     """
@@ -163,8 +224,10 @@ def fechar_programa():
         console.print("A fechar[bright_blue][b]...[/bright_blue][/b]")
         time.sleep(1)
         exit()
+    elif user_in == "N":
+        return
     else:
-        pass
+        print("Input inválido, por favor 'S' para sim e 'N' para não.")
 
 
 while True:
@@ -187,6 +250,7 @@ while True:
     print("")
     match menu_choice:
         case "1":
+            clear_console()
             introduzir_dados()
         case "2":
             ver_lista_presidentes()
