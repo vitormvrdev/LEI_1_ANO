@@ -9,9 +9,12 @@ import os
 
 
 console = Console()
-
+def error_message():
+    console.print("[bright_red][b]!!!ERRO!!![/bright_red][/b]")
+def delay():
+    time.sleep(0.5)
 def clear_console():
-    os.system('clear')
+    os.system('cls')
 def menu_panel(texto):
      #This function creates a panel with options for users to choose from 
     #console.print(Panel(f"[b][bright_blue]{texto}[/bright_blue][/b]", style="white", width=30, height=3),justify= "center")
@@ -24,27 +27,51 @@ def introduzir_dados():
     separator()
     menu_panel("Introdução de Dados")
     separator()
-    n = int(input("Quantos dados vai querer introduzir? \n"))
-    for i in range(n):
-        nome = input(f"Nome do Presidente {i + 1}: ")
-        ano_inicio = int(input("Ano de Início do Mandato: "))
-        ano_fim = int(input("Ano de Fim do Mandato: "))
-        if ano_inicio > ano_fim:
-            print("O ano de fim, tem de ser maior que o ano inicial.")
-            time.sleep(1)
-            continue
+    while True:
+        try:
+            n = int(input("Quantos dados vai querer introduzir? \n"))
+            if n >= 0:
+                break
+            else:
+                error_message()
+                print("O número de presidentes a introduzir tem que ser maior que 0.")
+                error_message
+                delay()
+        except ValueError:
+            error_message()
+            print("Tem que introduzir um número.\nLetras não estão incluidas.")
+            delay()
+    if n > 0:
+        for i in range(n):
+            nome = input(f"Nome do Presidente {i + 1}: ")
+            while True:
+                try:
+                    ano_inicio = int(input("Ano de Início do Mandato: "))
+                    if ano_inicio <= 1789:
+                        print("A Revolução Americana aconteceu no ano de 1984\n por isso, o número introduzido tem de ser maior que 1984.")
+                        error_message()
+                        delay()
+                    elif ano_inicio >= 1789:
+                        ano_fim = int(input("Ano de Início do Mandato: "))
+                    elif ano_inicio > ano_fim:
+                        print("O ano de fim, tem de ser maior que o ano inicial.")
+                        error_message()
+                        delay()
+                    time.sleep(1)
+                except ValueError:
+                    console.print("[bright_red][b]Os Valores introduzidos estão errados![/bright_red][/b]", justify="left")
         partido = input("Partido: ")
         presidente = {
             "nome": nome,
             "ano_inicio": ano_inicio,
             "ano_fim": ano_fim,
             "partido": partido
-        }
+            }
         presidentes.append(presidente)
         print("Presidente adicionado com sucesso.")
         time.sleep(1)
         i += 1
-    clear_console()
+        clear_console()
 def ver_lista_presidentes():
     clear_console()
     console.print("A carregar lista.")
@@ -63,13 +90,6 @@ def ver_lista_presidentes():
         for i, presidente in enumerate(presidentes, start= 1):
             print(f"{i}- {presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
     separator()
-def comparar_presidentes():
-    """
-    que presidentes pretende comparar?
-        procurar presidentes escolhidos
-            mostrar info de ambos os presidentes
-            """
-    pass
 def pesquisar_presidente():
     """
     por que dado pretende pesquisar
@@ -77,13 +97,25 @@ def pesquisar_presidente():
             seleção
                 fim
     """
+    
+    pass
+def comparar_presidentes():
+    nome_find = input("")
     pass
 def ver_partido():
     """
     por que partido pretende pesquisar?
         mostrar todos os presidentes desse partido
     """
-    pass
+    partido_user = input("Por que partido pretende pesquisar?")
+
+    if len(presidentes) == 0:
+        print("A lista está vazia, introduza valores na lista.")
+        time.sleep(0.5)
+        return
+    for presidente in presidentes:
+        if presidentes ["partido"] == partido_user:
+            print(f"{presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
 def eliminar_dados():
     ver_lista_presidentes()
     num = int(input("Que entrada pretende que seja removida da lista?  "))
