@@ -154,7 +154,7 @@ def ver_partido():
         return
     
     """
-    partido_user = input("Por que partido pretende pesquisar? ").lower()
+    partido_user = input("Por que partido pretende pesquisar? ")
 
     for presidente in presidentes:
         if partido_user == presidente["partido"]:
