@@ -147,8 +147,7 @@ def comparar_presidentes():
             print(f"2º Presidente: {presidente2['nome']}, {presidente2['ano_inicio']}, {presidente2['ano_fim']}, {presidente2['partido']}")
             console.input("Enter p/continuar[bright_red][b]...[/bright_red][/b]")
         else:
-            print("Números inválidos. Certifique-se de selecionar números dentro da faixa válida.")
-        
+            print("Números inválidos. Certifique-se de selecionar números dentro da faixa válida.")      
 def ver_partido():
     """
     por que partido pretende pesquisar?
@@ -248,6 +247,9 @@ def media_anos_mandato():
 
     input("Enter p/continuar")
 def guardar_em_ficheiro(nome_arquivo='presidentes.json'):
+    """
+    ler a partir de um ficheiro, duvida? perguntar ao MiMo :)
+    """
     with open(nome_arquivo, 'w') as f:
         json.dump(presidentes, f)
     print(f"Dados guardados em {nome_arquivo}.")
