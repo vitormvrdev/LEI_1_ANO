@@ -6,7 +6,8 @@ from rich.panel import Panel
 from rich.align import Align
 import os
 from operator import itemgetter
-from presidentes import presidentes
+from presidentes import *
+import random
 
 
 console = Console()
@@ -63,14 +64,14 @@ def introduzir_dados():
                 except ValueError:
                     console.print("[bright_red][b]Os Valores introduzidos estão errados![/bright_red][/b]", justify="left")
             partido = input("Partido: ")
-        presidente = {
-            "nome": nome,
-            "ano_inicio": ano_inicio,
-            "ano_fim": ano_fim,
-            "partido": partido
-            }
-        presidentes.append(presidente)
-        print("Presidente adicionado com sucesso.")
+            presidente = {
+                "nome": nome,
+                "ano_inicio": ano_inicio,
+                "ano_fim": ano_fim,
+                "partido": partido
+                }
+            presidentes.append(presidente)
+            print("Presidente adicionado com sucesso.")
         time.sleep(1)
         i += 1
         clear_console()
@@ -160,7 +161,7 @@ def ver_partido():
         if partido_user == presidente["partido"]:
             print(f"Nome {presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
 
-
+    input("Enter p/continuar...")           
 def eliminar_dados():
     ver_lista_presidentes()
     if len(presidentes) == 0:
@@ -193,7 +194,11 @@ def gerar_presidente():
         randomiza uma das listas e adiciona a lista principal de presidentes
             ver_lista_presidentes()
     """
-    pass
+    num = random.randint(0, 6)
+    presidentes_lista = [presidentes_gerar_1, presidentes_gerar_2, presidentes_gerar_3, presidentes_gerar_4, presidentes_gerar_5, presidentes_gerar_6 ]
+    presidentes.append(presidentes_lista[num])
+    ver_lista_presidentes()
+
 def media_anos_mandato():
     """
     calcular a média de todos os mandatos na lista
