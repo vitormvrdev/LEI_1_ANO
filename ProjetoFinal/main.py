@@ -91,8 +91,8 @@ def ver_lista_presidentes():
             time.sleep(0.5)
             separator()
     else:
-        for presidente in presidentes:
-            print(f"Nome {presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
+        for i, presidente in enumerate(presidentes, start=1):
+            print(f"{i} - {presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
     separator()
             
     separator()
@@ -101,7 +101,7 @@ def pesquisar_presidente():
     por que dado pretende pesquisar
         match case
             seleção
-                fim
+       tru         fim
     """
     clear_console()
     console.print("A carregar lista.")
@@ -128,11 +128,27 @@ def comparar_presidentes():
     separator()
     menu_panel("Presidentes")
     time.sleep(1)
+    
+    ver_lista_presidentes()
+
     if len(presidentes) == 0:
-            print("A lista está vazia, introduza valores na lista.")
-            time.sleep(0.5)
-            separator()
-    pass
+        return  # Se a lista estiver vazia, não há nada para comparar
+
+    elif len(presidentes) != 0:
+        num1 = int(input("Diga o 1º presidente para comparação: "))
+        num2 = int(input("Diga o 2º presidente para comparação: "))
+
+        if 0 < num1 <= len(presidentes) and 0 < num2 <= len(presidentes):
+            presidente1 = presidentes[num1 - 1]
+            presidente2 = presidentes[num2 - 1]
+
+            print(f"Comparando os presidentes:")
+            print(f"1º Presidente: {presidente1['nome']}, {presidente1['ano_inicio']}, {presidente1['ano_fim']}, {presidente1['partido']}")
+            print(f"2º Presidente: {presidente2['nome']}, {presidente2['ano_inicio']}, {presidente2['ano_fim']}, {presidente2['partido']}")
+            console.input("Enter p/continuar[bright_red][b]...[/bright_red][/b]")
+        else:
+            print("Números inválidos. Certifique-se de selecionar números dentro da faixa válida.")
+        
 def ver_partido():
     """
     por que partido pretende pesquisar?
@@ -164,6 +180,7 @@ def ver_partido():
     input("Enter p/continuar...")           
 def eliminar_dados():
     ver_lista_presidentes()
+
     if len(presidentes) == 0:
         print("A lista está vazia introduza dados primeiro.")
         time.sleep(2.5)
@@ -172,8 +189,8 @@ def eliminar_dados():
     elif len(presidentes) != 0:
         num = int(input("Que entrada pretende que seja removida da lista?  "))
 
-        if 0 < num < len(presidentes):
-            presidentes.pop(num - 1)
+        if 0 < num <= len(presidentes):
+            presidentes.pop(num - 1)           
             print("Entrada removida com exito.")
             time.sleep(2)
             input("\nENTER p/ continuar...")    
@@ -186,6 +203,7 @@ def alterar_dados():
             perguntar qual entrada de dados quer alterar
                 alterar essa entrada de dados
     """
+
     ver_lista_presidentes()
     pass
 def gerar_presidente():
@@ -198,11 +216,11 @@ def gerar_presidente():
     presidentes_lista = [presidentes_gerar_1, presidentes_gerar_2, presidentes_gerar_3, presidentes_gerar_4, presidentes_gerar_5, presidentes_gerar_6 ]
     presidentes.append(presidentes_lista[num])
     """???????????????????????"""
-
 def media_anos_mandato():
     """
     calcular a média de todos os mandatos na lista
         animação de "A calcular"
+            Concluida!
     """
     clear_console()
     console.print("A carregar calcular.")
@@ -224,20 +242,11 @@ def media_anos_mandato():
     
     if len(presidentes) > 0:
         media = total_anos_mandato / len(presidentes)
-        print(f"A média de anos de mandato é: {media}")
+        print(f"A média de anos de mandato na lista é: {media}")
     else:
         print("A lista de presidentes está vazia, impossivel calcular a média.")
-        
+
     input("Enter p/continuar")
-
-def n_mandatos_partidos():
-    """EXTRAAAAA!!!
-    calcular o n de mandatos de cada partido
-        print dos resultados de maior para menor com gráfico
-
-        FALAR COM O MANUEL DATA SCIENCE
-    """
-    pass
 def guardar_em_ficheiro(nome_arquivo='presidentes.json'):
     with open(nome_arquivo, 'w') as f:
         json.dump(presidentes, f)
@@ -256,7 +265,6 @@ def fechar_programa():
         return
     else:
         print("Input inválido, por favor 'S' para sim e 'N' para não.")
-
 
 while True:
     separator()
@@ -298,8 +306,6 @@ while True:
             gerar_presidente()
         case "9":
             media_anos_mandato()
-        case "10":
-            n_mandatos_partidos()
         case "11":
             guardar_em_ficheiro()
         case "12":
