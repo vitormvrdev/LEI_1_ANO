@@ -91,8 +91,8 @@ def ver_lista_presidentes():
             time.sleep(0.5)
             separator()
     else:
-        for i, presidente in enumerate(presidentes, start= 1):
-            print(f"{i}- {presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
+        for presidente in presidentes:
+            print(f"Nome {presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
     separator()
             
     separator()
@@ -197,14 +197,39 @@ def gerar_presidente():
     num = random.randint(0, 6)
     presidentes_lista = [presidentes_gerar_1, presidentes_gerar_2, presidentes_gerar_3, presidentes_gerar_4, presidentes_gerar_5, presidentes_gerar_6 ]
     presidentes.append(presidentes_lista[num])
-    ver_lista_presidentes()
+    """???????????????????????"""
 
 def media_anos_mandato():
     """
     calcular a média de todos os mandatos na lista
         animação de "A calcular"
     """
-    pass
+    clear_console()
+    console.print("A carregar calcular.")
+    time.sleep(0.3)
+    console.print("A carregar calcular..")
+    time.sleep(0.5)
+    console.print("A carregar calcular...\n", highlight= False)
+    separator()
+    menu_panel("Presidentes")
+    time.sleep(1)
+
+    total_anos_mandato = 0
+
+    for presidente in presidentes:
+        ano_inicio = presidente['ano_inicio']
+        ano_fim = presidente['ano_fim']
+        anos_mandato = ano_fim - ano_inicio
+        total_anos_mandato += anos_mandato
+    
+    if len(presidentes) > 0:
+        media = total_anos_mandato / len(presidentes)
+        print(f"A média de anos de mandato é: {media}")
+    else:
+        print("A lista de presidentes está vazia, impossivel calcular a média.")
+        
+    input("Enter p/continuar")
+
 def n_mandatos_partidos():
     """EXTRAAAAA!!!
     calcular o n de mandatos de cada partido
@@ -244,7 +269,7 @@ while True:
     console.print("[bright_blue][b]5 - [/bright_blue][/b]Ver por partido",justify= "left")
     console.print("[bright_blue][b]6 - [/bright_blue][/b]Eliminar dados da lista", justify= "left")
     console.print("[bright_blue][b]7 - [/bright_blue][/b]Alterar dados de um presidente", justify= "left")
-    console.print("[bright_blue][b]8 - [/bright_blue][/b]Gerar um presidente.", justify= "left")
+    console.print("[bright_blue][b]8 - [/bright_blue][/b]Gerar lista de presidentes.", justify= "left")
     console.print("[bright_blue][b]9 - [/bright_blue][/b]Calcular a média de anos por mandato.", justify= "left")
     console.print("[bright_blue][b]10 - [/bright_blue][/b]Verificar o número de mandatos por partido.", justify= "left")
     console.print("[bright_blue][b]11 - [/bright_blue][/b]Guardar em ficheiro.", justify= "left")
