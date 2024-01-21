@@ -4,9 +4,9 @@ import json
 from rich.console import Console
 from rich.panel import Panel
 from rich.align import Align
-from presidentes import presidentes
 import os
 from operator import itemgetter
+from presidentes import presidentes
 
 
 console = Console()
@@ -93,6 +93,8 @@ def ver_lista_presidentes():
         for i, presidente in enumerate(presidentes, start= 1):
             print(f"{i}- {presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
     separator()
+            
+    separator()
 def pesquisar_presidente():
     """
     por que dado pretende pesquisar
@@ -134,7 +136,7 @@ def ver_partido():
     """
     por que partido pretende pesquisar?
         mostrar todos os presidentes desse partido
-    
+    """
     clear_console()
     console.print("A carregar lista.")
     time.sleep(0.3)
@@ -144,24 +146,20 @@ def ver_partido():
     separator()
     menu_panel("Presidentes")
     time.sleep(1)
-
+    """
     if len(presidentes) == 0:
         print("A lista está vazia, introduza valores na lista.")
         time.sleep(2.5)
         separator()
         return
     
-
+    """
     partido_user = input("Por que partido pretende pesquisar? ").lower()
 
     for presidente in presidentes:
-        if partido_user == presidentes[presidente["partido"]]:
-            newlist = sorted(presidentes, key=itemgetter('partido'))
-            print(newlist)
-    """
-    user_partido = presidentes(partido="Federalista")
-    itemgetter("partido")(user_partido)
-    print(itemgetter)
+        if partido_user == presidente["partido"]:
+            print(f"Nome {presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
+
 
 def eliminar_dados():
     ver_lista_presidentes()
