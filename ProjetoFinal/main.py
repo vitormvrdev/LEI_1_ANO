@@ -53,27 +53,31 @@ def introduzir_dados():
                         
                     elif ano_inicio >= 1789:
                         ano_fim = int(input("Ano de Fim do Mandato: "))
-                        break
-                    elif ano_inicio > ano_fim:
-                        error_message()
-                        console.print("[bright_red][b]O ano de fim, tem de ser maior que o ano inicial.[/bright_red][/b]")
-                        
-                    time.sleep(1)
+                        if ano_inicio > ano_fim:
+                            error_message()
+                            console.print("[bright_red][b]O ano de fim, tem de ser maior que o ano inicial.[/bright_red][/b]")
+                        else:
+                            time.sleep(1)
+                            partido = input("Partido: ")
+                            presidente = {
+                                "nome": nome,
+                                "ano_inicio": ano_inicio,
+                                "ano_fim": ano_fim,
+                                "partido": partido
+                                }
+                            presidentes.append(presidente)
+                            print("Presidente adicionado com sucesso.")
+
                 except ValueError:
                     console.print("[bright_red][b]Os Valores introduzidos estão errados![/bright_red][/b]", justify="left")
-            partido = input("Partido: ")
-            presidente = {
-                "nome": nome,
-                "ano_inicio": ano_inicio,
-                "ano_fim": ano_fim,
-                "partido": partido
-                }
-            presidentes.append(presidente)
-            print("Presidente adicionado com sucesso.")
         time.sleep(1)
         i += 1
-        print("ENTER p/continuar...")
+        input("ENTER p/continuar...")
         clear_console()
+
+                    
+                        
+                    
 def ver_lista_presidentes():
     clear_console()
     console.print("[bright_blue][b]A carregar lista.[/bright_blue][/b]")
