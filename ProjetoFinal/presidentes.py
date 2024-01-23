@@ -1,10 +1,5 @@
-presidentes = [
-    {"nome": "George Washington", "ano_inicio": 1789, "ano_fim": 1797, "partido": "Independente"},
-    {"nome": "John Adams", "ano_inicio": 1797, "ano_fim": 1801, "partido": "Federalista"},
-    {"nome": "Thomas Jefferson", "ano_inicio": 1801, "ano_fim": 1809, "partido": "Democrata-Republicano"},
-    {"nome": "James Madison", "ano_inicio": 1809, "ano_fim": 1817, "partido": "Democrata-Republicano"},
-    {"nome": "James Monroe", "ano_inicio": 1817, "ano_fim": 1825, "partido": "Democrata-Republicano"},
-]
+presidentes = []
+
 
 presidentes_gerar_1 = [
     {"nome": "John Quincy Adams", "ano_inicio": 1825, "ano_fim": 1829, "partido": "Democrata-Republicano"},
@@ -47,4 +42,11 @@ presidentes_gerar_6= [
     {"nome": "George W. Bush", "ano_inicio": 2001, "ano_fim": 2009, "partido": "Republicano"},
     {"nome": "Barack Obama", "ano_inicio": 2009, "ano_fim": 2017, "partido": "Democrata"},
     {"nome": "Donald Trump", "ano_inicio": 2017, "ano_fim": 2021, "partido": "Republicano"},
+]
+presidentes_gerar_7 = [
+    {"nome": "George Washington", "ano_inicio": 1789, "ano_fim": 1797, "partido": "Independente"},
+    {"nome": "John Adams", "ano_inicio": 1797, "ano_fim": 1801, "partido": "Federalista"},
+    {"nome": "Thomas Jefferson", "ano_inicio": 1801, "ano_fim": 1809, "partido": "Democrata-Rwwwwwwdsajhbdashjbdasdepublicano"},
+    {"nome": "James Madison", "ano_inicio": 1809, "ano_fim": 1817, "partido": "Democrata-Republicano"},
+    {"nome": "James Monroe", "ano_inicio": 1817, "ano_fim": 1825, "partido": "Democrata-Republicanp"},
 ]
