@@ -37,7 +37,7 @@ def introduzir_dados():
                 time.sleep(0.5)
         except ValueError:
             error_message()
-            print("Tem que introduzir um número.\nLetras não estão incluidas.")
+            print("[bright_red][b]Tem que introduzir um número.\nLetras não estão incluidas.[/bright_red][/b]")
     if n > 0:
         for i in range(n):
             print("ENTER p/sair: ")
@@ -49,14 +49,14 @@ def introduzir_dados():
                     ano_inicio = int(input("Ano de Início do Mandato: "))
                     if ano_inicio <= 1789:
                         error_message()
-                        console.print("A Revolução Americana aconteceu no ano de [bright_red][b]1789[/bright_red][/b]\npor isso, o número introduzido tem de ser maior que [bright_red][b]1789[/bright_red][/b].")
+                        console.print("""[bright_red][b]A Revolução Americana aconteceu no ano de 1789\npor isso, o número introduzido tem de ser maior que 1789[/bright_red][/b].""")
                         
                     elif ano_inicio >= 1789:
                         ano_fim = int(input("Ano de Fim do Mandato: "))
                         break
                     elif ano_inicio > ano_fim:
                         error_message()
-                        print("O ano de fim, tem de ser maior que o ano inicial.")
+                        console.print("[bright_red][b]O ano de fim, tem de ser maior que o ano inicial.[/bright_red][/b]")
                         
                     time.sleep(1)
                 except ValueError:
@@ -100,9 +100,9 @@ def pesquisar_presidente():
        tru         fim
     """
     clear_console()
-    console.print("A carregar lista.")
+    console.print("[bright_blue][b]A carregar lista.[/bright_blue][/b]")
     time.sleep(0.3)
-    console.print("A carregar lista..")
+    console.print("[bright_red][b]A carregar lista..[/bright_red][/b]")
     time.sleep(0.5)
     console.print("A carregar lista...\n", highlight= False)
     separator()
@@ -121,9 +121,10 @@ def pesquisar_presidente():
         else:
             for presidente in presidentes:
                 if nome_presidente == presidente["nome"]:
-                    print(f"Nome: {presidente["nome"]} ano inicio: {presidente["ano_inicio"]}, ano fim: {presidente["ano_fim"]}, partido: {presidente["partido"]}") 
-                else:
-                    print("Não existe presidente com esse nome na Lista!") 
+                    print(f"Nome: {presidente['nome']} ano inicio: {presidente['ano_inicio']}, ano fim: {presidente['ano_fim']}, partido: {presidente['partido']}")
+                    break
+            else:
+                console.print(f"[bright_red][b]Não existe presidente com esse nome na Lista![/bright_red][/b]") 
 def comparar_presidentes():
     ver_lista_presidentes()
 
@@ -138,9 +139,9 @@ def comparar_presidentes():
             presidente1 = presidentes[num1 - 1]
             presidente2 = presidentes[num2 - 1]
 
-            print(f"Comparando os presidentes: ")
+            console.print(f"[bright_blue][b]Comparando os presidentes: [/bright_blue][/b]")
             time.sleep(0.5)
-            print(f"Comparando os presidentes.: ")
+            console.print(f"[bright_red][b]Comparando os presidentes.: [/bright_red][/b]")
             time.sleep(0.5)
             print(f"Comparando os presidentes..: ")
             time.sleep(0.5)
@@ -148,35 +149,33 @@ def comparar_presidentes():
             menu_panel("Comparador")
             print(f"1º Presidente: {presidente1['nome']}, {presidente1['ano_inicio']}, {presidente1['ano_fim']}, {presidente1['partido']}")
             print(f"2º Presidente: {presidente2['nome']}, {presidente2['ano_inicio']}, {presidente2['ano_fim']}, {presidente2['partido']}")
-            console.input("Enter p/continuar[bright_red][b]...[/bright_red][/b]")
+            console.input("Enter p/continuar...")
         else:
-            print("Números inválidos. Certifique-se de selecionar números dentro da faixa válida.")      
+            print(f"[bright_red][b]Números inválidos. Certifique-se de selecionar números dentro da faixa válida.[/bright_red][/b]")      
 def ver_partido():
     """
     por que partido pretende pesquisar?
         mostrar todos os presidentes desse partido
     """
     clear_console()
-    console.print("A carregar lista.")
+    console.print("[bright_blue][b]A carregar lista.[/bright_blue][/b]")
     time.sleep(0.3)
-    console.print("A carregar lista..")
+    console.print("[bright_blue][b]A carregar lista..[/bright_blue][/b]")
     time.sleep(0.5)
     console.print("A carregar lista...\n", highlight= False)
     separator()
     menu_panel("Presidentes")
     time.sleep(1)
-    """
-    if len(presidentes) == 0:
-        print("A lista está vazia, introduza valores na lista.")
-        time.sleep(2.5)
-        separator()
-        return
-    """
+
     partido_user = input("Por que partido pretende pesquisar? ")
 
     for presidente in presidentes:
         if partido_user == presidente["partido"]:
             print(f"Nome {presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
+            break
+
+    else:
+        console.print(f"[bright_red][b]Não existem presidentes com esse partido, procure por outro.[bright_red][/b]")
 
     input("Enter p/continuar...")           
 def eliminar_dados():
@@ -192,17 +191,18 @@ def eliminar_dados():
 
         if 0 < num <= len(presidentes):
             presidentes.pop(num - 1)           
-            print("Entrada removida com exito.")
+            print("[bright_red][b]Entrada removida com exito.[/bright_red][/b]")
             time.sleep(2)
             input("\nENTER p/ continuar...")    
         elif num > len(presidentes):
+            error_message()
             print(f"Número fora do número de entradas, introduza um número entre 1 e {len(presidentes)}")  
 def alterar_dados():
 
     clear_console()
-    console.print("A carregar lista.")
+    console.print("[bright_blue][b]A carregar lista.[/bright_blue][/b]")
     time.sleep(0.3)
-    console.print("A carregar lista..")
+    console.print("[bright_blue][b]A carregar lista..[/bright_blue][/b]")
     time.sleep(0.5)
     console.print("A carregar lista...\n", highlight= False)
     separator()
@@ -253,7 +253,7 @@ def gerar_presidente():
     time.sleep(0.5)
     console.print("[b]A gerar lista...\n[/b]", highlight= False)
     time.sleep(0.5)
-    print("Lista de presidentes gerada com sucesso!")
+    console.print(f"[bright_blue][b]Lista de[/bright_blue][/b] [bright_red][b]presidentes gerada[/bright_red][/b] com sucesso!")
     
 
     while True:
@@ -270,9 +270,6 @@ def gerar_presidente():
             error_message()
             print("Dados errados!")
             time.sleep(0.5)
-
-
-
 def media_anos_mandato():
     """
     calcular a média de todos os mandatos na lista
@@ -316,17 +313,19 @@ def guardar_em_ficheiro(nome_arquivo='presidentes.json'):
 def fechar_programa():
     user_in = input("Tem a certeza que pretende sair?(S/N)").upper()
     if user_in == "S":
-        console.print("A fechar[bright_blue][b].[/bright_blue][/b]")
+        console.print("[bright_blue][b]A fechar.[/bright_blue][/b]")
         time.sleep(0.5)
-        console.print("A fechar[bright_blue][b]..[/bright_blue][/b]")
+        console.print("[bright_red][b]A fechar..[/bright_red][/b]")
         time.sleep(0.5)
-        console.print("A fechar[bright_blue][b]...[/bright_blue][/b]")
+        console.print("A fechar...", highlight= False)
         time.sleep(1)
         exit()
     elif user_in == "N":
         return
     else:
         print("Input inválido, por favor 'S' para sim e 'N' para não.")
+def remover_lista():
+    pass
 
 while True:
     # Limpa a consola sempre que o user volta para o loop.
@@ -376,4 +375,4 @@ while True:
         case "11":
             fechar_programa()
         case _:
-            print("Por favor, introduza uma opção dentro de 1 a 12.")
+            console.print("[bright_red][b]Por favor, introduza uma opção dentro de 1 a 12.[/bright_red][/b]")
