@@ -57,7 +57,6 @@ def introduzir_dados():
                             error_message()
                             console.print("[bright_red][b]O ano de fim, tem de ser maior que o ano inicial.[/bright_red][/b]")
                         else:
-                            time.sleep(1)
                             partido = input("Partido: ")
                             presidente = {
                                 "nome": nome,
@@ -66,8 +65,8 @@ def introduzir_dados():
                                 "partido": partido
                                 }
                             presidentes.append(presidente)
-                            print("Presidente adicionado com sucesso.")
-
+                            console.print("[bright_blue][b]Presidente adicionado com sucesso.[/bright_blue][/b]")
+                            break
                 except ValueError:
                     console.print("[bright_red][b]Os Valores introduzidos estão errados![/bright_red][/b]", justify="left")
         time.sleep(1)
