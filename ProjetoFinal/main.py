@@ -73,10 +73,7 @@ def introduzir_dados():
         i += 1
         input("ENTER p/continuar...")
         clear_console()
-
-                    
-                        
-                    
+               
 def ver_lista_presidentes():
     clear_console()
     console.print("[bright_blue][b]A carregar lista.[/bright_blue][/b]")
