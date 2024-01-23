@@ -12,8 +12,6 @@ import random
 console = Console()
 def error_message():
     console.print("[bright_red][b]!!!ERRO!!![/bright_red][/b]")
-def delay():
-    time.sleep(0.5)
 def clear_console():
     os.system('cls')
 def menu_panel(texto):
@@ -36,29 +34,30 @@ def introduzir_dados():
             else:
                 error_message()
                 print("O número de presidentes a introduzir tem que ser maior que 0.")
-                error_message
                 time.sleep(0.5)
         except ValueError:
             error_message()
             print("Tem que introduzir um número.\nLetras não estão incluidas.")
-            delay()
     if n > 0:
         for i in range(n):
-            nome = input(f"Nome do Presidente {i + 1}: ")
+            print("ENTER p/sair: ")
             while True:
+                nome = input(f"Nome do Presidente {i + 1}: ")
+                if nome == "":
+                    return
                 try:
                     ano_inicio = int(input("Ano de Início do Mandato: "))
                     if ano_inicio <= 1789:
-                        console.print("A Revolução Americana aconteceu no ano de [bright_red][b]1789[/bright_red][/b]\npor isso, o número introduzido tem de ser maior que [bright_red][b]1789[/bright_red][/b].")
                         error_message()
-                        delay()
+                        console.print("A Revolução Americana aconteceu no ano de [bright_red][b]1789[/bright_red][/b]\npor isso, o número introduzido tem de ser maior que [bright_red][b]1789[/bright_red][/b].")
+                        
                     elif ano_inicio >= 1789:
                         ano_fim = int(input("Ano de Fim do Mandato: "))
                         break
                     elif ano_inicio > ano_fim:
-                        print("O ano de fim, tem de ser maior que o ano inicial.")
                         error_message()
-                        delay()
+                        print("O ano de fim, tem de ser maior que o ano inicial.")
+                        
                     time.sleep(1)
                 except ValueError:
                     console.print("[bright_red][b]Os Valores introduzidos estão errados![/bright_red][/b]", justify="left")
