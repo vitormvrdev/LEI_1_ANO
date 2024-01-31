@@ -10,20 +10,13 @@ import random
 
 
 console = Console()
-def loading_animation(texto):
-    console.print(f"[bright_blue][b]{texto}.[/bright_blue][/b]")
-    time.sleep(0.3)
-    console.print(f"[bright_red][b]{texto}..[/bright_red][/b]")
-    time.sleep(0.5)
-    console.print(f"[b]{texto}...\n[/b]", highlight= False)
-    time.sleep(1)
-
 def error_message():
     console.print("[bright_red][b]!!!ERRO!!![/bright_red][/b]")
 def clear_console():
     os.system('cls')
 def menu_panel(texto):
-    #This function creates a panel with options for users to choose from.
+     #This function creates a panel with options for users to choose from 
+    #console.print(Panel(f"[b][bright_blue]{texto}[/bright_blue][/b]", style="white", width=30, height=3),justify= "center")
     console.print("="*20)
     console.print(f"{texto:^20}")
     console.print("-"*20)
@@ -83,8 +76,14 @@ def introduzir_dados():
         clear_console()
 def ver_lista_presidentes():
     clear_console()
+    console.print("[bright_blue][b]A carregar lista.[/bright_blue][/b]")
+    time.sleep(0.3)
+    console.print("[bright_red][b]A carregar lista..[/bright_red][/b]")
+    time.sleep(0.5)
+    console.print("A carregar lista...\n", highlight= False)
+    separator()
     menu_panel("Presidentes")
-    loading_animation("A carregar")
+    time.sleep(1)
 
     if len(presidentes) == 0:
             print("A lista está vazia, introduza valores na lista.")
@@ -94,7 +93,18 @@ def ver_lista_presidentes():
         for i, presidente in enumerate(presidentes, start=1):
             print(f"{i} - {presidente['nome']}, {presidente['ano_inicio']}, {presidente['ano_fim']}, {presidente['partido']}")
 def pesquisar_presidente():
-    loading_animation("A pesquisar")
+    """
+    por que dado pretende pesquisar
+        match case
+            seleção
+       tru         fim
+    """
+    clear_console()
+    console.print("A carregar lista.")
+    time.sleep(0.3)
+    console.print("A carregar lista..")
+    time.sleep(0.5)
+    console.print("A carregar lista...\n", highlight= False)
     separator()
     menu_panel("Presidentes")
     time.sleep(1)
@@ -105,16 +115,15 @@ def pesquisar_presidente():
 
     while True:
         nome_presidente = input("Introduza o nome pelo qual pretende procurar('s'para sair): ")
-        encontrou = False
+        
         if nome_presidente == "s":
             break
         else:
             for presidente in presidentes:
-                if presidente["nome"].lower().find(nome_presidente.lower()) != -1:
-                    print(f"Nome: {presidente["nome"]} ano inicio: {presidente["ano_inicio"]}, ano fim: {presidente["ano_fim"]}, partido: {presidente["partido"]}")
-                    encontrou = True 
-            if encontrou == False:
-                print("Não existe presidente com esse nome na Lista!") 
+                if nome_presidente == presidente["nome"]:
+                    print(f"Nome: {presidente["nome"]} ano inicio: {presidente["ano_inicio"]}, ano fim: {presidente["ano_fim"]}, partido: {presidente["partido"]}") 
+                else:
+                    print("Não existe presidente com esse nome na Lista!") 
 def comparar_presidentes():
     ver_lista_presidentes()
 
@@ -129,19 +138,30 @@ def comparar_presidentes():
             presidente1 = presidentes[num1 - 1]
             presidente2 = presidentes[num2 - 1]
 
-            loading_animation("Comparando Presidentes")
+            print(f"Comparando os presidentes: ")
+            time.sleep(0.5)
+            print(f"Comparando os presidentes.: ")
+            time.sleep(0.5)
+            print(f"Comparando os presidentes..: ")
+            time.sleep(0.5)
+            clear_console()
             menu_panel("Comparador")
             print(f"1º Presidente: {presidente1['nome']}, {presidente1['ano_inicio']}, {presidente1['ano_fim']}, {presidente1['partido']}")
             print(f"2º Presidente: {presidente2['nome']}, {presidente2['ano_inicio']}, {presidente2['ano_fim']}, {presidente2['partido']}")
-            console.input("Enter p/continuar...")
+            console.input("Enter p/continuar[bright_red][b]...[/bright_red][/b]")
         else:
-            console.print("[bright_red][b]Números inválidos. Certifique-se de selecionar números dentro da faixa válida.[/bright_red][/b]")      
+            print("Números inválidos. Certifique-se de selecionar números dentro da faixa válida.")      
 def ver_partido():
     """
     por que partido pretende pesquisar?
         mostrar todos os presidentes desse partido
     """
-    loading_animation("A carregar")
+    clear_console()
+    console.print("A carregar lista.")
+    time.sleep(0.3)
+    console.print("A carregar lista..")
+    time.sleep(0.5)
+    console.print("A carregar lista...\n", highlight= False)
     separator()
     menu_panel("Presidentes")
     time.sleep(1)
@@ -179,7 +199,12 @@ def eliminar_dados():
             print(f"Número fora do número de entradas, introduza um número entre 1 e {len(presidentes)}")  
 def alterar_dados():
 
-    loading_animation("A carregar lista")
+    clear_console()
+    console.print("A carregar lista.")
+    time.sleep(0.3)
+    console.print("A carregar lista..")
+    time.sleep(0.5)
+    console.print("A carregar lista...\n", highlight= False)
     separator()
     menu_panel("Presidentes")
     time.sleep(1)
@@ -214,10 +239,20 @@ def alterar_dados():
 
     input("ENTER p/continuar...")
 def gerar_presidente():
+    """
+    o programa vai ao ficheiro presidentes.py
+        randomiza uma das listas e adiciona a lista principal de presidentes
+            ver_lista_presidentes()
+    """
     num = random.randint(0, 6)  # Ajustado para 5, pois você tem 6 listas
     presidentes_lista = [presidentes_gerar_1, presidentes_gerar_2, presidentes_gerar_3, presidentes_gerar_4, presidentes_gerar_5, presidentes_gerar_6, presidentes_gerar_7]
     presidentes.extend(presidentes_lista[num])
-    loading_animation("A gerar lista")
+    console.print("[bright_blue][b]A gerar lista.[/bright_blue][/b]")
+    time.sleep(0.5)
+    console.print("[bright_red][b]A gerar lista..[/bright_red][/b]")
+    time.sleep(0.5)
+    console.print("[b]A gerar lista...\n[/b]", highlight= False)
+    time.sleep(0.5)
     print("Lista de presidentes gerada com sucesso!")
     
 
@@ -235,13 +270,21 @@ def gerar_presidente():
             error_message()
             print("Dados errados!")
             time.sleep(0.5)
+
+
+
 def media_anos_mandato():
     """
     calcular a média de todos os mandatos na lista
         animação de "A calcular"
             Concluida!
     """
-    loading_animation("A calcular")
+    clear_console()
+    console.print("A carregar calcular.")
+    time.sleep(0.3)
+    console.print("A carregar calcular..")
+    time.sleep(0.5)
+    console.print("A carregar calcular...\n", highlight= False)
     separator()
     menu_panel("Presidentes")
     time.sleep(1)
@@ -264,14 +307,21 @@ def media_anos_mandato():
     input("Enter p/continuar")
     clear_console()
 def guardar_em_ficheiro(nome_arquivo='presidentes.json'):
-    loading_animation("A guardar")
+    """
+    ler a partir de um ficheiro, duvida? perguntar ao MiMo :)
+    """
     with open(nome_arquivo, 'w') as f:
         json.dump(presidentes, f)
-    input(f"Dados guardados em {nome_arquivo}.\nENTER p/continuar...")
+    print(f"Dados guardados em {nome_arquivo}.")
 def fechar_programa():
     user_in = input("Tem a certeza que pretende sair?(S/N)").upper()
     if user_in == "S":
-        loading_animation("A fechar")
+        console.print("A fechar[bright_blue][b].[/bright_blue][/b]")
+        time.sleep(0.5)
+        console.print("A fechar[bright_blue][b]..[/bright_blue][/b]")
+        time.sleep(0.5)
+        console.print("A fechar[bright_blue][b]...[/bright_blue][/b]")
+        time.sleep(1)
         exit()
     elif user_in == "N":
         return
