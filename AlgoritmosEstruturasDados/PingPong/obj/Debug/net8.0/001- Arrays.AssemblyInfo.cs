@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("001- Arrays")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf5c721fadc44ac3b53e5eb7ebfb1bf4df83c85c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0075be8e6dc5cf0f7994aae12da56bc4acb0595e")]
 [assembly: System.Reflection.AssemblyProductAttribute("001- Arrays")]
 [assembly: System.Reflection.AssemblyTitleAttribute("001- Arrays")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

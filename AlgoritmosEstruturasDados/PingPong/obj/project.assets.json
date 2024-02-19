@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vrocha\\Documents\\Git\\AlgoritmosEstruturasDados\\PingPong\\001- Arrays.csproj",
+      "projectUniqueName": "C:\\Users\\vrocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\PingPong\\001- Arrays.csproj",
       "projectName": "001- Arrays",
-      "projectPath": "C:\\Users\\vrocha\\Documents\\Git\\AlgoritmosEstruturasDados\\PingPong\\001- Arrays.csproj",
+      "projectPath": "C:\\Users\\vrocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\PingPong\\001- Arrays.csproj",
       "packagesPath": "C:\\Users\\vrocha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vrocha\\Documents\\Git\\AlgoritmosEstruturasDados\\PingPong\\obj\\",
+      "outputPath": "C:\\Users\\vrocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\PingPong\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
