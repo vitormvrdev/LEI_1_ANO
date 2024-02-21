@@ -1,16 +1,50 @@
 ﻿using System.ComponentModel.Design;
+using System.Security.Cryptography;
 
 namespace LearnCsharp
 {
     internal class Program
     {
-        static int[] notas = new int[5]; // Array para guardar as notas
+        // Array para guardar as notas
         static void Main(string[] args)
         {
-            Menu(); // Chama a função MENU que funciona como base do programa
+            int[] notas = new int[5];
+            while (true)
+            {
+                int opcao = Menu();
+
+                switch (opcao)
+                {
+                    case 1:
+                        IntroduzirDados(ref notas);
+                        break;
+                    case 2:
+                        MostrarDados(notas);
+                        break;
+                    case 3:
+                        MaiorNota(notas);
+                        break;
+                    case 4:
+                        MenorNota(notas);
+                        break;
+                    case 5:
+                        NumeroPositivasENegativas(notas);
+                        break;
+                    case 6:
+                        CalcularMedia(notas);
+                        break;
+                    case 0:
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        Console.WriteLine("Opção Inválida");
+                        break;
+                }
+
+            }
         }
 
-        static void Menu()
+        static int Menu()
         {
             while (true)
             {
@@ -20,42 +54,18 @@ namespace LearnCsharp
                 Console.WriteLine("3 - Nota maior");
                 Console.WriteLine("4 - Nota menor");
                 Console.WriteLine("5 - Nº de positivas e negativas");
+                Console.WriteLine("6-  Média das notas");
                 Console.WriteLine("0 - Sair");
 
                 // É pedido ao Utilizador que introduza o número da funcionalidade aprensentada no Menu
-                int opcao = Convert.ToInt32(Console.ReadLine());
-
-                switch (opcao)
-                {
-                    case 1:
-                        IntroduzirDados();
-                        break;
-                    case 2:
-                        MostrarDados();
-                        break;
-                    case 3:
-                        MaiorNota();
-                        break;
-                    case 4:
-                        MenorNota();
-                        break;
-                    case 5:
-                        NumeroPositivasENegativas();
-                        break;
-                    case 0:
-                        Environment.Exit(0);
-                        break;
-                    default:
-                        Console.WriteLine("Opção Inválida");
-                        break;
-                }
+                return Convert.ToInt32(Console.ReadLine());
             }
         }
 
-        /*Função que trata da introdução dos dados*/
-        static void IntroduzirDados()
+        //Função que trata da introdução dos dados
+        static void IntroduzirDados(ref int[] n)
         {
-            for (int i = 0; i < notas.Length; i++)
+            for (int i = 0; i < n.Length; i++)
             {
                 bool notaValida = false;
 
@@ -66,7 +76,7 @@ namespace LearnCsharp
 
                     if (IsValid(nota))
                     {
-                        notas[i] = nota;
+                        n[i] = nota;
                         notaValida = true;
                     }
                     else
@@ -78,11 +88,11 @@ namespace LearnCsharp
             Console.Clear();
         }
 
-        static void MostrarDados()
+        static void MostrarDados(int[] n)
         {
-            for (int k = 0; k < notas.Length; k++)
+            for (int k = 0; k < n.Length; k++)
             {
-                Console.WriteLine($"{k + 1}ª nota: {notas[k]}");
+                Console.WriteLine($"{k + 1}ª nota: {n[k]}");
             }
             Console.WriteLine("ENTER p/continuar...");
             Console.ReadKey();
@@ -100,14 +110,14 @@ namespace LearnCsharp
             }
         }
 
-        static void MaiorNota()
+        static void MaiorNota(int[] n)
         {
-            int maiorNota = notas[0];
-            for (int k = 0; k < notas.Length; k++)
+            int maiorNota = n[0];
+            for (int k = 0; k < n.Length; k++)
             {
-                if (notas[k] > maiorNota)
+                if (n[k] > maiorNota)
                 {
-                    maiorNota = notas[k];
+                    maiorNota = n[k];
                 }
             }
             Console.WriteLine($"A maior nota é: {maiorNota}");
@@ -116,14 +126,14 @@ namespace LearnCsharp
             Console.Clear();
         }
 
-        static void MenorNota()
+        static void MenorNota(int[] n)
         {
-            int menorNota = notas[0];
-            for (int l = 0; l < notas.Length; l++)
+            int menorNota = n[0];
+            for (int l = 0; l < n.Length; l++)
             {
-                if (notas[l] < menorNota)
+                if (n[l] < menorNota)
                 {
-                    menorNota = notas[l];
+                    menorNota = n[l];
                 }
             }
             Console.WriteLine($"A menor nota é: {menorNota}");
@@ -132,18 +142,18 @@ namespace LearnCsharp
             Console.Clear();
         }
 
-        static void NumeroPositivasENegativas()
+        static void NumeroPositivasENegativas(int[] n)
         {
             int somaNegativas = 0;
             int somaPositivas = 0;
-            for (int h = 0; h < notas.Length; h++)
+            for (int h = 0; h < n.Length; h++)
             {
-                if (notas[h] < 10)
+                if (n[h] < 10)
                 {
                     somaNegativas += 1;
                 }
 
-                if (notas[h] >= 10)
+                if (n[h] >= 10)
                 {
                     somaPositivas += 1;
                 }
@@ -152,6 +162,17 @@ namespace LearnCsharp
             Console.WriteLine("ENTER p/continuar");
             Console.ReadKey();
             Console.Clear();
+        }
+        static void CalcularMedia(int[] n)
+        {
+            float soma = 0;
+            float media;
+            for (int g = 0; g < n.Length; g++)
+            {
+                soma += n[g];
+            }
+            media = (soma / n.Length);
+            Console.WriteLine($"A média das notas é: {media:N2}");
         }
     }
 }
