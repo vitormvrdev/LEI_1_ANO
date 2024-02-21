@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001Array", "001Array\001Arr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanCalculator", "LoanCalculator\LoanCalculator.csproj", "{434ED86A-32CA-46D9-9B20-97F4BCD8F0A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayDeEstruturas", "ArrayDeEstruturas\ArrayDeEstruturas.csproj", "{A62396E7-9DFD-4270-842D-B624D739E4CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{434ED86A-32CA-46D9-9B20-97F4BCD8F0A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{434ED86A-32CA-46D9-9B20-97F4BCD8F0A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{434ED86A-32CA-46D9-9B20-97F4BCD8F0A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A62396E7-9DFD-4270-842D-B624D739E4CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62396E7-9DFD-4270-842D-B624D739E4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62396E7-9DFD-4270-842D-B624D739E4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62396E7-9DFD-4270-842D-B624D739E4CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
