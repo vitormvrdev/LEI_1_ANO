@@ -154,17 +154,20 @@
             Console.Write("Inserir o código: ");
             int num2 = Convert.ToInt16(Console.ReadLine());
 
-            for (int i = 0;i < sColab.Length;i++)
+            if (!isValid(num2, sColab))
             {
-                if (!isValid(num2, sColab))
+                for (int i = 0;i < sColab.Length; i++)
                 {
-                    Console.WriteLine($"Código: {sColab[i].codigoColab}\n" +
-                    $"Nome: {sColab[i].nomeColab}\n" +
-                    $"Morada: {sColab[i].moradaColab}\n" +
-                    $"Género: {sColab[i].generoColab}\n" +
-                    $"Idade: {sColab[i].idadeColab}\n" +
-                    $"Vencimento: {sColab[i].vencimentoColab}\n");
-                    break;
+                    if (num2 == sColab[i].codigoColab)
+                    {
+                        Console.WriteLine($"Código: {sColab[i].codigoColab}\n" +
+                        $"Nome: {sColab[i].nomeColab}\n" +
+                        $"Morada: {sColab[i].moradaColab}\n" +
+                        $"Género: {sColab[i].generoColab}\n" +
+                        $"Idade: {sColab[i].idadeColab}\n" +
+                        $"Vencimento: {sColab[i].vencimentoColab}\n");
+                        break;
+                    }
                 }
             }
         }
