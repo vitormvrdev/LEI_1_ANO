@@ -11,42 +11,128 @@
             public double vencimentoColab;
         }
 
-        static void Menu()
+        static int Menu()
         {
-            return;
+            Console.WriteLine("-----Gestão de Colaboradores-----");
+            Console.WriteLine("1 - Inserir Colaboradores");
+            Console.WriteLine("2 - Listar Colaboradores");
+            Console.WriteLine("0 - Sair");
+            Console.Write("Selecione uma opção: ");
+            return Convert.ToInt16(Console.ReadLine());
         }
         static void Main(string[] args)
         {
-            sColaborador sColab = new sColaborador();
+            // Definição de variáveis
+            // Inicia uma nova instancia do Struct sColaborador
+            sColaborador[] sColab = new sColaborador[0]; //definição de objeto array de estruturas
+            int opcao = 0;
 
-            Console.WriteLine("Gestão de Colaboradores");
+            do
+            {
 
-            Console.Write("Inserir o código: ");
-            sColab.codigoColab = Convert.ToInt16(Console.ReadLine());
+                opcao = Menu();
 
-            Console.Write("Inserir o nome: ");
-            sColab.nomeColab = Console.ReadLine();
 
-            Console.Write("Inserir o morada: ");
-            sColab.moradaColab = Console.ReadLine();
+                switch (opcao)
+                {
+                    case 1:
+                        InserirDadosColaborador(ref sColab);
+                        break;
+                    case 2:
+                        ListarColaboradores(sColab);
+                        break;
+                    case 3:
+                        break;
+                }
+            }while (opcao != 0);    
 
-            Console.Write("Inserir o genero: ");
-            sColab.generoColab = Console.ReadLine();
+            
+        }
+        static void InserirDadosColaborador(ref sColaborador[] sColab)
+        {
+            Console.WriteLine("Quantos colaboradores pretende inserir?");
+            int numColab = Convert.ToInt16(Console.ReadLine());
 
-            Console.Write("Inserir o idade: ");
-            sColab.idadeColab = Convert.ToInt16(Console.ReadLine());
+            // verificar o comprimento atual do array
+            int tamanhoAtualArray = sColab.Length;
+            // Guarda o valor novo do Array
+            int novoTamanhoArray = tamanhoAtualArray + numColab;
+            // Atrinui as novas posições ao array
+            Array.Resize(ref sColab, novoTamanhoArray);
 
-            Console.Write("Inserir o vencimento: ");
-            sColab.vencimentoColab = Convert.ToDouble(Console.ReadLine());
+            for (int i = tamanhoAtualArray; i < novoTamanhoArray; i++)
+            {
+                int j = 1;
+                Console.WriteLine($"Colaborador nº{j}");
+                bool numValido = false;
 
-            Console.WriteLine("*** Apresentação da Estrutura***");
+                while (!numValido) 
+                { 
+                    Console.Write("Inserir o código: ");
+                    int num2 = Convert.ToInt16(Console.ReadLine());
 
-            Console.WriteLine($"Código: {sColab.codigoColab}\n" +
-                $"Nome: {sColab.nomeColab}\n" +
-                $"Morada: {sColab.moradaColab}\n" +
-                $"Género: {sColab.generoColab}\n" +
-                $"Idade: {sColab.idadeColab}\n" +
-                $"Vencimento: {sColab.vencimentoColab}\n");
+                    if (isValid(num2, sColab))
+                    {
+                        sColab[i].codigoColab = num2;
+                        numValido = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Código já existente");
+                    }
+                    
+                }
+
+                Console.Write("Inserir o nome: ");
+                sColab[i].nomeColab = Console.ReadLine();
+
+                Console.Write("Inserir o morada: ");
+                sColab[i].moradaColab = Console.ReadLine();
+
+                Console.Write("Inserir o genero: ");
+                sColab[i].generoColab = Console.ReadLine();
+
+                Console.Write("Inserir o idade: ");
+                sColab[i].idadeColab = Convert.ToInt16(Console.ReadLine());
+
+                Console.Write("Inserir o vencimento: ");
+                sColab[i].vencimentoColab = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("ENTER p/continuar");
+                j++;
+                Console.ReadLine();
+                Console.Clear();
+            }
+        }
+
+        static void ListarColaboradores(sColaborador[] sColab)
+        {
+
+            for (int i = 0; i < sColab.Length; i++)
+            {
+                Console.WriteLine($"Código: {sColab[i].codigoColab}\n" +
+                $"Nome: {sColab[i].nomeColab}\n" +
+                $"Morada: {sColab[i].moradaColab}\n" +
+                $"Género: {sColab[i].generoColab}\n" +
+                $"Idade: {sColab[i].idadeColab}\n" +
+                $"Vencimento: {sColab[i].vencimentoColab}\n");
+            }
+
+            Console.WriteLine("ENTER p/continuar");
+            Console.ReadLine();
+            Console.Clear();
+        }
+
+        static bool isValid(int num, sColaborador[] sColab)
+        {
+            for (int i = 0; i < sColab.Length; i++)
+            {
+                if (num == sColab[i].codigoColab)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\AlgoritmosEstruturasDados",
-    "\\AlgoritmosEstruturasDados\\001ExArrays"
+    "\\AlgoritmosEstruturasDados\\ConsoleApps",
+    "\\AlgoritmosEstruturasDados\\ConsoleApps\\001Array",
+    "\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas"
   ],
+  "SelectedNode": "\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
