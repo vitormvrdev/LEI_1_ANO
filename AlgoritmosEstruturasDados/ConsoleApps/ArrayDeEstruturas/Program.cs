@@ -16,6 +16,8 @@
             Console.WriteLine("-----Gestão de Colaboradores-----");
             Console.WriteLine("1 - Inserir Colaboradores");
             Console.WriteLine("2 - Listar Colaboradores");
+            Console.WriteLine("3 - Consultar Colaborador");
+            Console.WriteLine("4 - Alterar dados de colaborador");
             Console.WriteLine("0 - Sair");
             Console.Write("Selecione uma opção: ");
             return Convert.ToInt16(Console.ReadLine());
@@ -42,6 +44,10 @@
                         ListarColaboradores(sColab);
                         break;
                     case 3:
+                        ConsultarColaborador(sColab);
+                        break;
+                    case 4:
+                        AlterarColaborador(sColab);
                         break;
                 }
             }while (opcao != 0);    
@@ -133,6 +139,34 @@
                 }
             }
             return true;
+        }
+        
+        static void AlterarColaborador(sColaborador[] sColab)
+        {
+            return;
+        }
+
+        static void ConsultarColaborador(sColaborador[] sColab)
+        {
+            Console.WriteLine("------Consultar dados de colaborador------");
+            Console.WriteLine("Qual o código de Colaborador que pretende consultar: ");
+
+            Console.Write("Inserir o código: ");
+            int num2 = Convert.ToInt16(Console.ReadLine());
+
+            for (int i = 0;i < sColab.Length;i++)
+            {
+                if (!isValid(num2, sColab))
+                {
+                    Console.WriteLine($"Código: {sColab[i].codigoColab}\n" +
+                    $"Nome: {sColab[i].nomeColab}\n" +
+                    $"Morada: {sColab[i].moradaColab}\n" +
+                    $"Género: {sColab[i].generoColab}\n" +
+                    $"Idade: {sColab[i].idadeColab}\n" +
+                    $"Vencimento: {sColab[i].vencimentoColab}\n");
+                    break;
+                }
+            }
         }
     }
 }
