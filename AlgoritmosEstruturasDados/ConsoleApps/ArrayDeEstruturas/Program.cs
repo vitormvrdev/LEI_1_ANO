@@ -58,17 +58,17 @@
         {
             Console.WriteLine("Quantos colaboradores pretende inserir?");
             int numColab = Convert.ToInt16(Console.ReadLine());
-
+            Console.Clear();
             // verificar o comprimento atual do array
             int tamanhoAtualArray = sColab.Length;
             // Guarda o valor novo do Array
             int novoTamanhoArray = tamanhoAtualArray + numColab;
             // Atrinui as novas posições ao array
             Array.Resize(ref sColab, novoTamanhoArray);
-
+            int j = 1;
+            // itera o ciclo até
             for (int i = tamanhoAtualArray; i < novoTamanhoArray; i++)
             {
-                int j = 1;
                 Console.WriteLine($"Colaborador nº{j}");
                 bool numValido = false;
 
@@ -113,15 +113,17 @@
 
         static void ListarColaboradores(sColaborador[] sColab)
         {
-
+            int j = 1;
             for (int i = 0; i < sColab.Length; i++)
             {
+                Console.WriteLine($"Colaborador {j}: ");
                 Console.WriteLine($"Código: {sColab[i].codigoColab}\n" +
                 $"Nome: {sColab[i].nomeColab}\n" +
                 $"Morada: {sColab[i].moradaColab}\n" +
                 $"Género: {sColab[i].generoColab}\n" +
                 $"Idade: {sColab[i].idadeColab}\n" +
                 $"Vencimento: {sColab[i].vencimentoColab}\n");
+                j++;
             }
 
             Console.WriteLine("ENTER p/continuar");
