@@ -47,12 +47,12 @@
                         ConsultarColaborador(sColab);
                         break;
                     case 4:
-                        AlterarColaborador(sColab);
+                        AlterarColaborador(ref sColab);
                         break;
                 }
-            }while (opcao != 0);    
+            } while (opcao != 0);
 
-            
+
         }
         static void InserirDadosColaborador(ref sColaborador[] sColab)
         {
@@ -72,8 +72,8 @@
                 Console.WriteLine($"Colaborador nº{j}");
                 bool numValido = false;
 
-                while (!numValido) 
-                { 
+                while (!numValido)
+                {
                     Console.Write("Inserir o código: ");
                     int num2 = Convert.ToInt16(Console.ReadLine());
 
@@ -86,7 +86,7 @@
                     {
                         Console.WriteLine("Código já existente");
                     }
-                    
+
                 }
 
                 Console.Write("Inserir o nome: ");
@@ -110,7 +110,6 @@
                 Console.Clear();
             }
         }
-
         static void ListarColaboradores(sColaborador[] sColab)
         {
             int j = 1;
@@ -128,9 +127,8 @@
 
             Console.WriteLine("ENTER p/continuar");
             Console.ReadLine();
-            Console.Clear();
-        }
 
+        }
         static bool isValid(int num, sColaborador[] sColab)
         {
             for (int i = 0; i < sColab.Length; i++)
@@ -142,10 +140,94 @@
             }
             return true;
         }
-        
-        static void AlterarColaborador(sColaborador[] sColab)
+        static void AlterarColaborador(ref sColaborador[] sColab)
         {
-            return;
+            // Função para alterar dados de um colaborador em especifico
+            Console.Clear();
+            Console.WriteLine("-----Alterar dados de Colaborador-----");
+            ListarColaboradores(sColab);  // Mostra a lista dos Colaboradores atuais
+            Console.WriteLine("De qual colaborador pretende alterar os dados?");
+
+            int codigoColaborador = Convert.ToInt16(Console.ReadLine());
+
+            if (!isValid(codigoColaborador, sColab)) // Verifica se o código existe senão pede um novo
+            {
+                for (int i = 0; i < sColab.Length; i++)
+                {
+                    if (codigoColaborador == sColab[i].codigoColab)
+                    {
+                        Console.WriteLine("Pretende um campo em especifico ou todos?");
+                        Console.WriteLine("1 - Um campo em especifico");
+                        Console.WriteLine("2 - Todos os campos");
+
+                        int userEscolha1 = Convert.ToInt16(Console.ReadLine());
+
+                        if (userEscolha1 == 1)
+                        {
+                            Console.WriteLine("----Alteração de dados de Colaborador----");
+                            Console.WriteLine("Que campo pretende que seja alterado?");
+                            Console.WriteLine("1 - Nome");
+                            Console.WriteLine("2 - Morada");
+                            Console.WriteLine("3 - Genero");
+                            Console.WriteLine("4 - Idade");
+                            Console.WriteLine("5 - Vencimento");
+
+                            int userEscolha2 = Convert.ToInt16(Console.ReadLine());
+
+                            switch (userEscolha2)
+                            {
+                                case 1:
+                                    Console.WriteLine("Insira novo nome: ");
+                                    sColab[i].nomeColab = Console.ReadLine();
+                                    break;
+                                case 2:
+                                    Console.WriteLine("Insira nova morada: ");
+                                    sColab[i].nomeColab = Console.ReadLine();
+                                    break;
+                                case 3:
+                                    Console.WriteLine("Insira novo genero: ");
+                                    sColab[i].nomeColab = Console.ReadLine();
+                                    break;
+                                case 4:
+                                    Console.WriteLine("Insira nova idade: ");
+                                    sColab[i].nomeColab = Console.ReadLine();
+                                    break;
+                                case 5:
+                                    Console.WriteLine("Insira novo vencimento: ");
+                                    sColab[i].vencimentoColab = Convert.ToInt16(Console.ReadLine());
+                                    break;
+                                case 0:
+                                    break;
+                            }
+                            break;
+                        }
+                        if (userEscolha1 == 2)
+                        {
+                            Console.WriteLine("----Alteração de dados de Colaborador----");
+                            Console.WriteLine("Introduza novos dados");
+                            Console.WriteLine("");
+                            Console.Write("Inserir o nome: ");
+                            sColab[i].nomeColab = Console.ReadLine();
+
+                            Console.Write("Inserir o morada: ");
+                            sColab[i].moradaColab = Console.ReadLine();
+                            Console.Write("Inserir o genero: ");
+                            sColab[i].generoColab = Console.ReadLine();
+                            Console.Write("Inserir o idade: ");
+                            sColab[i].idadeColab = Convert.ToInt16(Console.ReadLine());
+                            Console.Write("Inserir o vencimento: ");
+                            sColab[i].vencimentoColab = Convert.ToDouble(Console.ReadLine());
+
+                            Console.WriteLine("ENTER p/continuar");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Número inválido, 1 ou 2.");
+                        }
+                    }
+                }
+            }
         }
 
         static void ConsultarColaborador(sColaborador[] sColab)
