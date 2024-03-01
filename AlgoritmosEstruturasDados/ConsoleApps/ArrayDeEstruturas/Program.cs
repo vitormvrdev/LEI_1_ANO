@@ -201,11 +201,10 @@
                             }
                             break;
                         }
-                        if (userEscolha1 == 2)
-                        {
+                        else if (userEscolha1 == 2)
+                        {   
                             Console.WriteLine("----Alteração de dados de Colaborador----");
-                            Console.WriteLine("Introduza novos dados");
-                            Console.WriteLine("");
+                            Console.WriteLine("Introduza novos dados\n");
                             Console.Write("Inserir o nome: ");
                             sColab[i].nomeColab = Console.ReadLine();
 
