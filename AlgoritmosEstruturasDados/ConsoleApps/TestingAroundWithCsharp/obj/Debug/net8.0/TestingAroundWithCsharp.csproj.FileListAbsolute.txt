@@ -1,0 +1,15 @@
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\bin\Debug\net8.0\TestingAroundWithCsharp.exe
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\bin\Debug\net8.0\TestingAroundWithCsharp.deps.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\bin\Debug\net8.0\TestingAroundWithCsharp.runtimeconfig.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\bin\Debug\net8.0\TestingAroundWithCsharp.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\bin\Debug\net8.0\TestingAroundWithCsharp.pdb
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.AssemblyInfoInputs.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.AssemblyInfo.cs
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.csproj.CoreCompileInputs.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.sourcelink.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\refint\TestingAroundWithCsharp.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.pdb
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.genruntimeconfig.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\ref\TestingAroundWithCsharp.dll
