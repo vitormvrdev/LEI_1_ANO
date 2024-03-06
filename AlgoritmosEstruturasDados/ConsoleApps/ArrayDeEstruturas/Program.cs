@@ -18,6 +18,7 @@
             Console.WriteLine("2 - Listar Colaboradores");
             Console.WriteLine("3 - Consultar Colaborador");
             Console.WriteLine("4 - Alterar dados de colaborador");
+            Console.WriteLine("5 - Remover Colaborador");
             Console.WriteLine("0 - Sair");
             Console.Write("Selecione uma opção: ");
             return Convert.ToInt16(Console.ReadLine());
@@ -48,6 +49,9 @@
                         break;
                     case 4:
                         AlterarColaborador(ref sColab);
+                        break;
+                    case 5:
+                        RemoverColaborador(ref sColab);
                         break;
                 }
             } while (opcao != 0);
@@ -86,7 +90,6 @@
                     {
                         Console.WriteLine("Código já existente");
                     }
-
                 }
 
                 Console.Write("Inserir o nome: ");
@@ -140,6 +143,7 @@
             }
             return true;
         }
+
         static void AlterarColaborador(ref sColaborador[] sColab)
         {
             // Função para alterar dados de um colaborador em especifico
@@ -258,6 +262,35 @@
                         $"Idade: {sColab[i].idadeColab}\n" +
                         $"Vencimento: {sColab[i].vencimentoColab}\n");
                         break;
+                    }
+                }
+            }
+        }
+        
+        static void RemoverColaborador(ref sColaborador[] sColab)
+        {
+            ListarColaboradores(sColab);
+
+            Console.WriteLine("Que utilizador pretende remover?");
+            int num = Convert.ToUInt16(Console.ReadLine());
+
+            if (!isValid(num, sColab))
+            {
+                for (int i = 0; i < sColab.Length; i++)
+                {
+                    if (num == sColab[i].codigoColab)
+                    {
+                        for (int j = i; j < sColab.Length - 1; j++)
+                        {
+                            sColab[j].codigoColab = sColab[j + 1].codigoColab;
+                            sColab[j].nomeColab = sColab[j + 1].nomeColab;
+                            sColab[j].moradaColab = sColab[j + 1].moradaColab;
+                            sColab[j].generoColab = sColab[j + 1].generoColab;
+                            sColab[j].idadeColab = sColab[j + 1].idadeColab;
+                            sColab[j].vencimentoColab = sColab[j + 1].vencimentoColab;
+                        }
+                        Array.Resize(ref sColab, sColab.Length - 1);
+                        return;
                     }
                 }
             }
