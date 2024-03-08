@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\Exercicios3\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FEBCE128-D0D7-4429-B4B9-608810CF7A43}|Exercicios3.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\exercicios3\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEBCE128-D0D7-4429-B4B9-608810CF7A43}|Exercicios3.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEBCE128-D0D7-4429-B4B9-608810CF7A43}|Exercicios3.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\exercicios3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEBCE128-D0D7-4429-B4B9-608810CF7A43}|Exercicios3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 247,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\Exercicios3\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\Exercicios3\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T14:16:15.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\Exercicios3\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\Exercicios3\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T14:13:30.386Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
