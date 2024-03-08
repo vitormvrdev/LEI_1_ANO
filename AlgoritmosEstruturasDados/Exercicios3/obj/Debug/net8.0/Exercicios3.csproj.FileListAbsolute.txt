@@ -1,0 +1,7 @@
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\Exercicios3\obj\Debug\net8.0\Exercicios3.csproj.AssemblyReference.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\Exercicios3\obj\Debug\net8.0\Exercicios3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\Exercicios3\obj\Debug\net8.0\Exercicios3.AssemblyInfoInputs.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\Exercicios3\obj\Debug\net8.0\Exercicios3.AssemblyInfo.cs
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\Exercicios3\obj\Debug\net8.0\Exercicios3.csproj.CoreCompileInputs.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\Exercicios3\obj\Debug\net8.0\Exercicios3.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\Exercicios3\obj\Debug\net8.0\Exercicios3.sourcelink.json
