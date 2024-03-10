@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\",
+  "WorkspaceRootPath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C054EA6-D14A-4374-9FA7-CA6C238F3868}|TestingAroundWithCsharp\\TestingAroundWithCsharp.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\consoleapps\\testingaroundwithcsharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5C054EA6-D14A-4374-9FA7-CA6C238F3868}|TestingAroundWithCsharp\\TestingAroundWithCsharp.csproj|c:\\users\\vitor rocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\consoleapps\\testingaroundwithcsharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C054EA6-D14A-4374-9FA7-CA6C238F3868}|TestingAroundWithCsharp\\TestingAroundWithCsharp.csproj|solutionrelative:testingaroundwithcsharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,37 +14,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": []
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "53a97660-1b31-483c-8087-f3961e197463",
-        "Display": 0,
-        "X": 53,
-        "Y": 84,
-        "Width": 1055,
-        "Height": 334,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\Program.cs",
               "RelativeDocumentMoniker": "TestingAroundWithCsharp\\Program.cs",
-              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\Program.cs",
-              "RelativeToolTip": "TestingAroundWithCsharp\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA1AAAA",
+              "ToolTip": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\Program.cs*",
+              "RelativeToolTip": "TestingAroundWithCsharp\\Program.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T12:25:45.4Z",
               "EditorCaption": ""

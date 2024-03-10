@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestingAroundWithCsharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b1b1c8a06e8d401121b6957a78cebb099fe27e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1be851d6463737a0e6093f34f23beb7f2b2f326c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestingAroundWithCsharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestingAroundWithCsharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
