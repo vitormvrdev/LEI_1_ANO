@@ -1,4 +1,6 @@
-﻿namespace ArrayDeEstruturas
+﻿using System.Text;
+
+namespace ArrayDeEstruturas
 {   // Autor: Vitor Rocha
     // Array de estruturas de colaboradores
     internal class Program
@@ -19,6 +21,7 @@
             Console.WriteLine("3 - Consultar Colaborador");
             Console.WriteLine("4 - Alterar dados de colaborador");
             Console.WriteLine("5 - Remover Colaborador");
+            Console.WriteLine("6 - Extrair documento CSV");
             Console.WriteLine("0 - Sair");
             Console.Write("Selecione uma opção: ");
             return Convert.ToInt16(Console.ReadLine());
@@ -52,6 +55,9 @@
                         break;
                     case 5:
                         RemoverColaborador(ref sColab);
+                        break;
+                    case 6:
+                        ExtrairDocumentoCSV(sColab);
                         break;
                 }
             } while (opcao != 0);
@@ -294,6 +300,30 @@
                     }
                 }
             }
+        }
+
+        static void ExtrairDocumentoCSV(sColaborador[] sColab)
+        {
+            // Função para extrair os dados dos colaboradores para um documento CSV
+            StringBuilder sb = new StringBuilder();
+            sb = sb.AppendLine("Codigo,Nome,Morada,Genero,Idade,Vencimento");
+            for (int j = 0; j < sColab.Length; j++)
+            {
+                {
+                    sb = sb.AppendLine($"{sColab[j].codigoColab}," +
+                        $"{sColab[j].nomeColab}," +
+                        $"{sColab[j].moradaColab}," +
+                        $"{sColab[j].generoColab}," +
+                        $"{sColab[j].idadeColab}," +
+                        $"{sColab[j].vencimentoColab}");
+
+                }
+            }
+
+            string filePath = @"C:\Users\vrocha\Documents\Colaboradores.csv";
+            File.WriteAllText(filePath, sb.ToString());
+
+            Console.WriteLine($"Documento CSV criado com sucesso e guardado em {filePath}");
         }
     }
 }
