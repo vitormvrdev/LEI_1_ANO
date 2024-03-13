@@ -22,6 +22,7 @@ namespace ArrayDeEstruturas
             Console.WriteLine("4 - Alterar dados de colaborador");
             Console.WriteLine("5 - Remover Colaborador");
             Console.WriteLine("6 - Extrair documento CSV");
+            Console.WriteLine("7 - Ler documento a partir de um documento CSV");
             Console.WriteLine("0 - Sair");
             Console.Write("Selecione uma opção: ");
             return Convert.ToInt16(Console.ReadLine());
@@ -58,6 +59,9 @@ namespace ArrayDeEstruturas
                         break;
                     case 6:
                         ExtrairDocumentoCSV(sColab);
+                        break;
+                    case 7:
+                        LerDocumentoCSV(ref sColab);
                         break;
                 }
             } while (opcao != 0);
@@ -131,6 +135,7 @@ namespace ArrayDeEstruturas
                 $"Género: {sColab[i].generoColab}\n" +
                 $"Idade: {sColab[i].idadeColab}\n" +
                 $"Vencimento: {sColab[i].vencimentoColab}\n");
+                Console.WriteLine(sColab.Length);
                 j++;
             }
 
@@ -306,7 +311,7 @@ namespace ArrayDeEstruturas
         {
             // Função para extrair os dados dos colaboradores para um documento CSV
             StringBuilder sb = new StringBuilder();
-            sb = sb.AppendLine("Codigo,Nome,Morada,Genero,Idade,Vencimento");
+            sb = sb.AppendLine("Código,Nome,Morada,Género,Idade,Vencimento");
             for (int j = 0; j < sColab.Length; j++)
             {
                 {
@@ -321,9 +326,55 @@ namespace ArrayDeEstruturas
             }
 
             string filePath = @"C:\Users\vrocha\Documents\Colaboradores.csv";
-            File.WriteAllText(filePath, sb.ToString());
+            File.WriteAllText(filePath, sb.ToString(), Encoding.UTF8);
 
             Console.WriteLine($"Documento CSV criado com sucesso e guardado em {filePath}");
+        }
+
+        static void LerDocumentoCSV(ref sColaborador[] sColab)
+        {
+            Console.WriteLine("A ler dados do ficheiro CSV...");
+
+            string filePath = @"C:\Users\vrocha\Documents\Colaboradores.csv";
+
+            try
+            {
+                string[] linhas = File.ReadAllLines(filePath);
+
+                if (linhas.Length > 0)
+                {
+                    int novoTamanhoArray = sColab.Length + linhas.Length - 1;
+
+                    sColaborador[] novoArray = new sColaborador[novoTamanhoArray];
+
+                    Array.Copy(sColab, novoArray, sColab.Length);
+                    
+                    sColab = novoArray;
+
+                    for (int i = 1; i < linhas.Length; i++)
+                    {
+                        string[] valores = linhas[i].Split(',');
+
+                        int indice = sColab.Length - linhas.Length + i;
+                        sColab[i].codigoColab = int.Parse(valores[0]);
+                        sColab[i].nomeColab = valores[1];
+                        sColab[i].moradaColab = valores[2];
+                        sColab[i].generoColab = valores[3];
+                        sColab[i].idadeColab = int.Parse(valores[4]);
+                        sColab[i].vencimentoColab = double.Parse(valores[5]);
+                    }
+
+                    Console.WriteLine($"Foram adicionados {linhas.Length - 1} colaboradores ao array de colaboradores existente.");
+                }
+                else
+                {
+                    Console.WriteLine("O ficheiro CSV está vazio ou não contém dados para processar.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ocorreu um erro ao ler o ficheiro CSV: {ex.Message}");
+            }
         }
     }
 }

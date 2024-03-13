@@ -14,17 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\Program.cs",
               "RelativeDocumentMoniker": "ArrayDeEstruturas\\Program.cs",
-              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\Program.cs",
-              "RelativeToolTip": "ArrayDeEstruturas\\Program.cs",
-              "ViewState": "AQIAADABAAAAAAAAAAAuwDQBAAA1AAAA",
+              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\Program.cs*",
+              "RelativeToolTip": "ArrayDeEstruturas\\Program.cs*",
+              "ViewState": "AQIAAFYBAAAAAAAAAAAowFYBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-13T08:26:04.897Z",
               "EditorCaption": ""
