@@ -3,30 +3,9 @@
 namespace ArrayDeEstruturas
 {   // Autor: Vitor Rocha
     // Array de estruturas de colaboradores
+
     internal class Program
     {
-        struct sColaborador
-        {   // Definição da estrutura Colaborador
-            public int codigoColab;
-            public string nomeColab, moradaColab, generoColab;
-            public int idadeColab;
-            public double vencimentoColab;
-        }
-
-        static int Menu()
-        {
-            Console.WriteLine("-----Gestão de Colaboradores-----");
-            Console.WriteLine("1 - Inserir Colaboradores");
-            Console.WriteLine("2 - Listar Colaboradores");
-            Console.WriteLine("3 - Consultar Colaborador");
-            Console.WriteLine("4 - Alterar dados de colaborador");
-            Console.WriteLine("5 - Remover Colaborador");
-            Console.WriteLine("6 - Extrair documento CSV");
-            Console.WriteLine("7 - Ler documento a partir de um documento CSV");
-            Console.WriteLine("0 - Sair");
-            Console.Write("Selecione uma opção: ");
-            return Convert.ToInt16(Console.ReadLine());
-        }
         static void Main(string[] args)
         {
             // Definição de variáveis
@@ -65,22 +44,44 @@ namespace ArrayDeEstruturas
                         break;
                 }
             } while (opcao != 0);
-
-
         }
+        struct sColaborador
+        {   // Definição da estrutura Colaborador
+            public int codigoColab;
+            public string nomeColab, moradaColab, generoColab;
+            public int idadeColab;
+            public double vencimentoColab;
+        }
+
+        static int Menu()
+        {
+            Console.WriteLine("-----Gestão de Colaboradores-----");
+            Console.WriteLine("1 - Inserir Colaboradores");
+            Console.WriteLine("2 - Listar Colaboradores");
+            Console.WriteLine("3 - Consultar Colaborador");
+            Console.WriteLine("4 - Alterar dados de colaborador");
+            Console.WriteLine("5 - Remover Colaborador");
+            Console.WriteLine("6 - Extrair documento CSV");
+            Console.WriteLine("7 - Ler documento a partir de um documento CSV");
+            Console.WriteLine("0 - Sair");
+            Console.Write("Selecione uma opção: ");
+            return Convert.ToInt16(Console.ReadLine());
+        }
+
         static void InserirDadosColaborador(ref sColaborador[] sColab)
         {
             Console.WriteLine("Quantos colaboradores pretende inserir?");
             int numColab = Convert.ToInt16(Console.ReadLine());
             Console.Clear();
-            // verificar o comprimento atual do array
+
             int tamanhoAtualArray = sColab.Length;
-            // Guarda o valor novo do Array
+
             int novoTamanhoArray = tamanhoAtualArray + numColab;
-            // Atrinui as novas posições ao array
+
             Array.Resize(ref sColab, novoTamanhoArray);
+
             int j = 1;
-            // itera o ciclo até
+
             for (int i = tamanhoAtualArray; i < novoTamanhoArray; i++)
             {
                 Console.WriteLine($"Colaborador nº{j}");
