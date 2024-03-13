@@ -4,17 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter two numbers: ");
-            int num1 = Convert.ToInt16(Console.ReadLine());
-            int num2 = Convert.ToInt16(Console.ReadLine());
-
-            Console.WriteLine(Add(num1, num2));
-            Console.ReadKey();
+            Console.WriteLine("Introduza um número");
+            int num = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine(LesserNum(num));
         }
 
-        static int Add(int num1, int num2)
+        static int LesserNum(int n)
         {
-            return num1 + num2;
+            return n - 1;
         }
     }
 }

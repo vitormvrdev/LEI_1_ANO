@@ -45,6 +45,7 @@ namespace ArrayDeEstruturas
                 }
             } while (opcao != 0);
         }
+
         struct sColaborador
         {   // Definição da estrutura Colaborador
             public int codigoColab;
@@ -124,6 +125,7 @@ namespace ArrayDeEstruturas
                 Console.Clear();
             }
         }
+
         static void ListarColaboradores(sColaborador[] sColab)
         {
             int j = 1;
@@ -144,6 +146,7 @@ namespace ArrayDeEstruturas
             Console.ReadLine();
 
         }
+
         static bool isValid(int num, sColaborador[] sColab)
         {
             for (int i = 0; i < sColab.Length; i++)
@@ -357,12 +360,13 @@ namespace ArrayDeEstruturas
                         string[] valores = linhas[i].Split(',');
 
                         int indice = sColab.Length - linhas.Length + i;
-                        sColab[i].codigoColab = int.Parse(valores[0]);
-                        sColab[i].nomeColab = valores[1];
-                        sColab[i].moradaColab = valores[2];
-                        sColab[i].generoColab = valores[3];
-                        sColab[i].idadeColab = int.Parse(valores[4]);
-                        sColab[i].vencimentoColab = double.Parse(valores[5]);
+
+                        sColab[indice].codigoColab = int.Parse(valores[0]);
+                        sColab[indice].nomeColab = valores[1];
+                        sColab[indice].moradaColab = valores[2];
+                        sColab[indice].generoColab = valores[3];
+                        sColab[indice].idadeColab = int.Parse(valores[4]);
+                        sColab[indice].vencimentoColab = double.Parse(valores[5]);
                     }
 
                     Console.WriteLine($"Foram adicionados {linhas.Length - 1} colaboradores ao array de colaboradores existente.");
@@ -372,9 +376,9 @@ namespace ArrayDeEstruturas
                     Console.WriteLine("O ficheiro CSV está vazio ou não contém dados para processar.");
                 }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                Console.WriteLine($"Ocorreu um erro ao ler o ficheiro CSV: {ex.Message}");
+                Console.WriteLine($"Ocorreu um erro ao ler o ficheiro CSV: {e.Message}");
             }
         }
     }
