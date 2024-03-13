@@ -42,6 +42,9 @@ namespace ArrayDeEstruturas
                     case 7:
                         LerDocumentoCSV(ref sColab);
                         break;
+                    case 8:
+                        DiversasFuncoesVencimento(sColab);
+                        break;
                 }
             } while (opcao != 0);
         }
@@ -64,6 +67,7 @@ namespace ArrayDeEstruturas
             Console.WriteLine("5 - Remover Colaborador");
             Console.WriteLine("6 - Extrair documento CSV");
             Console.WriteLine("7 - Ler documento a partir de um documento CSV");
+            Console.WriteLine("8 - Diversas funções sobre o vencimento dos colaboradores");
             Console.WriteLine("0 - Sair");
             Console.Write("Selecione uma opção: ");
             return Convert.ToInt16(Console.ReadLine());
@@ -138,7 +142,6 @@ namespace ArrayDeEstruturas
                 $"Género: {sColab[i].generoColab}\n" +
                 $"Idade: {sColab[i].idadeColab}\n" +
                 $"Vencimento: {sColab[i].vencimentoColab}\n");
-                Console.WriteLine(sColab.Length);
                 j++;
             }
 
@@ -222,7 +225,7 @@ namespace ArrayDeEstruturas
                                 break;
                             case 5:
                                 Console.WriteLine("Insira novo vencimento: ");
-                                sColab[i].vencimentoColab = Convert.ToInt16(Console.ReadLine());
+                                sColab[i].vencimentoColab = Convert.ToInt32(Console.ReadLine());
                                 break;
                             case 0:
                                 break;
@@ -379,6 +382,49 @@ namespace ArrayDeEstruturas
             catch (Exception e)
             {
                 Console.WriteLine($"Ocorreu um erro ao ler o ficheiro CSV: {e.Message}");
+            }
+        }
+
+        static void DiversasFuncoesVencimento(sColaborador[] sColab)
+        {
+            Console.WriteLine("-----Diversas funções sobre o vencimento dos colaboradores-----");
+            Console.WriteLine("1 - Média de vencimentos");
+            Console.WriteLine("2 - Vencimento mais alto");
+            Console.WriteLine("3 - Vencimento mais baixo");
+            int opcao = Convert.ToInt16(Console.ReadLine());
+
+            switch (opcao)
+            {
+                case 1:
+                    double soma = 0.0;
+                    for (int i = 0; i < sColab.Length; i++)
+                    {
+                        soma += sColab[i].vencimentoColab;
+                    }
+                    Console.WriteLine($"A média de vencimentos é: {soma / sColab.Length}");
+                    break;
+                case 2:
+                    double vencimentoAlto = 0;
+                    for (int i = 0; i < sColab.Length; i++)
+                    {
+                        if (sColab[i].vencimentoColab > vencimentoAlto)
+                        {
+                            vencimentoAlto = sColab[i].vencimentoColab;
+                        }
+                    }
+                    Console.WriteLine($"O vencimento mais alto é: {vencimentoAlto}");
+                    break;
+                case 3:
+                    double vencimentoBaixo = 0;
+                    for (int i = 0; i < sColab.Length; i++)
+                    {
+                        if (sColab[i].vencimentoColab < vencimentoBaixo)
+                        {
+                            vencimentoBaixo = sColab[i].vencimentoColab;
+                        }
+                    }
+                    Console.WriteLine($"O vencimento mais alto é: {vencimentoBaixo}");
+                    break;
             }
         }
     }
