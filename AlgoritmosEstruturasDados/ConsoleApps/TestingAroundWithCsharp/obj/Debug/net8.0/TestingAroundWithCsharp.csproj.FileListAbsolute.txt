@@ -13,3 +13,11 @@ C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\Tes
 C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.pdb
 C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.genruntimeconfig.cache
 C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\ref\TestingAroundWithCsharp.dll
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.AssemblyInfoInputs.cache
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.AssemblyInfo.cs
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.csproj.CoreCompileInputs.cache
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.sourcelink.json
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.dll
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\refint\TestingAroundWithCsharp.dll
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\TestingAroundWithCsharp\obj\Debug\net8.0\TestingAroundWithCsharp.pdb
