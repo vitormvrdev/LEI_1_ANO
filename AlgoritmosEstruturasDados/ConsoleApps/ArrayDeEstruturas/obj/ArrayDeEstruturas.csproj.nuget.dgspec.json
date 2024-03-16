@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\ArrayDeEstruturas.csproj": {}
+    "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\ArrayDeEstruturas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\ArrayDeEstruturas.csproj": {
+    "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\ArrayDeEstruturas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\ArrayDeEstruturas.csproj",
+        "projectUniqueName": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\ArrayDeEstruturas.csproj",
         "projectName": "ArrayDeEstruturas",
-        "projectPath": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\ArrayDeEstruturas.csproj",
+        "projectPath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\ArrayDeEstruturas.csproj",
         "packagesPath": "C:\\Users\\Vitor Rocha\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\obj\\",
         "projectStyle": "PackageReference",

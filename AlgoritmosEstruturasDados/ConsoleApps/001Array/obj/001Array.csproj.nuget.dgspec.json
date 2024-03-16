@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\001Array\\001Array.csproj": {}
+    "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\001Array\\001Array.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\001Array\\001Array.csproj": {
+    "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\001Array\\001Array.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\001Array\\001Array.csproj",
+        "projectUniqueName": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\001Array\\001Array.csproj",
         "projectName": "001Array",
-        "projectPath": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\001Array\\001Array.csproj",
+        "projectPath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\001Array\\001Array.csproj",
         "packagesPath": "C:\\Users\\Vitor Rocha\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\001Array\\obj\\",
         "projectStyle": "PackageReference",

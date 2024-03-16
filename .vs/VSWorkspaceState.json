@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\AlgoritmosEstruturasDados",
+    "\\AlgoritmosEstruturasDados\\ConsoleApps",
+    "\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp"
   ],
-  "SelectedNode": "\\ConsoleApps.sln",
+  "SelectedNode": "\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

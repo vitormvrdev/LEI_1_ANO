@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoanCalculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1be851d6463737a0e6093f34f23beb7f2b2f326c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d775c9ae348e8568bc0419361e12ccafeeb5098f")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoanCalculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoanCalculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

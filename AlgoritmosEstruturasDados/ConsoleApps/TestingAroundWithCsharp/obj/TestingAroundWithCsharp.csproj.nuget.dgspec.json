@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\TestingAroundWithCsharp.csproj": {}
+    "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\TestingAroundWithCsharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\TestingAroundWithCsharp.csproj": {
+    "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\TestingAroundWithCsharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\TestingAroundWithCsharp.csproj",
+        "projectUniqueName": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\TestingAroundWithCsharp.csproj",
         "projectName": "TestingAroundWithCsharp",
-        "projectPath": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\TestingAroundWithCsharp.csproj",
+        "projectPath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\TestingAroundWithCsharp.csproj",
         "packagesPath": "C:\\Users\\Vitor Rocha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\obj\\",
+        "outputPath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vitor Rocha\\AppData\\Roaming\\NuGet\\NuGet.Config",
