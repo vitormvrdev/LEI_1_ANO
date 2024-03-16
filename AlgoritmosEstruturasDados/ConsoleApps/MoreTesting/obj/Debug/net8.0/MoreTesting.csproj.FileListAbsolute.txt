@@ -1,0 +1,15 @@
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\bin\Debug\net8.0\MoreTesting.exe
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\bin\Debug\net8.0\MoreTesting.deps.json
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\bin\Debug\net8.0\MoreTesting.runtimeconfig.json
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\bin\Debug\net8.0\MoreTesting.dll
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\bin\Debug\net8.0\MoreTesting.pdb
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\obj\Debug\net8.0\MoreTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\obj\Debug\net8.0\MoreTesting.AssemblyInfoInputs.cache
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\obj\Debug\net8.0\MoreTesting.AssemblyInfo.cs
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\obj\Debug\net8.0\MoreTesting.csproj.CoreCompileInputs.cache
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\obj\Debug\net8.0\MoreTesting.sourcelink.json
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\obj\Debug\net8.0\MoreTesting.dll
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\obj\Debug\net8.0\refint\MoreTesting.dll
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\obj\Debug\net8.0\MoreTesting.pdb
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\obj\Debug\net8.0\MoreTesting.genruntimeconfig.cache
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\obj\Debug\net8.0\ref\MoreTesting.dll
