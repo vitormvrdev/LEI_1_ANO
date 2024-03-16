@@ -1,28 +1,11 @@
-﻿namespace ArrayDeEstruturas
+﻿using System.Text;
+
+namespace ArrayDeEstruturas
 {   // Autor: Vitor Rocha
     // Array de estruturas de colaboradores
+
     internal class Program
     {
-        struct sColaborador
-        {   // Definição da estrutura Colaborador
-            public int codigoColab;
-            public string nomeColab, moradaColab, generoColab;
-            public int idadeColab;
-            public double vencimentoColab;
-        }
-
-        static int Menu()
-        {
-            Console.WriteLine("-----Gestão de Colaboradores-----");
-            Console.WriteLine("1 - Inserir Colaboradores");
-            Console.WriteLine("2 - Listar Colaboradores");
-            Console.WriteLine("3 - Consultar Colaborador");
-            Console.WriteLine("4 - Alterar dados de colaborador");
-            Console.WriteLine("5 - Remover Colaborador");
-            Console.WriteLine("0 - Sair");
-            Console.Write("Selecione uma opção: ");
-            return Convert.ToInt16(Console.ReadLine());
-        }
         static void Main(string[] args)
         {
             // Definição de variáveis
@@ -53,24 +36,57 @@
                     case 5:
                         RemoverColaborador(ref sColab);
                         break;
+                    case 6:
+                        ExtrairDocumentoCSV(sColab);
+                        break;
+                    case 7:
+                        LerDocumentoCSV(ref sColab);
+                        break;
+                    case 8:
+                        DiversasFuncoesVencimento(sColab);
+                        break;
                 }
             } while (opcao != 0);
-
-
         }
+
+        struct sColaborador
+        {   // Definição da estrutura Colaborador
+            public int codigoColab;
+            public string nomeColab, moradaColab, generoColab;
+            public int idadeColab;
+            public double vencimentoColab;
+        }
+
+        static int Menu()
+        {
+            Console.WriteLine("-----Gestão de Colaboradores-----");
+            Console.WriteLine("1 - Inserir Colaboradores");
+            Console.WriteLine("2 - Listar Colaboradores");
+            Console.WriteLine("3 - Consultar Colaborador");
+            Console.WriteLine("4 - Alterar dados de colaborador");
+            Console.WriteLine("5 - Remover Colaborador");
+            Console.WriteLine("6 - Extrair documento CSV");
+            Console.WriteLine("7 - Ler documento a partir de um documento CSV");
+            Console.WriteLine("8 - Diversas funções sobre o vencimento dos colaboradores");
+            Console.WriteLine("0 - Sair");
+            Console.Write("Selecione uma opção: ");
+            return Convert.ToInt16(Console.ReadLine());
+        }
+
         static void InserirDadosColaborador(ref sColaborador[] sColab)
         {
             Console.WriteLine("Quantos colaboradores pretende inserir?");
             int numColab = Convert.ToInt16(Console.ReadLine());
             Console.Clear();
-            // verificar o comprimento atual do array
+
             int tamanhoAtualArray = sColab.Length;
-            // Guarda o valor novo do Array
+
             int novoTamanhoArray = tamanhoAtualArray + numColab;
-            // Atrinui as novas posições ao array
+
             Array.Resize(ref sColab, novoTamanhoArray);
+
             int j = 1;
-            // itera o ciclo até
+
             for (int i = tamanhoAtualArray; i < novoTamanhoArray; i++)
             {
                 Console.WriteLine($"Colaborador nº{j}");
@@ -113,6 +129,7 @@
                 Console.Clear();
             }
         }
+
         static void ListarColaboradores(sColaborador[] sColab)
         {
             int j = 1;
@@ -132,6 +149,7 @@
             Console.ReadLine();
 
         }
+
         static bool isValid(int num, sColaborador[] sColab)
         {
             for (int i = 0; i < sColab.Length; i++)
@@ -207,7 +225,7 @@
                                 break;
                             case 5:
                                 Console.WriteLine("Insira novo vencimento: ");
-                                sColab[i].vencimentoColab = Convert.ToInt16(Console.ReadLine());
+                                sColab[i].vencimentoColab = Convert.ToInt32(Console.ReadLine());
                                 break;
                             case 0:
                                 break;
@@ -293,6 +311,120 @@
                         return;
                     }
                 }
+            }
+        }
+
+        static void ExtrairDocumentoCSV(sColaborador[] sColab)
+        {
+            // Função para extrair os dados dos colaboradores para um documento CSV
+            StringBuilder sb = new StringBuilder();
+            sb = sb.AppendLine("Código,Nome,Morada,Género,Idade,Vencimento");
+            for (int j = 0; j < sColab.Length; j++)
+            {
+                {
+                    sb = sb.AppendLine($"{sColab[j].codigoColab}," +
+                        $"{sColab[j].nomeColab}," +
+                        $"{sColab[j].moradaColab}," +
+                        $"{sColab[j].generoColab}," +
+                        $"{sColab[j].idadeColab}," +
+                        $"{sColab[j].vencimentoColab}");
+
+                }
+            }
+
+            string filePath = @"C:\Users\vrocha\Documents\Colaboradores.csv";
+            File.WriteAllText(filePath, sb.ToString(), Encoding.UTF8);
+
+            Console.WriteLine($"Documento CSV criado com sucesso e guardado em {filePath}");
+        }
+
+        static void LerDocumentoCSV(ref sColaborador[] sColab)
+        {
+            Console.WriteLine("A ler dados do ficheiro CSV...");
+
+            string filePath = @"C:\Users\vrocha\Documents\Colaboradores.csv";
+
+            try
+            {
+                string[] linhas = File.ReadAllLines(filePath);
+
+                if (linhas.Length > 0)
+                {
+                    int novoTamanhoArray = sColab.Length + linhas.Length - 1;
+
+                    sColaborador[] novoArray = new sColaborador[novoTamanhoArray];
+
+                    Array.Copy(sColab, novoArray, sColab.Length);
+                    
+                    sColab = novoArray;
+
+                    for (int i = 1; i < linhas.Length; i++)
+                    {
+                        string[] valores = linhas[i].Split(',');
+
+                        int indice = sColab.Length - linhas.Length + i;
+
+                        sColab[indice].codigoColab = int.Parse(valores[0]);
+                        sColab[indice].nomeColab = valores[1];
+                        sColab[indice].moradaColab = valores[2];
+                        sColab[indice].generoColab = valores[3];
+                        sColab[indice].idadeColab = int.Parse(valores[4]);
+                        sColab[indice].vencimentoColab = double.Parse(valores[5]);
+                    }
+
+                    Console.WriteLine($"Foram adicionados {linhas.Length - 1} colaboradores ao array de colaboradores existente.");
+                }
+                else
+                {
+                    Console.WriteLine("O ficheiro CSV está vazio ou não contém dados para processar.");
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Ocorreu um erro ao ler o ficheiro CSV: {e.Message}");
+            }
+        }
+
+        static void DiversasFuncoesVencimento(sColaborador[] sColab)
+        {
+            Console.WriteLine("-----Diversas funções sobre o vencimento dos colaboradores-----");
+            Console.WriteLine("1 - Média de vencimentos");
+            Console.WriteLine("2 - Vencimento mais alto");
+            Console.WriteLine("3 - Vencimento mais baixo");
+            int opcao = Convert.ToInt16(Console.ReadLine());
+
+            switch (opcao)
+            {
+                case 1:
+                    double soma = 0.0;
+                    for (int i = 0; i < sColab.Length; i++)
+                    {
+                        soma += sColab[i].vencimentoColab;
+                    }
+                    Console.WriteLine($"A média de vencimentos é: {soma / sColab.Length}");
+                    break;
+                case 2:
+                    double vencimentoAlto = 0;
+                    for (int i = 0; i < sColab.Length; i++)
+                    {
+                        if (sColab[i].vencimentoColab > vencimentoAlto)
+                        {
+                            vencimentoAlto = sColab[i].vencimentoColab;
+                        }
+                    }
+                    Console.WriteLine($"O vencimento mais alto é: {vencimentoAlto}");
+                    break;
+                case 3:
+                    double vencimentoBaixo = 0;
+                    for (int i = 0; i < sColab.Length; i++)
+                    {
+                        if (sColab[i].vencimentoColab < vencimentoBaixo)
+                        {
+                            vencimentoBaixo = sColab[i].vencimentoColab;
+                        }
+                    }
+                    Console.WriteLine($"O vencimento mais alto é: {vencimentoBaixo}");
+                    break;
             }
         }
     }

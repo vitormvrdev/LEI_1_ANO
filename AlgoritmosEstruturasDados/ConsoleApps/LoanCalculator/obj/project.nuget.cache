@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "EcU771tvZWnY6OV5iPV1cYyTtW0sdcl7wjo/Lo4FRBZh63ouKtKWslCcxPv52CEEl/V3v6JXFq0P9I+FAnZLiQ==",
+  "dgSpecHash": "vZvSuZVIbdP0Z7XBEK/tMyiDRjQpwOQSSSkmfUwj0CwEdxAx/mCrqyYWX1iP0AR+uz4LPH1reYPbE9iJAj2h6A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\LoanCalculator\\LoanCalculator.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\LoanCalculator\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
