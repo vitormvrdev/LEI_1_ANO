@@ -3,8 +3,9 @@
     "",
     "\\AlgoritmosEstruturasDados",
     "\\AlgoritmosEstruturasDados\\ConsoleApps",
+    "\\AlgoritmosEstruturasDados\\ConsoleApps\\MoreTesting",
     "\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp"
   ],
-  "SelectedNode": "\\AlgoritmosEstruturasDados\\ConsoleApps\\ConsoleApps.sln",
+  "SelectedNode": "\\AlgoritmosEstruturasDados\\ConsoleApps\\MoreTesting\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
