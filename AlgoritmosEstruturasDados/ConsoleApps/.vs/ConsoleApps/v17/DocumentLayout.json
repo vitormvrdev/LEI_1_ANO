@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5C054EA6-D14A-4374-9FA7-CA6C238F3868}|TestingAroundWithCsharp\\TestingAroundWithCsharp.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\consoleapps\\testingaroundwithcsharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C054EA6-D14A-4374-9FA7-CA6C238F3868}|TestingAroundWithCsharp\\TestingAroundWithCsharp.csproj|solutionrelative:testingaroundwithcsharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A62396E7-9DFD-4270-842D-B624D739E4CF}|ArrayDeEstruturas\\ArrayDeEstruturas.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\consoleapps\\arraydeestruturas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A62396E7-9DFD-4270-842D-B624D739E4CF}|ArrayDeEstruturas\\ArrayDeEstruturas.csproj|solutionrelative:arraydeestruturas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,21 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\Program.cs",
+              "RelativeDocumentMoniker": "TestingAroundWithCsharp\\Program.cs",
+              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\Program.cs*",
+              "RelativeToolTip": "TestingAroundWithCsharp\\Program.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T12:31:05.629Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\Program.cs",
               "RelativeDocumentMoniker": "ArrayDeEstruturas\\Program.cs",
               "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ArrayDeEstruturas\\Program.cs",
               "RelativeToolTip": "ArrayDeEstruturas\\Program.cs",
-              "ViewState": "AQIAAFUBAAAAAAAAAAAcwMwAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAiwDoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-13T08:26:04.897Z",
               "EditorCaption": ""
