@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y7S16tkdDvvIRGIxQP5TZGrxbWLUUxubkzrR+jq0luf7I77TYcD7oJ+yY4va+6TeZS4TX8pXHdeqDetVKIsTuw==",
+  "dgSpecHash": "lULdX0JRsM9YTBtd9ZfGaz5I40XkBuLhfkxZ0S1PDamFj7BrdTWFxaiGQxdzchOdAIIi+z+l+RCllnVEOCQDPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\001Array\\001Array.csproj",
+  "projectFilePath": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\001Array\\001Array.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\001Array\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
