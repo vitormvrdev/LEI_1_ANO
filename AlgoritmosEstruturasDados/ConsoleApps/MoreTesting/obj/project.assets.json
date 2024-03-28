@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\MoreTesting\\MoreTesting.csproj",
-      "projectName": "MoreTesting",
-      "projectPath": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\MoreTesting\\MoreTesting.csproj",
+      "projectUniqueName": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\MoreTesting\\Parsing.csproj",
+      "projectName": "Parsing",
+      "projectPath": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\MoreTesting\\Parsing.csproj",
       "packagesPath": "C:\\Users\\vrocha\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\MoreTesting\\obj\\",
       "projectStyle": "PackageReference",
