@@ -1,10 +1,15 @@
-﻿namespace Testing
+﻿using System.Runtime.Serialization;
+
+namespace Testing
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Car audi = new Car();
+
+            audi.Drive();
+            audi.Stop();
         }
     }
 }
