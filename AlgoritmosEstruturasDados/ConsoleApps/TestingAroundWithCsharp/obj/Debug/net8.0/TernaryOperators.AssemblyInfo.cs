@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TernaryOperators")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ade7c9ad886a13f01b3e84ab8863c5df0a97e47e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02b7bd4a660786b5fad7393a70b7ea6790e96cd6")]
 [assembly: System.Reflection.AssemblyProductAttribute("TernaryOperators")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TernaryOperators")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
