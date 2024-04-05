@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoanCalculator", "LoanCalcu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayDeEstruturas", "ArrayDeEstruturas\ArrayDeEstruturas.csproj", "{A62396E7-9DFD-4270-842D-B624D739E4CF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestingAroundWithCsharp", "TestingAroundWithCsharp\TestingAroundWithCsharp.csproj", "{5C054EA6-D14A-4374-9FA7-CA6C238F3868}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TernaryOperators", "TestingAroundWithCsharp\TernaryOperators.csproj", "{5C054EA6-D14A-4374-9FA7-CA6C238F3868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreTesting", "MoreTesting\MoreTesting.csproj", "{5704711A-A1DF-4FA5-87A1-2FDE2AEE6327}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parsing", "MoreTesting\Parsing.csproj", "{5704711A-A1DF-4FA5-87A1-2FDE2AEE6327}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{13F03ABC-95D8-461A-9A49-17596BDA60A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5704711A-A1DF-4FA5-87A1-2FDE2AEE6327}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5704711A-A1DF-4FA5-87A1-2FDE2AEE6327}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5704711A-A1DF-4FA5-87A1-2FDE2AEE6327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13F03ABC-95D8-461A-9A49-17596BDA60A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F03ABC-95D8-461A-9A49-17596BDA60A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F03ABC-95D8-461A-9A49-17596BDA60A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F03ABC-95D8-461A-9A49-17596BDA60A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

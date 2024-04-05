@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Uzn/MKzlUve8xK1snNZb0xT6gBcxGOYaVeNpQvuJ6dVtFugOA3B7+2BvJPxUU4o/fD/bhYj4ui2vzZ7rASdsCw==",
+  "dgSpecHash": "29vqUSAxCsBv1sSkYG2xd/bsKqdw5b0ytZgTKSyZVDMINzU39rkN51pOeG5StZ1kS94jGEd9gI/jkd7y5RDP/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\TestingAroundWithCsharp.csproj",
+  "projectFilePath": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\TernaryOperators.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
