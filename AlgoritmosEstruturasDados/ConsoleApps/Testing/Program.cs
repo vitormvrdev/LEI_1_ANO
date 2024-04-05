@@ -6,10 +6,30 @@ namespace Testing
     {
         public static void Main(string[] args)
         {
-            Car audi = new Car();
+            Car myCar = new Car();
+            Car audi = new Car("audi", 350);
+            Car bmw = new Car("BMW", 500, "blue");
 
+            bmw.Drive();
             audi.Drive();
-            audi.Stop();
+
+            Console.WriteLine("Press 1 to stop the cars!");
+            string userInput = Console.ReadLine();
+
+            if (userInput == "1")
+            {
+                audi.Stop();
+                bmw.Stop();
+            }
+            else
+            {
+                Console.WriteLine("They will drive forever.....");
+            }
+
+
+            audi.Details();
+            bmw.Details();
+            myCar.Details();
         }
     }
 }

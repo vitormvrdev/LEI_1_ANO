@@ -13,3 +13,18 @@ C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\Arr
 C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\obj\Debug\net8.0\ArrayDeEstruturas.pdb
 C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\obj\Debug\net8.0\ArrayDeEstruturas.genruntimeconfig.cache
 C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\obj\Debug\net8.0\ref\ArrayDeEstruturas.dll
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\bin\Debug\net8.0\ArrayDeEstruturas.exe
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\bin\Debug\net8.0\ArrayDeEstruturas.deps.json
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\bin\Debug\net8.0\ArrayDeEstruturas.runtimeconfig.json
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\bin\Debug\net8.0\ArrayDeEstruturas.dll
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\bin\Debug\net8.0\ArrayDeEstruturas.pdb
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\obj\Debug\net8.0\ArrayDeEstruturas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\obj\Debug\net8.0\ArrayDeEstruturas.AssemblyInfoInputs.cache
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\obj\Debug\net8.0\ArrayDeEstruturas.AssemblyInfo.cs
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\obj\Debug\net8.0\ArrayDeEstruturas.csproj.CoreCompileInputs.cache
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\obj\Debug\net8.0\ArrayDeEstruturas.sourcelink.json
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\obj\Debug\net8.0\ArrayDeEstruturas.dll
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\obj\Debug\net8.0\refint\ArrayDeEstruturas.dll
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\obj\Debug\net8.0\ArrayDeEstruturas.pdb
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\obj\Debug\net8.0\ArrayDeEstruturas.genruntimeconfig.cache
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ArrayDeEstruturas\obj\Debug\net8.0\ref\ArrayDeEstruturas.dll
