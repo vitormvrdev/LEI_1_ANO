@@ -1,0 +1,15 @@
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\bin\Debug\net8.0\EstruturasComArrays.exe
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\bin\Debug\net8.0\EstruturasComArrays.deps.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\bin\Debug\net8.0\EstruturasComArrays.runtimeconfig.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\bin\Debug\net8.0\EstruturasComArrays.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\bin\Debug\net8.0\EstruturasComArrays.pdb
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\obj\Debug\net8.0\EstruturasComArrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\obj\Debug\net8.0\EstruturasComArrays.AssemblyInfoInputs.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\obj\Debug\net8.0\EstruturasComArrays.AssemblyInfo.cs
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\obj\Debug\net8.0\EstruturasComArrays.csproj.CoreCompileInputs.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\obj\Debug\net8.0\EstruturasComArrays.sourcelink.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\obj\Debug\net8.0\EstruturasComArrays.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\obj\Debug\net8.0\refint\EstruturasComArrays.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\obj\Debug\net8.0\EstruturasComArrays.pdb
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\obj\Debug\net8.0\EstruturasComArrays.genruntimeconfig.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\obj\Debug\net8.0\ref\EstruturasComArrays.dll
