@@ -20,14 +20,17 @@ namespace EstruturasComArrays
         {
             int numAlunos = 3;
             int numDisciplinas = 4;
-
+            
             Aluno[] alunos = new Aluno[numAlunos];
             Disciplina[] disciplinas = new Disciplina[numDisciplinas];
+
+            
+            int opcao = Menu();
 
             do
             {
                 SwitchCase(ref alunos, ref disciplinas);
-            }while (Menu() != 0);
+            }while (opcao != 0);
         }
 
         static int Menu()
@@ -42,6 +45,7 @@ namespace EstruturasComArrays
 
         static void SwitchCase(ref Aluno[] alunos,ref Disciplina[] disciplinas)
         {
+            Console.Clear();
             switch (Menu())
             {
                 case 1:
@@ -60,6 +64,7 @@ namespace EstruturasComArrays
         }
         static void IntroduzirDadosAlunos(ref Aluno[] alunos, ref Disciplina[] disciplinas)
         {
+            Console.Clear();
             for (int i = 0; i < alunos.Length; i++)
             {
                 Console.Write($"Escreve o nome do {i + 1} aluno: ");
@@ -71,12 +76,13 @@ namespace EstruturasComArrays
                     Console.WriteLine($"Disciplina: {alunos[i].disciplinas[j].codigo}");
                     Console.WriteLine($"Disciplina: {alunos[i].disciplinas[j].designacao}");
                     Console.WriteLine("Qual a nota? ");
-                    alunos[j].disciplinas[j].nota = Convert.ToInt32(Console.ReadLine());
+                    alunos[i].disciplinas[j].nota = Convert.ToInt32(Console.ReadLine());
                 }
             }
         }
         static void IntroduzirDadosDisciplinas(ref Disciplina[] disciplinas)
         {
+            Console.Clear();
             for (int i = 0; i < disciplinas.Length; i++)
             {
                 Console.Write($"Escreve o código da disciplina {i + 1}:");
@@ -88,13 +94,14 @@ namespace EstruturasComArrays
 
         static void ListarAlunos(Aluno[] alunos)
         {
+            Console.Clear();
             Console.WriteLine("Listagem de alunos");
             for (int k = 0; k < alunos.Length; k++)
             {
                 Console.WriteLine($"Aluno {alunos[k].nome}");
                 for (int z = 0; z < alunos[k].disciplinas.Length; z++)
                 {
-                    Console.WriteLine("");
+                    Console.WriteLine($"{alunos[k].disciplinas[z].codigo} - {alunos[k].disciplinas[z].designacao}: {alunos[k].disciplinas[z].nota}");
                 }
             }
         }
