@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EstruturasComArrays
-build_property.ProjectDir = C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\
+build_property.ProjectDir = C:\Users\vrocha\Source\Repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\EstruturasComArrays\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
