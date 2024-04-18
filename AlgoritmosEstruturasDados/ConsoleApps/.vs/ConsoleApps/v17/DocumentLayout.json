@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13F03ABC-95D8-461A-9A49-17596BDA60A3}|Testing\\OOP.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\consoleapps\\testing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13F03ABC-95D8-461A-9A49-17596BDA60A3}|Testing\\OOP.csproj|solutionrelative:testing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13F03ABC-95D8-461A-9A49-17596BDA60A3}|Testing\\OOP.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\consoleapps\\testing\\oop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{13F03ABC-95D8-461A-9A49-17596BDA60A3}|Testing\\OOP.csproj|solutionrelative:testing\\oop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{85B8035D-9B90-4B2D-AAD1-55082785576E}|ExercicioJaggedArrays\\ExercicioJaggedArrays.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\consoleapps\\exerciciojaggedarrays\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85B8035D-9B90-4B2D-AAD1-55082785576E}|ExercicioJaggedArrays\\ExercicioJaggedArrays.csproj|solutionrelative:exerciciojaggedarrays\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,26 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\Testing\\Program.cs",
-              "RelativeDocumentMoniker": "Testing\\Program.cs",
-              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\Testing\\Program.cs",
-              "RelativeToolTip": "Testing\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAANAAAA",
+              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ExercicioJaggedArrays\\Program.cs",
+              "RelativeDocumentMoniker": "ExercicioJaggedArrays\\Program.cs",
+              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\ExercicioJaggedArrays\\Program.cs",
+              "RelativeToolTip": "ExercicioJaggedArrays\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T09:12:35.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OOP.csproj",
-              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\Testing\\OOP.csproj",
-              "RelativeDocumentMoniker": "Testing\\OOP.csproj",
-              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\Testing\\OOP.csproj",
-              "RelativeToolTip": "Testing\\OOP.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-13T09:12:03.255Z",
+              "WhenOpened": "2024-04-18T12:34:58.014Z",
               "EditorCaption": ""
             }
           ]
