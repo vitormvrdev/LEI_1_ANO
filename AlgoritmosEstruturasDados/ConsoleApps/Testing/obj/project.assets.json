@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\Testing\\Testing.csproj",
-      "projectName": "Testing",
-      "projectPath": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\Testing\\Testing.csproj",
+      "projectUniqueName": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\Testing\\OOP.csproj",
+      "projectName": "OOP",
+      "projectPath": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\Testing\\OOP.csproj",
       "packagesPath": "C:\\Users\\vrocha\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\Testing\\obj\\",
       "projectStyle": "PackageReference",
