@@ -13,11 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TernaryOperators", "Testing
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parsing", "MoreTesting\Parsing.csproj", "{5704711A-A1DF-4FA5-87A1-2FDE2AEE6327}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testing", "Testing\Testing.csproj", "{13F03ABC-95D8-461A-9A49-17596BDA60A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP", "Testing\OOP.csproj", "{13F03ABC-95D8-461A-9A49-17596BDA60A3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstruturasComArrays", "EstruturasComArrays\EstruturasComArrays.csproj", "{B03C474E-CD14-44B0-A6EE-D2DC70A4A0B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioJaggedArrays", "ExercicioJaggedArrays\ExercicioJaggedArrays.csproj", "{85B8035D-9B90-4B2D-AAD1-55082785576E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioJaggedArrays", "ExercicioJaggedArrays\ExercicioJaggedArrays.csproj", "{85B8035D-9B90-4B2D-AAD1-55082785576E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tracagem", "ConsoleApp1\tracagem.csproj", "{C32760FB-9919-4D7E-AD05-FEF50E15C4AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{85B8035D-9B90-4B2D-AAD1-55082785576E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85B8035D-9B90-4B2D-AAD1-55082785576E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85B8035D-9B90-4B2D-AAD1-55082785576E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C32760FB-9919-4D7E-AD05-FEF50E15C4AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C32760FB-9919-4D7E-AD05-FEF50E15C4AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C32760FB-9919-4D7E-AD05-FEF50E15C4AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C32760FB-9919-4D7E-AD05-FEF50E15C4AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
