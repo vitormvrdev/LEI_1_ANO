@@ -19,7 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstruturasComArrays", "Estr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioJaggedArrays", "ExercicioJaggedArrays\ExercicioJaggedArrays.csproj", "{85B8035D-9B90-4B2D-AAD1-55082785576E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tracagem", "ConsoleApp1\tracagem.csproj", "{C32760FB-9919-4D7E-AD05-FEF50E15C4AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tracagem", "ConsoleApp1\tracagem.csproj", "{C32760FB-9919-4D7E-AD05-FEF50E15C4AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BubbleSort", "BubbleSort\BubbleSort.csproj", "{A9522E1F-63FC-4806-AEAD-9EFE3EDA3013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForm", "LoginForm\LoginForm.csproj", "{64921702-F506-4BA6-9D98-111237A21087}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{C32760FB-9919-4D7E-AD05-FEF50E15C4AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C32760FB-9919-4D7E-AD05-FEF50E15C4AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C32760FB-9919-4D7E-AD05-FEF50E15C4AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9522E1F-63FC-4806-AEAD-9EFE3EDA3013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9522E1F-63FC-4806-AEAD-9EFE3EDA3013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9522E1F-63FC-4806-AEAD-9EFE3EDA3013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9522E1F-63FC-4806-AEAD-9EFE3EDA3013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64921702-F506-4BA6-9D98-111237A21087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64921702-F506-4BA6-9D98-111237A21087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64921702-F506-4BA6-9D98-111237A21087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64921702-F506-4BA6-9D98-111237A21087}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

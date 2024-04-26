@@ -1,0 +1,15 @@
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\bin\Debug\net8.0\tracagem.exe
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\bin\Debug\net8.0\tracagem.deps.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\bin\Debug\net8.0\tracagem.runtimeconfig.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\bin\Debug\net8.0\tracagem.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\bin\Debug\net8.0\tracagem.pdb
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\obj\Debug\net8.0\tracagem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\obj\Debug\net8.0\tracagem.AssemblyInfoInputs.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\obj\Debug\net8.0\tracagem.AssemblyInfo.cs
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\obj\Debug\net8.0\tracagem.csproj.CoreCompileInputs.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\obj\Debug\net8.0\tracagem.sourcelink.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\obj\Debug\net8.0\tracagem.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\obj\Debug\net8.0\refint\tracagem.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\obj\Debug\net8.0\tracagem.pdb
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\obj\Debug\net8.0\tracagem.genruntimeconfig.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ConsoleApp1\obj\Debug\net8.0\ref\tracagem.dll
