@@ -14,6 +14,7 @@ namespace EstruturasComArrays
         public string designacao;
         public double nota;
     }
+
     internal class Program
     {
         static void Main(string[] args)
