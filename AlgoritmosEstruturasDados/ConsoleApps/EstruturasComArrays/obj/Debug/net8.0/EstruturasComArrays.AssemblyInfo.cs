@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EstruturasComArrays")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb9bc1d452d3c55def1f39908c462aa439022619")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d8b7a502a517166e656a788ae29b85c3632cfdd")]
 [assembly: System.Reflection.AssemblyProductAttribute("EstruturasComArrays")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EstruturasComArrays")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
