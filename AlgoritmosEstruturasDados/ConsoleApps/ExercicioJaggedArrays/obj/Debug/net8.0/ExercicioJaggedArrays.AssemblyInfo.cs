@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExercicioJaggedArrays")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb9bc1d452d3c55def1f39908c462aa439022619")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa3fdd23b480b4da44084dcc5e393e3d7dd0f52d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExercicioJaggedArrays")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExercicioJaggedArrays")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

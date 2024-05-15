@@ -1,0 +1,15 @@
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\obj\Debug\net8.0\ExercicioJaggedArrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\obj\Debug\net8.0\ExercicioJaggedArrays.AssemblyInfoInputs.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\obj\Debug\net8.0\ExercicioJaggedArrays.AssemblyInfo.cs
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\obj\Debug\net8.0\ExercicioJaggedArrays.csproj.CoreCompileInputs.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\obj\Debug\net8.0\ExercicioJaggedArrays.sourcelink.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\bin\Debug\net8.0\ExercicioJaggedArrays.exe
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\bin\Debug\net8.0\ExercicioJaggedArrays.deps.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\bin\Debug\net8.0\ExercicioJaggedArrays.runtimeconfig.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\bin\Debug\net8.0\ExercicioJaggedArrays.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\bin\Debug\net8.0\ExercicioJaggedArrays.pdb
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\obj\Debug\net8.0\ExercicioJaggedArrays.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\obj\Debug\net8.0\refint\ExercicioJaggedArrays.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\obj\Debug\net8.0\ExercicioJaggedArrays.pdb
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\obj\Debug\net8.0\ExercicioJaggedArrays.genruntimeconfig.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\ExercicioJaggedArrays\obj\Debug\net8.0\ref\ExercicioJaggedArrays.dll
