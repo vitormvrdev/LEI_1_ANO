@@ -1,3 +1,5 @@
+using System.Reflection;
+
 namespace Calculadora
 {
     public partial class Form1 : Form
@@ -67,7 +69,7 @@ namespace Calculadora
 
             bool canParseFirstNumber = int.TryParse(unparsedValueFirstNumber, out int parsedValueFirstValue);
             bool canParseSecondNumber = int.TryParse(unparsedValueSecondNumber, out int parsedValueSecondValue);
-
+            
             if (canParseFirstNumber && canParseSecondNumber)
             {
                     
@@ -82,9 +84,16 @@ namespace Calculadora
 
         private void btnSubtract_Click(object sender, EventArgs e)
         {
-            resultTextBox.Text = Convert.ToString(Convert.ToInt32(firstNumbertxtBox.Text) - Convert.ToInt32(secondNumbertxtBox.Text));
-        }
+            try
+            {
+                resultTextBox.Text = Convert.ToString(Convert.ToInt32(firstNumbertxtBox.Text) - Convert.ToInt32(secondNumbertxtBox.Text));
 
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Error {ex}");
+            }
+        }
         private void btnMultiply_Click(object sender, EventArgs e)
         {
             resultTextBox.Text = Convert.ToString(Convert.ToInt32(firstNumbertxtBox.Text) * Convert.ToInt32(secondNumbertxtBox.Text));
