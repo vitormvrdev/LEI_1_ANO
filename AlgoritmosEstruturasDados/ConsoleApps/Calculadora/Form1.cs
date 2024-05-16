@@ -96,12 +96,26 @@ namespace Calculadora
         }
         private void btnMultiply_Click(object sender, EventArgs e)
         {
-            resultTextBox.Text = Convert.ToString(Convert.ToInt32(firstNumbertxtBox.Text) * Convert.ToInt32(secondNumbertxtBox.Text));
+            try
+            {
+                resultTextBox.Text = Convert.ToString(Convert.ToInt32(firstNumbertxtBox.Text) * Convert.ToInt32(secondNumbertxtBox.Text));
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Error{ex}");
+            }
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
-            resultTextBox.Text = Convert.ToString(Convert.ToInt32(firstNumbertxtBox.Text) / Convert.ToInt32(secondNumbertxtBox.Text));
+            try 
+            { 
+                resultTextBox.Text = Convert.ToString(Convert.ToInt32(firstNumbertxtBox.Text) / Convert.ToInt32(secondNumbertxtBox.Text));
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Error{ex}");
+            }
         }
     }
 }
