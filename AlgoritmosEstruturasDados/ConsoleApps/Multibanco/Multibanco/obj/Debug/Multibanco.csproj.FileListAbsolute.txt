@@ -1,0 +1,10 @@
+C:\Users\a22302080\source\repos\Multibanco\Multibanco\bin\Debug\Multibanco.exe.config
+C:\Users\a22302080\source\repos\Multibanco\Multibanco\bin\Debug\Multibanco.exe
+C:\Users\a22302080\source\repos\Multibanco\Multibanco\bin\Debug\Multibanco.pdb
+C:\Users\a22302080\source\repos\Multibanco\Multibanco\obj\Debug\Multibanco.csprojAssemblyReference.cache
+C:\Users\a22302080\source\repos\Multibanco\Multibanco\obj\Debug\Multibanco.Form1.resources
+C:\Users\a22302080\source\repos\Multibanco\Multibanco\obj\Debug\Multibanco.Properties.Resources.resources
+C:\Users\a22302080\source\repos\Multibanco\Multibanco\obj\Debug\Multibanco.csproj.GenerateResource.cache
+C:\Users\a22302080\source\repos\Multibanco\Multibanco\obj\Debug\Multibanco.csproj.CoreCompileInputs.cache
+C:\Users\a22302080\source\repos\Multibanco\Multibanco\obj\Debug\Multibanco.exe
+C:\Users\a22302080\source\repos\Multibanco\Multibanco\obj\Debug\Multibanco.pdb
