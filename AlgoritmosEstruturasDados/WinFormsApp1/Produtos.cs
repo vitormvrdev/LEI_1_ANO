@@ -21,5 +21,10 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void Produtos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
