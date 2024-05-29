@@ -17,12 +17,21 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Produtos_Load(object sender, EventArgs e)
         {
+            lstProdutos.View = View.Details;
 
+            lstProdutos.Columns.Add("#", 50);
+            lstProdutos.Columns.Add("Categoria", 200);
+            lstProdutos.Columns.Add("Marca", 200);
+            lstProdutos.Columns.Add("Modelo", 200);
+            lstProdutos.Columns.Add("Preço", 85);
+            lstProdutos.Columns.Add("Iva", 80);
+
+            lstProdutos.Refresh();
         }
 
-        private void Produtos_Load(object sender, EventArgs e)
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
