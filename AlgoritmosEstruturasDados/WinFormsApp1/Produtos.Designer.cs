@@ -56,7 +56,7 @@
             btnExit.FlatAppearance.BorderSize = 0;
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnExit.ForeColor = Color.FromArgb(48, 70, 116);
+            btnExit.ForeColor = Color.White;
             btnExit.Location = new Point(916, 1);
             btnExit.Margin = new Padding(4, 5, 4, 5);
             btnExit.Name = "btnExit";
@@ -67,7 +67,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(152, 186, 213);
+            panel1.BackColor = Color.FromArgb(48, 70, 116);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(btnExit);
@@ -82,7 +82,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(48, 70, 116);
+            label1.ForeColor = Color.White;
             label1.Location = new Point(70, 25);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
@@ -120,7 +120,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(216, 225, 232);
+            label2.BackColor = Color.FromArgb(198, 211, 227);
             label2.Font = new Font("Tahoma", 28F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(48, 70, 116);
             label2.Location = new Point(216, 88);
@@ -258,7 +258,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(216, 225, 232);
+            BackColor = Color.FromArgb(198, 211, 227);
             ClientSize = new Size(1000, 650);
             Controls.Add(lstProdutos);
             Controls.Add(label6);
