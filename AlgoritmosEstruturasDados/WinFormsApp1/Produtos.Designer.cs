@@ -38,15 +38,11 @@
             btnInserir = new Button();
             btnEliminar = new Button();
             btnAlterar = new Button();
-            txtNomeProduto = new TextBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            label4 = new Label();
-            label3 = new Label();
-            label5 = new Label();
-            label6 = new Label();
             lstProdutos = new ListView();
+            cboxCategoria = new ComboBox();
+            label3 = new Label();
+            btnPesquisa = new Button();
+            button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -133,9 +129,11 @@
             // btnInserir
             // 
             btnInserir.BackColor = Color.FromArgb(48, 70, 116);
+            btnInserir.FlatAppearance.BorderSize = 0;
+            btnInserir.FlatStyle = FlatStyle.Flat;
             btnInserir.Font = new Font("Tahoma", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnInserir.ForeColor = Color.White;
-            btnInserir.Location = new Point(17, 218);
+            btnInserir.Location = new Point(17, 176);
             btnInserir.Name = "btnInserir";
             btnInserir.Size = new Size(150, 80);
             btnInserir.TabIndex = 4;
@@ -145,9 +143,10 @@
             // btnEliminar
             // 
             btnEliminar.BackColor = Color.FromArgb(48, 70, 116);
+            btnEliminar.FlatStyle = FlatStyle.Flat;
             btnEliminar.Font = new Font("Tahoma", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnEliminar.ForeColor = Color.White;
-            btnEliminar.Location = new Point(17, 390);
+            btnEliminar.Location = new Point(17, 348);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(150, 80);
             btnEliminar.TabIndex = 5;
@@ -157,102 +156,71 @@
             // btnAlterar
             // 
             btnAlterar.BackColor = Color.FromArgb(48, 70, 116);
+            btnAlterar.FlatStyle = FlatStyle.Flat;
             btnAlterar.Font = new Font("Tahoma", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAlterar.ForeColor = Color.White;
-            btnAlterar.Location = new Point(17, 304);
+            btnAlterar.Location = new Point(17, 262);
             btnAlterar.Name = "btnAlterar";
             btnAlterar.Size = new Size(150, 80);
             btnAlterar.TabIndex = 6;
             btnAlterar.Text = "Alterar";
             btnAlterar.UseVisualStyleBackColor = false;
             // 
-            // txtNomeProduto
+            // lstProdutos
             // 
-            txtNomeProduto.Enabled = false;
-            txtNomeProduto.Font = new Font("Tahoma", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtNomeProduto.Location = new Point(219, 553);
-            txtNomeProduto.Name = "txtNomeProduto";
-            txtNomeProduto.Size = new Size(150, 46);
-            txtNomeProduto.TabIndex = 8;
+            lstProdutos.Location = new Point(219, 176);
+            lstProdutos.Name = "lstProdutos";
+            lstProdutos.Size = new Size(768, 252);
+            lstProdutos.TabIndex = 17;
+            lstProdutos.UseCompatibleStateImageBehavior = false;
             // 
-            // textBox1
+            // cboxCategoria
             // 
-            textBox1.Enabled = false;
-            textBox1.Font = new Font("Tahoma", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(375, 553);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 46);
-            textBox1.TabIndex = 9;
-            // 
-            // textBox2
-            // 
-            textBox2.Enabled = false;
-            textBox2.Font = new Font("Tahoma", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(531, 553);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 46);
-            textBox2.TabIndex = 10;
-            // 
-            // textBox3
-            // 
-            textBox3.Enabled = false;
-            textBox3.Font = new Font("Tahoma", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(687, 553);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(150, 46);
-            textBox3.TabIndex = 11;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.FromArgb(48, 70, 116);
-            label4.Location = new Point(257, 503);
-            label4.Name = "label4";
-            label4.Size = new Size(85, 29);
-            label4.TabIndex = 13;
-            label4.Text = "Marca";
+            cboxCategoria.FormattingEnabled = true;
+            cboxCategoria.Location = new Point(219, 512);
+            cboxCategoria.Name = "cboxCategoria";
+            cboxCategoria.Size = new Size(182, 33);
+            cboxCategoria.TabIndex = 18;
+            cboxCategoria.Text = "Categoria";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(48, 70, 116);
-            label3.Location = new Point(714, 503);
+            label3.Location = new Point(216, 457);
             label3.Name = "label3";
-            label3.Size = new Size(57, 29);
-            label3.TabIndex = 14;
-            label3.Text = "IVA";
+            label3.Size = new Size(338, 43);
+            label3.TabIndex = 19;
+            label3.Text = "Filtrar por Categoria";
             // 
-            // label5
+            // btnPesquisa
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.FromArgb(48, 70, 116);
-            label5.Location = new Point(560, 503);
-            label5.Name = "label5";
-            label5.Size = new Size(81, 29);
-            label5.TabIndex = 15;
-            label5.Text = "Preço";
+            btnPesquisa.BackColor = Color.FromArgb(48, 70, 116);
+            btnPesquisa.FlatAppearance.BorderSize = 0;
+            btnPesquisa.FlatStyle = FlatStyle.Flat;
+            btnPesquisa.Font = new Font("Tahoma", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnPesquisa.ForeColor = Color.White;
+            btnPesquisa.Location = new Point(407, 512);
+            btnPesquisa.Name = "btnPesquisa";
+            btnPesquisa.Size = new Size(182, 33);
+            btnPesquisa.TabIndex = 20;
+            btnPesquisa.Text = "Pesquisar";
+            btnPesquisa.UseVisualStyleBackColor = false;
             // 
-            // label6
+            // button1
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.FromArgb(48, 70, 116);
-            label6.Location = new Point(414, 503);
-            label6.Name = "label6";
-            label6.Size = new Size(100, 29);
-            label6.TabIndex = 16;
-            label6.Text = "Modelo";
-            // 
-            // lstProdutos
-            // 
-            lstProdutos.Location = new Point(219, 218);
-            lstProdutos.Name = "lstProdutos";
-            lstProdutos.Size = new Size(618, 252);
-            lstProdutos.TabIndex = 17;
-            lstProdutos.UseCompatibleStateImageBehavior = false;
+            button1.BackColor = Color.FromArgb(48, 70, 116);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Tahoma", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(805, 137);
+            button1.Name = "button1";
+            button1.Size = new Size(182, 33);
+            button1.TabIndex = 21;
+            button1.Text = "Atualizar Lista";
+            button1.UseVisualStyleBackColor = false;
             // 
             // Produtos
             // 
@@ -260,15 +228,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(198, 211, 227);
             ClientSize = new Size(1000, 650);
-            Controls.Add(lstProdutos);
-            Controls.Add(label6);
-            Controls.Add(label5);
+            Controls.Add(button1);
+            Controls.Add(btnPesquisa);
             Controls.Add(label3);
-            Controls.Add(label4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(txtNomeProduto);
+            Controls.Add(cboxCategoria);
+            Controls.Add(lstProdutos);
             Controls.Add(btnAlterar);
             Controls.Add(btnEliminar);
             Controls.Add(btnInserir);
@@ -299,14 +263,10 @@
         private Button btnInserir;
         private Button btnEliminar;
         private Button btnAlterar;
-        private TextBox txtNomeProduto;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private Label label4;
-        private Label label3;
-        private Label label5;
-        private Label label6;
         private ListView lstProdutos;
+        private ComboBox cboxCategoria;
+        private Label label3;
+        private Button btnPesquisa;
+        private Button button1;
     }
 }
