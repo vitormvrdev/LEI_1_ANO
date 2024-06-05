@@ -34,3 +34,5 @@ C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\ob
 C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
 C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AddProduct.resources
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Menu.resources

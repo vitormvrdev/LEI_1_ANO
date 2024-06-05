@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             panel2 = new Panel();
+            btnLogout = new Button();
             label2 = new Label();
             pictureBox2 = new PictureBox();
             button1 = new Button();
             panel1 = new Panel();
-            label1 = new Label();
             label3 = new Label();
-            btnLogout = new Button();
+            label1 = new Label();
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
@@ -59,6 +59,20 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(1000, 83);
             panel2.TabIndex = 4;
+            // 
+            // btnLogout
+            // 
+            btnLogout.FlatAppearance.BorderSize = 0;
+            btnLogout.FlatStyle = FlatStyle.Flat;
+            btnLogout.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLogout.ForeColor = Color.White;
+            btnLogout.Location = new Point(803, 10);
+            btnLogout.Margin = new Padding(0);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(109, 61);
+            btnLogout.TabIndex = 2;
+            btnLogout.Text = "Logout";
+            btnLogout.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -97,6 +111,7 @@
             button1.TabIndex = 0;
             button1.Text = "X";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // panel1
             // 
@@ -109,17 +124,6 @@
             panel1.Size = new Size(300, 567);
             panel1.TabIndex = 5;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Tahoma", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(70, 28);
-            label1.Name = "label1";
-            label1.Size = new Size(159, 58);
-            label1.TabIndex = 0;
-            label1.Text = "Menu";
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -131,19 +135,16 @@
             label3.TabIndex = 1;
             label3.Text = "Bem-Vindo";
             // 
-            // btnLogout
+            // label1
             // 
-            btnLogout.FlatAppearance.BorderSize = 0;
-            btnLogout.FlatStyle = FlatStyle.Flat;
-            btnLogout.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLogout.ForeColor = Color.White;
-            btnLogout.Location = new Point(803, 10);
-            btnLogout.Margin = new Padding(0);
-            btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(109, 61);
-            btnLogout.TabIndex = 2;
-            btnLogout.Text = "Logout";
-            btnLogout.UseVisualStyleBackColor = true;
+            label1.AutoSize = true;
+            label1.Font = new Font("Tahoma", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(70, 28);
+            label1.Name = "label1";
+            label1.Size = new Size(159, 58);
+            label1.TabIndex = 0;
+            label1.Text = "Menu";
             // 
             // button3
             // 

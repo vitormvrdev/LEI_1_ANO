@@ -87,6 +87,7 @@
             btnExit.TabIndex = 0;
             btnExit.Text = "X";
             btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // Vendas
             // 

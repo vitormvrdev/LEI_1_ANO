@@ -16,5 +16,14 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult respostaForm;
+            respostaForm = MessageBox.Show("Queres mesmo sair?", "!!ATENÇÃO!!", MessageBoxButtons.YesNo, MessageBoxIcon.Stop);
+
+            if (respostaForm == DialogResult.Yes)
+                Application.Exit();
+        }
     }
 }
