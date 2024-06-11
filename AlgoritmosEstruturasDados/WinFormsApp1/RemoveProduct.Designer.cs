@@ -45,9 +45,8 @@
             panel1.Controls.Add(btnExit);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4, 5, 4, 5);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1000, 83);
+            panel1.Size = new Size(700, 50);
             panel1.TabIndex = 3;
             // 
             // label1
@@ -55,10 +54,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(70, 25);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(49, 15);
             label1.Name = "label1";
-            label1.Size = new Size(272, 39);
+            label1.Size = new Size(180, 25);
             label1.TabIndex = 3;
             label1.Text = "Gestão de Vendas";
             // 
@@ -66,10 +64,9 @@
             // 
             pictureBox1.Image = Properties.Resources.open_box;
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(4, 10);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Location = new Point(3, 6);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(57, 67);
+            pictureBox1.Size = new Size(40, 40);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -80,22 +77,22 @@
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnExit.ForeColor = Color.White;
-            btnExit.Location = new Point(916, 1);
-            btnExit.Margin = new Padding(4, 5, 4, 5);
+            btnExit.Location = new Point(641, 1);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(71, 83);
+            btnExit.Size = new Size(50, 50);
             btnExit.TabIndex = 0;
             btnExit.Text = "X";
             btnExit.UseVisualStyleBackColor = true;
             // 
             // RemoveProduct
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 650);
+            ClientSize = new Size(700, 390);
             ControlBox = false;
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2, 2, 2, 2);
             Name = "RemoveProduct";
             Text = "RemoveProduct";
             panel1.ResumeLayout(false);

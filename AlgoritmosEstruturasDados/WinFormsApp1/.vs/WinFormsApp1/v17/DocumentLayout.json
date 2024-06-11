@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\removeproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:removeproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\menu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:menu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Menu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Menu.cs",
+              "RelativeDocumentMoniker": "Menu.cs",
+              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Menu.cs [Design]*",
+              "RelativeToolTip": "Menu.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T16:03:19.598Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Menu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Menu.Designer.cs",
+              "RelativeDocumentMoniker": "Menu.Designer.cs",
+              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Menu.Designer.cs*",
+              "RelativeToolTip": "Menu.Designer.cs*",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAMwDkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T16:01:55.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Menu.cs",
+              "RelativeDocumentMoniker": "Menu.cs",
+              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Menu.cs*",
+              "RelativeToolTip": "Menu.cs*",
+              "ViewState": "AQIAABcAAAAAAAAAAAArwCEAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T16:01:13.239Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -39,66 +69,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RemoveProduct.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\RemoveProduct.cs",
-              "RelativeDocumentMoniker": "RemoveProduct.cs",
-              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\RemoveProduct.cs [Design]",
-              "RelativeToolTip": "RemoveProduct.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T11:00:38.475Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Produtos.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Produtos.cs",
-              "RelativeDocumentMoniker": "Produtos.cs",
-              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Produtos.cs [Design]",
-              "RelativeToolTip": "Produtos.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T10:59:34.619Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Menu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Menu.cs",
-              "RelativeDocumentMoniker": "Menu.cs",
-              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Menu.cs [Design]",
-              "RelativeToolTip": "Menu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T14:47:40.342Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddProduct.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\AddProduct.cs",
-              "RelativeDocumentMoniker": "AddProduct.cs",
-              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\AddProduct.cs [Design]",
-              "RelativeToolTip": "AddProduct.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T14:04:48.139Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Vendas.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Vendas.cs",
-              "RelativeDocumentMoniker": "Vendas.cs",
-              "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Vendas.cs [Design]",
-              "RelativeToolTip": "Vendas.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T14:04:58.098Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

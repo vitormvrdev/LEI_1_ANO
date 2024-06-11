@@ -25,5 +25,15 @@ namespace WinFormsApp1
             if (respostaForm == DialogResult.Yes)
                 Application.Exit();
         }
+
+        private void goToVendedores_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -53,10 +53,9 @@
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnExit.ForeColor = Color.White;
-            btnExit.Location = new Point(916, 1);
-            btnExit.Margin = new Padding(4, 5, 4, 5);
+            btnExit.Location = new Point(641, 1);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(71, 83);
+            btnExit.Size = new Size(50, 50);
             btnExit.TabIndex = 0;
             btnExit.Text = "X";
             btnExit.UseVisualStyleBackColor = true;
@@ -70,9 +69,8 @@
             panel1.Controls.Add(btnExit);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4, 5, 4, 5);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1000, 83);
+            panel1.Size = new Size(700, 50);
             panel1.TabIndex = 1;
             // 
             // label1
@@ -80,10 +78,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(70, 25);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(49, 15);
             label1.Name = "label1";
-            label1.Size = new Size(272, 39);
+            label1.Size = new Size(180, 25);
             label1.TabIndex = 3;
             label1.Text = "Gestão de Vendas";
             // 
@@ -91,10 +88,9 @@
             // 
             pictureBox1.Image = Properties.Resources.open_box;
             pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(4, 10);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Location = new Point(3, 6);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(57, 67);
+            pictureBox1.Size = new Size(40, 40);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -106,10 +102,9 @@
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(17, 586);
-            btnBack.Margin = new Padding(4, 5, 4, 5);
+            btnBack.Location = new Point(12, 328);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(150, 50);
+            btnBack.Size = new Size(105, 50);
             btnBack.TabIndex = 2;
             btnBack.Text = "Voltar";
             btnBack.UseVisualStyleBackColor = false;
@@ -120,10 +115,9 @@
             label2.BackColor = Color.FromArgb(198, 211, 227);
             label2.Font = new Font("Tahoma", 28F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(48, 70, 116);
-            label2.Location = new Point(216, 88);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(151, 53);
             label2.Name = "label2";
-            label2.Size = new Size(283, 68);
+            label2.Size = new Size(191, 46);
             label2.TabIndex = 3;
             label2.Text = "Produtos";
             // 
@@ -134,9 +128,10 @@
             btnInserir.FlatStyle = FlatStyle.Flat;
             btnInserir.Font = new Font("Tahoma", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnInserir.ForeColor = Color.White;
-            btnInserir.Location = new Point(17, 176);
+            btnInserir.Location = new Point(12, 106);
+            btnInserir.Margin = new Padding(2, 2, 2, 2);
             btnInserir.Name = "btnInserir";
-            btnInserir.Size = new Size(150, 80);
+            btnInserir.Size = new Size(105, 48);
             btnInserir.TabIndex = 4;
             btnInserir.Text = "Inserir";
             btnInserir.UseVisualStyleBackColor = false;
@@ -147,9 +142,10 @@
             btnEliminar.FlatStyle = FlatStyle.Flat;
             btnEliminar.Font = new Font("Tahoma", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnEliminar.ForeColor = Color.White;
-            btnEliminar.Location = new Point(17, 348);
+            btnEliminar.Location = new Point(12, 209);
+            btnEliminar.Margin = new Padding(2, 2, 2, 2);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(150, 80);
+            btnEliminar.Size = new Size(105, 48);
             btnEliminar.TabIndex = 5;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = false;
@@ -160,27 +156,30 @@
             btnAlterar.FlatStyle = FlatStyle.Flat;
             btnAlterar.Font = new Font("Tahoma", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAlterar.ForeColor = Color.White;
-            btnAlterar.Location = new Point(17, 262);
+            btnAlterar.Location = new Point(12, 157);
+            btnAlterar.Margin = new Padding(2, 2, 2, 2);
             btnAlterar.Name = "btnAlterar";
-            btnAlterar.Size = new Size(150, 80);
+            btnAlterar.Size = new Size(105, 48);
             btnAlterar.TabIndex = 6;
             btnAlterar.Text = "Alterar";
             btnAlterar.UseVisualStyleBackColor = false;
             // 
             // lstProdutos
             // 
-            lstProdutos.Location = new Point(219, 176);
+            lstProdutos.Location = new Point(153, 106);
+            lstProdutos.Margin = new Padding(2, 2, 2, 2);
             lstProdutos.Name = "lstProdutos";
-            lstProdutos.Size = new Size(768, 252);
+            lstProdutos.Size = new Size(539, 153);
             lstProdutos.TabIndex = 17;
             lstProdutos.UseCompatibleStateImageBehavior = false;
             // 
             // cboxCategoria
             // 
             cboxCategoria.FormattingEnabled = true;
-            cboxCategoria.Location = new Point(219, 512);
+            cboxCategoria.Location = new Point(153, 307);
+            cboxCategoria.Margin = new Padding(2, 2, 2, 2);
             cboxCategoria.Name = "cboxCategoria";
-            cboxCategoria.Size = new Size(182, 33);
+            cboxCategoria.Size = new Size(129, 23);
             cboxCategoria.TabIndex = 18;
             cboxCategoria.Text = "Categoria";
             // 
@@ -189,9 +188,10 @@
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(48, 70, 116);
-            label3.Location = new Point(216, 457);
+            label3.Location = new Point(151, 274);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(338, 43);
+            label3.Size = new Size(227, 29);
             label3.TabIndex = 19;
             label3.Text = "Filtrar por Categoria";
             // 
@@ -202,9 +202,10 @@
             btnPesquisa.FlatStyle = FlatStyle.Flat;
             btnPesquisa.Font = new Font("Tahoma", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnPesquisa.ForeColor = Color.White;
-            btnPesquisa.Location = new Point(407, 512);
+            btnPesquisa.Location = new Point(285, 307);
+            btnPesquisa.Margin = new Padding(2, 2, 2, 2);
             btnPesquisa.Name = "btnPesquisa";
-            btnPesquisa.Size = new Size(182, 33);
+            btnPesquisa.Size = new Size(127, 20);
             btnPesquisa.TabIndex = 20;
             btnPesquisa.Text = "Pesquisar";
             btnPesquisa.UseVisualStyleBackColor = false;
@@ -216,19 +217,20 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Tahoma", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(805, 137);
+            button1.Location = new Point(564, 82);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(182, 33);
+            button1.Size = new Size(127, 20);
             button1.TabIndex = 21;
             button1.Text = "Atualizar Lista";
             button1.UseVisualStyleBackColor = false;
             // 
             // Produtos
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(198, 211, 227);
-            ClientSize = new Size(1000, 650);
+            ClientSize = new Size(700, 390);
             Controls.Add(button1);
             Controls.Add(btnPesquisa);
             Controls.Add(label3);
@@ -241,7 +243,6 @@
             Controls.Add(btnBack);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4, 5, 4, 5);
             Name = "Produtos";
             ShowInTaskbar = false;
             Text = "Produtos";

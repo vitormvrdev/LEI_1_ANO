@@ -37,10 +37,10 @@
             panel1 = new Panel();
             label3 = new Label();
             label1 = new Label();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
+            goToVendedores = new Button();
+            goToVendas = new Button();
+            goToAnalises = new Button();
+            goToProdutos = new Button();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
@@ -55,9 +55,8 @@
             panel2.Controls.Add(button1);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 0);
-            panel2.Margin = new Padding(4, 5, 4, 5);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1000, 83);
+            panel2.Size = new Size(700, 50);
             panel2.TabIndex = 4;
             // 
             // btnLogout
@@ -66,10 +65,10 @@
             btnLogout.FlatStyle = FlatStyle.Flat;
             btnLogout.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLogout.ForeColor = Color.White;
-            btnLogout.Location = new Point(803, 10);
+            btnLogout.Location = new Point(562, 6);
             btnLogout.Margin = new Padding(0);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(109, 61);
+            btnLogout.Size = new Size(76, 37);
             btnLogout.TabIndex = 2;
             btnLogout.Text = "Logout";
             btnLogout.UseVisualStyleBackColor = true;
@@ -79,10 +78,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(70, 25);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(49, 15);
             label2.Name = "label2";
-            label2.Size = new Size(272, 39);
+            label2.Size = new Size(180, 25);
             label2.TabIndex = 3;
             label2.Text = "Gestão de Vendas";
             // 
@@ -90,10 +88,9 @@
             // 
             pictureBox2.Image = Properties.Resources.open_box;
             pictureBox2.InitialImage = (Image)resources.GetObject("pictureBox2.InitialImage");
-            pictureBox2.Location = new Point(4, 10);
-            pictureBox2.Margin = new Padding(4, 5, 4, 5);
+            pictureBox2.Location = new Point(3, 6);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(57, 67);
+            pictureBox2.Size = new Size(40, 40);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
@@ -104,10 +101,9 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(916, 1);
-            button1.Margin = new Padding(4, 5, 4, 5);
+            button1.Location = new Point(641, 1);
             button1.Name = "button1";
-            button1.Size = new Size(71, 83);
+            button1.Size = new Size(50, 50);
             button1.TabIndex = 0;
             button1.Text = "X";
             button1.UseVisualStyleBackColor = true;
@@ -119,9 +115,10 @@
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 83);
+            panel1.Location = new Point(0, 50);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(300, 567);
+            panel1.Size = new Size(210, 340);
             panel1.TabIndex = 5;
             // 
             // label3
@@ -129,9 +126,10 @@
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(28, 217);
+            label3.Location = new Point(20, 130);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(241, 48);
+            label3.Size = new Size(165, 33);
             label3.TabIndex = 1;
             label3.Text = "Bem-Vindo";
             // 
@@ -140,86 +138,90 @@
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(70, 28);
+            label1.Location = new Point(49, 17);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(159, 58);
+            label1.Size = new Size(105, 39);
             label1.TabIndex = 0;
             label1.Text = "Menu";
             // 
-            // button3
+            // goToVendedores
             // 
-            button3.BackColor = Color.FromArgb(48, 70, 116);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(421, 159);
-            button3.Margin = new Padding(0);
-            button3.Name = "button3";
-            button3.Size = new Size(175, 100);
-            button3.TabIndex = 4;
-            button3.Text = "Vendedores";
-            button3.UseVisualStyleBackColor = false;
+            goToVendedores.BackColor = Color.FromArgb(48, 70, 116);
+            goToVendedores.FlatAppearance.BorderSize = 0;
+            goToVendedores.FlatStyle = FlatStyle.Flat;
+            goToVendedores.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            goToVendedores.ForeColor = Color.White;
+            goToVendedores.Location = new Point(295, 95);
+            goToVendedores.Margin = new Padding(0);
+            goToVendedores.Name = "goToVendedores";
+            goToVendedores.Size = new Size(122, 60);
+            goToVendedores.TabIndex = 4;
+            goToVendedores.Text = "Vendedores";
+            goToVendedores.UseVisualStyleBackColor = false;
+            goToVendedores.Click += goToVendedores_Click;
             // 
-            // button4
+            // goToVendas
             // 
-            button4.BackColor = Color.FromArgb(48, 70, 116);
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(421, 472);
-            button4.Margin = new Padding(0);
-            button4.Name = "button4";
-            button4.Size = new Size(175, 100);
-            button4.TabIndex = 5;
-            button4.Text = "Vendas";
-            button4.UseVisualStyleBackColor = false;
+            goToVendas.BackColor = Color.FromArgb(48, 70, 116);
+            goToVendas.FlatAppearance.BorderSize = 0;
+            goToVendas.FlatStyle = FlatStyle.Flat;
+            goToVendas.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            goToVendas.ForeColor = Color.White;
+            goToVendas.Location = new Point(295, 283);
+            goToVendas.Margin = new Padding(0);
+            goToVendas.Name = "goToVendas";
+            goToVendas.Size = new Size(122, 60);
+            goToVendas.TabIndex = 5;
+            goToVendas.Text = "Vendas";
+            goToVendas.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // goToAnalises
             // 
-            button5.BackColor = Color.FromArgb(48, 70, 116);
-            button5.FlatAppearance.BorderSize = 0;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(737, 472);
-            button5.Margin = new Padding(0);
-            button5.Name = "button5";
-            button5.Size = new Size(175, 100);
-            button5.TabIndex = 6;
-            button5.Text = "Analises";
-            button5.UseVisualStyleBackColor = false;
+            goToAnalises.BackColor = Color.FromArgb(48, 70, 116);
+            goToAnalises.FlatAppearance.BorderSize = 0;
+            goToAnalises.FlatStyle = FlatStyle.Flat;
+            goToAnalises.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            goToAnalises.ForeColor = Color.White;
+            goToAnalises.Location = new Point(516, 283);
+            goToAnalises.Margin = new Padding(0);
+            goToAnalises.Name = "goToAnalises";
+            goToAnalises.Size = new Size(122, 60);
+            goToAnalises.TabIndex = 6;
+            goToAnalises.Text = "Analises";
+            goToAnalises.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // goToProdutos
             // 
-            button6.BackColor = Color.FromArgb(48, 70, 116);
-            button6.FlatAppearance.BorderSize = 0;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(737, 159);
-            button6.Margin = new Padding(0);
-            button6.Name = "button6";
-            button6.Size = new Size(175, 100);
-            button6.TabIndex = 7;
-            button6.Text = "Produtos";
-            button6.UseVisualStyleBackColor = false;
+            goToProdutos.BackColor = Color.FromArgb(48, 70, 116);
+            goToProdutos.FlatAppearance.BorderSize = 0;
+            goToProdutos.FlatStyle = FlatStyle.Flat;
+            goToProdutos.Font = new Font("Tahoma", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            goToProdutos.ForeColor = Color.White;
+            goToProdutos.Location = new Point(516, 95);
+            goToProdutos.Margin = new Padding(0);
+            goToProdutos.Name = "goToProdutos";
+            goToProdutos.Size = new Size(122, 60);
+            goToProdutos.TabIndex = 7;
+            goToProdutos.Text = "Produtos";
+            goToProdutos.UseVisualStyleBackColor = false;
+            goToProdutos.Click += button6_Click;
             // 
             // Menu
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(198, 211, 227);
-            ClientSize = new Size(1000, 650);
+            ClientSize = new Size(700, 390);
             ControlBox = false;
-            Controls.Add(button6);
-            Controls.Add(button3);
-            Controls.Add(button4);
-            Controls.Add(button5);
+            Controls.Add(goToProdutos);
+            Controls.Add(goToVendedores);
+            Controls.Add(goToVendas);
+            Controls.Add(goToAnalises);
             Controls.Add(panel1);
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(2);
             Name = "Menu";
             Text = "Menu";
             panel2.ResumeLayout(false);
@@ -240,9 +242,9 @@
         private Button btnLogout;
         private Label label3;
         private Label label1;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
+        private Button goToVendedores;
+        private Button goToVendas;
+        private Button goToAnalises;
+        private Button goToProdutos;
     }
 }
