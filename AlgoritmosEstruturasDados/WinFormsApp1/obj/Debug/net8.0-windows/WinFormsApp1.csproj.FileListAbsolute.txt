@@ -50,3 +50,9 @@ C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\ob
 C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinForms.E4050A35.Up2Date
 C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.formAnalises.resources
 C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.formVendedores.resources
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

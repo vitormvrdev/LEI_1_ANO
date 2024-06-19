@@ -80,7 +80,7 @@
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnExit.ForeColor = Color.White;
-            btnExit.Location = new Point(938, 1);
+            btnExit.Location = new Point(638, 1);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(50, 50);
             btnExit.TabIndex = 0;

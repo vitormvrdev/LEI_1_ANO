@@ -13,7 +13,7 @@ namespace WinFormsApp1
         //string conString = "Data Source=localhost;Initial Catalog=GestaoVendas-ProjAED;Integrated Security=True";
 
         //String de conexão à base de dados
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-P1MTD1H\\SQLEXPRESS;Initial Catalog=ProjetoAED;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=LT-VROCHA\\SQLEXPRESS;Initial Catalog=master;Integrated Security=True");
 
         public void NonQuery(string query) //Função para inserir/atualizar/apagar dados na base de dados
         {
