@@ -80,7 +80,7 @@
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnExit.ForeColor = Color.White;
-            btnExit.Location = new Point(641, 1);
+            btnExit.Location = new Point(938, 1);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(50, 50);
             btnExit.TabIndex = 0;
@@ -92,9 +92,10 @@
             // 
             lstVendas.Location = new Point(11, 104);
             lstVendas.Name = "lstVendas";
-            lstVendas.Size = new Size(679, 214);
+            lstVendas.Size = new Size(677, 214);
             lstVendas.TabIndex = 7;
             lstVendas.UseCompatibleStateImageBehavior = false;
+            lstVendas.SelectedIndexChanged += lstVendas_SelectedIndexChanged;
             // 
             // label2
             // 
@@ -120,6 +121,7 @@
             btnBack.TabIndex = 8;
             btnBack.Text = "Voltar";
             btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // Vendas
             // 

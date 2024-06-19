@@ -22,14 +22,24 @@ namespace WinFormsApp1
             lstVendas.View = View.Details;
 
             lstVendas.Columns.Add("#", 50);
-            lstVendas.Columns.Add("Código", 200);
-            lstVendas.Columns.Add("Zona", 200);
-            lstVendas.Columns.Add("Código", 200);
-            lstVendas.Columns.Add("Quantidade", 200);
-            lstVendas.Columns.Add("Código do Produto", 85);
+            lstVendas.Columns.Add("Código", 150);
+            lstVendas.Columns.Add("Zona", 100);
+            lstVendas.Columns.Add("Código", 100);
+            lstVendas.Columns.Add("Quantidade", 50);
+            lstVendas.Columns.Add("Código do Produto", 100);
             lstVendas.Columns.Add("Valor da Venda", 80);
 
             lstVendas.Refresh();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void lstVendas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

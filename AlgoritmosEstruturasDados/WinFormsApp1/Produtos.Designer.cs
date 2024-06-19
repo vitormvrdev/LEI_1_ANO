@@ -108,6 +108,7 @@
             btnBack.TabIndex = 2;
             btnBack.Text = "Voltar";
             btnBack.UseVisualStyleBackColor = false;
+            btnBack.Click += btnBack_Click;
             // 
             // label2
             // 
@@ -129,7 +130,7 @@
             btnInserir.Font = new Font("Tahoma", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnInserir.ForeColor = Color.White;
             btnInserir.Location = new Point(12, 106);
-            btnInserir.Margin = new Padding(2, 2, 2, 2);
+            btnInserir.Margin = new Padding(2);
             btnInserir.Name = "btnInserir";
             btnInserir.Size = new Size(105, 48);
             btnInserir.TabIndex = 4;
@@ -143,7 +144,7 @@
             btnEliminar.Font = new Font("Tahoma", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnEliminar.ForeColor = Color.White;
             btnEliminar.Location = new Point(12, 209);
-            btnEliminar.Margin = new Padding(2, 2, 2, 2);
+            btnEliminar.Margin = new Padding(2);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(105, 48);
             btnEliminar.TabIndex = 5;
@@ -157,7 +158,7 @@
             btnAlterar.Font = new Font("Tahoma", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAlterar.ForeColor = Color.White;
             btnAlterar.Location = new Point(12, 157);
-            btnAlterar.Margin = new Padding(2, 2, 2, 2);
+            btnAlterar.Margin = new Padding(2);
             btnAlterar.Name = "btnAlterar";
             btnAlterar.Size = new Size(105, 48);
             btnAlterar.TabIndex = 6;
@@ -167,7 +168,7 @@
             // lstProdutos
             // 
             lstProdutos.Location = new Point(153, 106);
-            lstProdutos.Margin = new Padding(2, 2, 2, 2);
+            lstProdutos.Margin = new Padding(2);
             lstProdutos.Name = "lstProdutos";
             lstProdutos.Size = new Size(539, 153);
             lstProdutos.TabIndex = 17;
@@ -177,7 +178,7 @@
             // 
             cboxCategoria.FormattingEnabled = true;
             cboxCategoria.Location = new Point(153, 307);
-            cboxCategoria.Margin = new Padding(2, 2, 2, 2);
+            cboxCategoria.Margin = new Padding(2);
             cboxCategoria.Name = "cboxCategoria";
             cboxCategoria.Size = new Size(129, 23);
             cboxCategoria.TabIndex = 18;
@@ -203,7 +204,7 @@
             btnPesquisa.Font = new Font("Tahoma", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnPesquisa.ForeColor = Color.White;
             btnPesquisa.Location = new Point(285, 307);
-            btnPesquisa.Margin = new Padding(2, 2, 2, 2);
+            btnPesquisa.Margin = new Padding(2);
             btnPesquisa.Name = "btnPesquisa";
             btnPesquisa.Size = new Size(127, 20);
             btnPesquisa.TabIndex = 20;
@@ -217,10 +218,10 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Tahoma", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(564, 82);
-            button1.Margin = new Padding(2, 2, 2, 2);
+            button1.Location = new Point(565, 75);
+            button1.Margin = new Padding(2);
             button1.Name = "button1";
-            button1.Size = new Size(127, 20);
+            button1.Size = new Size(127, 24);
             button1.TabIndex = 21;
             button1.Text = "Atualizar Lista";
             button1.UseVisualStyleBackColor = false;

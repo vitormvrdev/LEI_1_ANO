@@ -44,5 +44,10 @@ namespace WinFormsApp1
             if (respostaForm == DialogResult.Yes)
                 Application.Exit();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();   
+        }
     }
 }

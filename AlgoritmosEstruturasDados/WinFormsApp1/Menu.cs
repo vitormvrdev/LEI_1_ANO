@@ -28,22 +28,30 @@ namespace WinFormsApp1
 
         private void goToVendedores_Click(object sender, EventArgs e)
         {
+            formVendedores formVendedores = new formVendedores();
 
+            formVendedores.Show();
         }
 
         private void goToProdutos_Click(object sender, EventArgs e)
         {
+            Produtos produtosForm = new Produtos();
 
+            produtosForm.Show();
         }
 
         private void goToVendas_Click(object sender, EventArgs e)
         {
+            Vendas vendasForm = new Vendas();
 
+            vendasForm.Show();
         }
 
         private void goToAnalises_Click(object sender, EventArgs e)
         {
+            formAnalises formAnalises = new formAnalises();
 
+            formAnalises.Show();
         }
     }
 }
