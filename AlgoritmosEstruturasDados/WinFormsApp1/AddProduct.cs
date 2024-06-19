@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WinFormsApp1
 {
@@ -24,6 +25,11 @@ namespace WinFormsApp1
 
             if (respostaForm == DialogResult.Yes)
                 Application.Exit();
+        }
+
+        private void AddProduct_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

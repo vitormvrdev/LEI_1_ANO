@@ -100,6 +100,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "AddProduct";
             Text = "AddProduct";
+            Load += AddProduct_Load;
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
