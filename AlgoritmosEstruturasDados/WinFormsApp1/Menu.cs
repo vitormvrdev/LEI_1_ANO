@@ -31,7 +31,17 @@ namespace WinFormsApp1
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void goToProdutos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void goToVendas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void goToAnalises_Click(object sender, EventArgs e)
         {
 
         }
