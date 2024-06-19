@@ -47,7 +47,22 @@ namespace WinFormsApp1
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Close();   
+            this.Close();
+        }
+
+        private void cboxCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboxCategoria.Items.Clear();
+
+            DatabaseManager dbFectchCategoria = new DatabaseManager();
+
+            DataTable dt = dbFectchCategoria.SelectDataTable("SELECT DISTINCT * FROM Produtos");
+
+
+            foreach (DataRow row in dt.Rows)
+            {
+                cboxCategoria.Items.Add(row[2]);
+            }
         }
     }
 }

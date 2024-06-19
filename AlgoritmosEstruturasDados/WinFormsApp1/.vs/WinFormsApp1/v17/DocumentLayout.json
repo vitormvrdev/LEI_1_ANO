@@ -7,23 +7,23 @@
       "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vrocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -71,8 +71,7 @@
               "RelativeToolTip": "Vendas.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T18:48:55.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T18:48:55.851Z"
             },
             {
               "$type": "Document",
@@ -83,8 +82,7 @@
               "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Vendas.cs [Design]",
               "RelativeToolTip": "Vendas.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T18:48:52.046Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-19T18:48:52.046Z"
             },
             {
               "$type": "Document",
@@ -96,8 +94,7 @@
               "RelativeToolTip": "Produtos.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAcwDEAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T18:38:40.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T18:38:40.204Z"
             },
             {
               "$type": "Document",
@@ -108,8 +105,7 @@
               "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Produtos.cs [Design]",
               "RelativeToolTip": "Produtos.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T18:38:36.77Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-19T18:38:36.77Z"
             },
             {
               "$type": "Document",
@@ -121,8 +117,7 @@
               "RelativeToolTip": "Menu.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAswCAAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T18:36:44.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T18:36:44.964Z"
             },
             {
               "$type": "Document",
@@ -133,8 +128,7 @@
               "ToolTip": "C:\\Users\\vrocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Menu.cs [Design]",
               "RelativeToolTip": "Menu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T18:27:46.327Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-19T18:27:46.327Z"
             }
           ]
         }

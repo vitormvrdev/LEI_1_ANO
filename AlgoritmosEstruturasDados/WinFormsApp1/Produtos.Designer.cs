@@ -183,6 +183,7 @@
             cboxCategoria.Size = new Size(129, 23);
             cboxCategoria.TabIndex = 18;
             cboxCategoria.Text = "Categoria";
+            cboxCategoria.SelectedIndexChanged += cboxCategoria_SelectedIndexChanged;
             // 
             // label3
             // 
