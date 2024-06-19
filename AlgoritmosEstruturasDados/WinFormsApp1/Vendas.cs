@@ -1,3 +1,6 @@
+using System.Data;
+using 
+
 namespace WinFormsApp1
 {
     public partial class Vendas : Form
@@ -30,6 +33,20 @@ namespace WinFormsApp1
             lstVendas.Columns.Add("Valor da Venda", 80);
 
             lstVendas.Refresh();
+
+            DatabaseManager db = new DatabaseManager();
+            DataTable dbVendas = db.SelectDataTable("SELECT * FROM Vendas");
+
+            foreach (DataRow dr in dbVendas.Rows)
+            {
+                ListViewItem item = new ListViewItem(dr[0].ToString());
+
+                for (int i = 0;  i < dbVendas.Rows.Count; i ++)
+                {
+
+
+                }
+            }
         }
 
         private void btnBack_Click(object sender, EventArgs e)
