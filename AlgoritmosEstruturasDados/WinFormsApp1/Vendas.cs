@@ -1,5 +1,4 @@
-using System.Data;
-using 
+using System.Data; 
 
 namespace WinFormsApp1
 {
@@ -43,8 +42,7 @@ namespace WinFormsApp1
 
                 for (int i = 0;  i < dbVendas.Rows.Count; i ++)
                 {
-
-
+                    item.SubItems.Add(dr[i].ToString());
                 }
             }
         }
