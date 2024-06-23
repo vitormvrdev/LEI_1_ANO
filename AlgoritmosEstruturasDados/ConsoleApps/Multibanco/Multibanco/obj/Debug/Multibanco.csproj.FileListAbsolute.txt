@@ -8,3 +8,13 @@ C:\Users\a22302080\source\repos\Multibanco\Multibanco\obj\Debug\Multibanco.cspro
 C:\Users\a22302080\source\repos\Multibanco\Multibanco\obj\Debug\Multibanco.csproj.CoreCompileInputs.cache
 C:\Users\a22302080\source\repos\Multibanco\Multibanco\obj\Debug\Multibanco.exe
 C:\Users\a22302080\source\repos\Multibanco\Multibanco\obj\Debug\Multibanco.pdb
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\Multibanco\Multibanco\bin\Debug\Multibanco.exe.config
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\Multibanco\Multibanco\bin\Debug\Multibanco.exe
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\Multibanco\Multibanco\bin\Debug\Multibanco.pdb
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\Multibanco\Multibanco\obj\Debug\Multibanco.csproj.AssemblyReference.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\Multibanco\Multibanco\obj\Debug\Multibanco.Form1.resources
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\Multibanco\Multibanco\obj\Debug\Multibanco.Properties.Resources.resources
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\Multibanco\Multibanco\obj\Debug\Multibanco.csproj.GenerateResource.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\Multibanco\Multibanco\obj\Debug\Multibanco.csproj.CoreCompileInputs.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\Multibanco\Multibanco\obj\Debug\Multibanco.exe
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\Multibanco\Multibanco\obj\Debug\Multibanco.pdb

@@ -28,6 +28,10 @@ namespace Multibanco
             lstMovimentos.Columns.Add("Movimento", 80);
             lstMovimentos.Columns.Add("Valor", 60);
             lstMovimentos.Columns.Add("Saldo", 60);
+
+
+            btnDepositar.Enabled = txtValor.Text.Length > 0;
+            btnLevantar.Enabled = txtValor.Text.Length > 0;
         }
 
         private void btnDepositar_Click(object sender, EventArgs e)
@@ -98,8 +102,6 @@ namespace Multibanco
                 btnLevantar.Enabled = true;
             }*/
 
-            btnDepositar.Enabled = txtValor.Text.Length > 0;
-            btnLevantar.Enabled = txtValor.Text.Length > 0;
 
         }
 

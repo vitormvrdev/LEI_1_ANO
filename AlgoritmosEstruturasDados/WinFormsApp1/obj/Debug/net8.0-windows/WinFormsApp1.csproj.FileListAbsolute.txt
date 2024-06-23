@@ -15,3 +15,44 @@ C:\Users\Vitor Rocha\Source\Repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsAp
 C:\Users\Vitor Rocha\Source\Repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
 C:\Users\Vitor Rocha\Source\Repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
 C:\Users\Vitor Rocha\Source\Repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.exe
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.deps.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Produtos.resources
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Vendas.resources
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.sourcelink.json
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\refint\WinFormsApp1.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.pdb
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\ref\WinFormsApp1.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AddProduct.resources
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Menu.resources
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.RemoveProduct.resources
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinForms.E4050A35.Up2Date
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.formAnalises.resources
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.formVendedores.resources
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\vrocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
