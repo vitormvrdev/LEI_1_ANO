@@ -191,5 +191,42 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            // Obter a categoria selecionada na ComboBox
+            string categoriaSelecionada = cboxCategoria.SelectedItem?.ToString();
+
+            // Validação básica
+            if (string.IsNullOrEmpty(categoriaSelecionada))
+            {
+                MessageBox.Show("Por favor, selecione uma categoria para calcular.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Instância do gerenciador da base de dados
+            DatabaseManager db = new DatabaseManager();
+
+            try
+            {
+                // Consulta para buscar os preços dos produtos da categoria selecionada
+                string query = "SELECT Preco FROM Produtos WHERE Categoria = @Categoria";
+                DataTable dtProdutos = db.SelectDataTableWArgs(query, new SqlParameter("@Categoria", categoriaSelecionada));
+
+                // Calcular a soma dos preços
+                decimal somaPrecos = 0;
+                foreach (DataRow row in dtProdutos.Rows)
+                {
+                    somaPrecos += Convert.ToDecimal(row["Preco"]);
+                }
+
+                // Exibir a soma no TextBox de resultado com símbolo do euro
+                txtBoxResultado.Text = somaPrecos.ToString("C2", System.Globalization.CultureInfo.GetCultureInfo("pt-PT"));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao calcular soma dos preços: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

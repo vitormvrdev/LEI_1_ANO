@@ -232,6 +232,7 @@
             btnCalcular.TabIndex = 22;
             btnCalcular.Text = "Calcular";
             btnCalcular.UseVisualStyleBackColor = false;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // txtBoxResultado
             // 
