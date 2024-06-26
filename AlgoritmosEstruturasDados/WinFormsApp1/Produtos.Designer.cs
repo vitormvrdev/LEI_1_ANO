@@ -41,8 +41,9 @@
             lstProdutos = new ListView();
             cboxCategoria = new ComboBox();
             label3 = new Label();
-            btnPesquisa = new Button();
-            button1 = new Button();
+            btnAtualizaLista = new Button();
+            btnCalcular = new Button();
+            txtBoxResultado = new TextBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -136,6 +137,7 @@
             btnInserir.TabIndex = 4;
             btnInserir.Text = "Inserir";
             btnInserir.UseVisualStyleBackColor = false;
+            btnInserir.Click += btnInserir_Click;
             // 
             // btnEliminar
             // 
@@ -150,6 +152,7 @@
             btnEliminar.TabIndex = 5;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = false;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnAlterar
             // 
@@ -164,23 +167,26 @@
             btnAlterar.TabIndex = 6;
             btnAlterar.Text = "Alterar";
             btnAlterar.UseVisualStyleBackColor = false;
+            btnAlterar.Click += btnAlterar_Click;
             // 
             // lstProdutos
             // 
             lstProdutos.Location = new Point(153, 106);
             lstProdutos.Margin = new Padding(2);
             lstProdutos.Name = "lstProdutos";
-            lstProdutos.Size = new Size(539, 153);
+            lstProdutos.Size = new Size(539, 211);
             lstProdutos.TabIndex = 17;
             lstProdutos.UseCompatibleStateImageBehavior = false;
+            lstProdutos.View = View.Details;
             // 
             // cboxCategoria
             // 
+            cboxCategoria.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cboxCategoria.FormattingEnabled = true;
-            cboxCategoria.Location = new Point(153, 307);
+            cboxCategoria.Location = new Point(155, 352);
             cboxCategoria.Margin = new Padding(2);
             cboxCategoria.Name = "cboxCategoria";
-            cboxCategoria.Size = new Size(129, 23);
+            cboxCategoria.Size = new Size(130, 27);
             cboxCategoria.TabIndex = 18;
             cboxCategoria.Text = "Categoria";
             cboxCategoria.SelectedIndexChanged += cboxCategoria_SelectedIndexChanged;
@@ -190,42 +196,50 @@
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(48, 70, 116);
-            label3.Location = new Point(151, 274);
+            label3.Location = new Point(153, 319);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(227, 29);
+            label3.Size = new Size(339, 29);
             label3.TabIndex = 19;
-            label3.Text = "Filtrar por Categoria";
+            label3.Text = "Filtrar e Calcular por Categoria";
             // 
-            // btnPesquisa
+            // btnAtualizaLista
             // 
-            btnPesquisa.BackColor = Color.FromArgb(48, 70, 116);
-            btnPesquisa.FlatAppearance.BorderSize = 0;
-            btnPesquisa.FlatStyle = FlatStyle.Flat;
-            btnPesquisa.Font = new Font("Tahoma", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnPesquisa.ForeColor = Color.White;
-            btnPesquisa.Location = new Point(285, 307);
-            btnPesquisa.Margin = new Padding(2);
-            btnPesquisa.Name = "btnPesquisa";
-            btnPesquisa.Size = new Size(127, 20);
-            btnPesquisa.TabIndex = 20;
-            btnPesquisa.Text = "Pesquisar";
-            btnPesquisa.UseVisualStyleBackColor = false;
+            btnAtualizaLista.BackColor = Color.FromArgb(48, 70, 116);
+            btnAtualizaLista.FlatAppearance.BorderSize = 0;
+            btnAtualizaLista.FlatStyle = FlatStyle.Flat;
+            btnAtualizaLista.Font = new Font("Tahoma", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAtualizaLista.ForeColor = Color.White;
+            btnAtualizaLista.Location = new Point(565, 75);
+            btnAtualizaLista.Margin = new Padding(2);
+            btnAtualizaLista.Name = "btnAtualizaLista";
+            btnAtualizaLista.Size = new Size(127, 24);
+            btnAtualizaLista.TabIndex = 21;
+            btnAtualizaLista.Text = "Atualizar Lista";
+            btnAtualizaLista.UseVisualStyleBackColor = false;
+            btnAtualizaLista.Click += btnAtualizaLista_Click;
             // 
-            // button1
+            // btnCalcular
             // 
-            button1.BackColor = Color.FromArgb(48, 70, 116);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Tahoma", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(565, 75);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(127, 24);
-            button1.TabIndex = 21;
-            button1.Text = "Atualizar Lista";
-            button1.UseVisualStyleBackColor = false;
+            btnCalcular.BackColor = Color.FromArgb(48, 70, 116);
+            btnCalcular.FlatAppearance.BorderSize = 0;
+            btnCalcular.FlatStyle = FlatStyle.Flat;
+            btnCalcular.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCalcular.ForeColor = Color.White;
+            btnCalcular.Location = new Point(290, 352);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.Size = new Size(130, 27);
+            btnCalcular.TabIndex = 22;
+            btnCalcular.Text = "Calcular";
+            btnCalcular.UseVisualStyleBackColor = false;
+            // 
+            // txtBoxResultado
+            // 
+            txtBoxResultado.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtBoxResultado.Location = new Point(426, 352);
+            txtBoxResultado.Name = "txtBoxResultado";
+            txtBoxResultado.Size = new Size(130, 27);
+            txtBoxResultado.TabIndex = 23;
             // 
             // Produtos
             // 
@@ -233,8 +247,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(198, 211, 227);
             ClientSize = new Size(700, 390);
-            Controls.Add(button1);
-            Controls.Add(btnPesquisa);
+            Controls.Add(txtBoxResultado);
+            Controls.Add(btnCalcular);
+            Controls.Add(btnAtualizaLista);
             Controls.Add(label3);
             Controls.Add(cboxCategoria);
             Controls.Add(lstProdutos);
@@ -270,7 +285,8 @@
         private ListView lstProdutos;
         private ComboBox cboxCategoria;
         private Label label3;
-        private Button btnPesquisa;
-        private Button button1;
+        private Button btnAtualizaLista;
+        private Button btnCalcular;
+        private TextBox txtBoxResultado;
     }
 }

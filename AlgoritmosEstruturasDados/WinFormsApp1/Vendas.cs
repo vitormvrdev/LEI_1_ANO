@@ -40,7 +40,7 @@ namespace WinFormsApp1
             {
                 ListViewItem item = new ListViewItem(dr[0].ToString());
 
-                for (int i = 0;  i < dbVendas.Rows.Count; i ++)
+                for (int i = 0;  i < dbVendas.Rows.Count -1 ; i ++)
                 {
                     item.SubItems.Add(dr[i].ToString());
                 }

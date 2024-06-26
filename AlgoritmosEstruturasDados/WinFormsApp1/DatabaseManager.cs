@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WinFormsApp1
 {
@@ -13,7 +14,7 @@ namespace WinFormsApp1
         //string conString = "Data Source=localhost;Initial Catalog=GestaoVendas-ProjAED;Integrated Security=True";
 
         //String de conexão à base de dados
-        SqlConnection con = new SqlConnection("Data Source=LT-VROCHA\\SQLEXPRESS;Initial Catalog=master;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-DSEV4I4\\SQLEXPRESS;Initial Catalog=ProjAED;Integrated Security=True");
 
         public void NonQuery(string query) //Função para inserir/atualizar/apagar dados na base de dados
         {
@@ -56,5 +57,59 @@ namespace WinFormsApp1
             return dt;
         }
 
+        public DataTable SelectDataTableWArgs(string query, params SqlParameter[] parameters)
+        {
+            DataTable dt = new DataTable();
+   
+            try
+            {
+                // Abre a conexão com a base de dados
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    // Se houver parâmetros, adiciona-os ao comando SQL
+                    if (parameters != null)
+                    {
+                        cmd.Parameters.AddRange(parameters);
+                    }
+
+                    // Usa um SqlDataAdapter para executar a consulta e preencher o DataTable com os resultados
+
+                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    {
+                        da.Fill(dt);
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Atira uma exceção se ocorrer um erro ao pegar nos dados
+                throw new Exception($"Error fetching data: {ex.Message}", ex);
+            }
+            // Retorna o DataTable preenchido com os resultados da consulta
+            return dt;
+        }
+        public void NonQueryWArgs(string query, params SqlParameter[] parameters)
+        {
+            try
+            {
+                // Cria um comando SQL com a consulta e a conexão
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    // Se houver parâmetros, adiciona-os ao comando SQL
+                    if (parameters != null)
+                    {
+                        cmd.Parameters.AddRange(parameters);
+                    }
+                    // Executa o comando SQL
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (SqlException ex)
+            {
+                // Lança uma exceção se ocorrer um erro durante a operação na base de dados
+                throw new Exception($"Database operation failed: {ex.Message}", ex);
+            }
+        }
     }
 }
