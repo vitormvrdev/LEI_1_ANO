@@ -189,7 +189,11 @@ namespace WinFormsApp1
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
+            // Cria uma nova instância do formulário AddProduct
+            AlterarProduto alterarProdutoForm = new AlterarProduto();
 
+            // Exibe o formulário AddProduct
+            alterarProdutoForm.Show();
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)

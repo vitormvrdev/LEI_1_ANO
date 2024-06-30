@@ -11,6 +11,14 @@ namespace WinFormsApp1
 {
     internal class DatabaseManager
     {
+        private string connectionString;
+
+        public DatabaseManager()
+        {
+            connectionString = "Data Source=DESKTOP-DSEV4I4\\SQLEXPRESS;Initial Catalog=ProjAED;Integrated Security=True";
+        }
+
+
         //string conString = "Data Source=localhost;Initial Catalog=GestaoVendas-ProjAED;Integrated Security=True";
 
         //String de conexão à base de dados
@@ -59,56 +67,53 @@ namespace WinFormsApp1
 
         public DataTable SelectDataTableWArgs(string query, params SqlParameter[] parameters)
         {
-            DataTable dt = new DataTable();
-   
-            try
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
-                // Abre a conexão com a base de dados
-                con.Open();
-                using (SqlCommand cmd = new SqlCommand(query, con))
+                DataTable dt = new DataTable();
+                try
                 {
-                    // Se houver parâmetros, adiciona-os ao comando SQL
-                    if (parameters != null)
+                    con.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        cmd.Parameters.AddRange(parameters);
-                    }
+                        if (parameters != null)
+                        {
+                            cmd.Parameters.AddRange(parameters);
+                        }
 
-                    // Usa um SqlDataAdapter para executar a consulta e preencher o DataTable com os resultados
-
-                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
-                    {
-                        da.Fill(dt);
+                        using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                        {
+                            da.Fill(dt);
+                        }
                     }
                 }
+                catch (SqlException ex)
+                {
+                    throw new Exception($"Erro ao buscar dados: {ex.Message}", ex);
+                }
+                return dt; // A conexão será fechada automaticamente aqui
             }
-            catch (SqlException ex)
-            {
-                // Atira uma exceção se ocorrer um erro ao pegar nos dados
-                throw new Exception($"Error fetching data: {ex.Message}", ex);
-            }
-            // Retorna o DataTable preenchido com os resultados da consulta
-            return dt;
         }
+
         public void NonQueryWArgs(string query, params SqlParameter[] parameters)
         {
-            try
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
-                // Cria um comando SQL com a consulta e a conexão
-                using (SqlCommand cmd = new SqlCommand(query, con))
+                try
                 {
-                    // Se houver parâmetros, adiciona-os ao comando SQL
-                    if (parameters != null)
+                    con.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        cmd.Parameters.AddRange(parameters);
+                        if (parameters != null)
+                        {
+                            cmd.Parameters.AddRange(parameters);
+                        }
+                        cmd.ExecuteNonQuery();
                     }
-                    // Executa o comando SQL
-                    cmd.ExecuteNonQuery();
                 }
-            }
-            catch (SqlException ex)
-            {
-                // Lança uma exceção se ocorrer um erro durante a operação na base de dados
-                throw new Exception($"Database operation failed: {ex.Message}", ex);
+                catch (SqlException ex)
+                {
+                    throw new Exception($"Operação no banco de dados falhou: {ex.Message}", ex);
+                } // A conexão será fechada automaticamente aqui
             }
         }
     }

@@ -36,6 +36,10 @@
             lstVendas = new ListView();
             label2 = new Label();
             btnBack = new Button();
+            btnInserir = new Button();
+            btnRemover = new Button();
+            btnAlterar = new Button();
+            btnAtualizaListaVenda = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -49,7 +53,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(700, 50);
+            panel1.Size = new Size(850, 50);
             panel1.TabIndex = 2;
             // 
             // label1
@@ -80,7 +84,7 @@
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnExit.ForeColor = Color.White;
-            btnExit.Location = new Point(638, 1);
+            btnExit.Location = new Point(788, 0);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(50, 50);
             btnExit.TabIndex = 0;
@@ -92,10 +96,9 @@
             // 
             lstVendas.Location = new Point(11, 104);
             lstVendas.Name = "lstVendas";
-            lstVendas.Size = new Size(677, 214);
+            lstVendas.Size = new Size(827, 503);
             lstVendas.TabIndex = 7;
             lstVendas.UseCompatibleStateImageBehavior = false;
-            lstVendas.SelectedIndexChanged += lstVendas_SelectedIndexChanged;
             // 
             // label2
             // 
@@ -115,21 +118,86 @@
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(12, 328);
+            btnBack.Location = new Point(11, 613);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(105, 50);
+            btnBack.Size = new Size(150, 75);
             btnBack.TabIndex = 8;
             btnBack.Text = "Voltar";
             btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
+            // 
+            // btnInserir
+            // 
+            btnInserir.BackColor = Color.FromArgb(48, 70, 116);
+            btnInserir.FlatAppearance.BorderSize = 0;
+            btnInserir.FlatStyle = FlatStyle.Flat;
+            btnInserir.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnInserir.ForeColor = Color.White;
+            btnInserir.Location = new Point(347, 613);
+            btnInserir.Name = "btnInserir";
+            btnInserir.Size = new Size(150, 75);
+            btnInserir.TabIndex = 9;
+            btnInserir.Text = "Inserir";
+            btnInserir.UseVisualStyleBackColor = false;
+            btnInserir.Click += btnInserir_Click;
+            // 
+            // btnRemover
+            // 
+            btnRemover.BackColor = Color.FromArgb(48, 70, 116);
+            btnRemover.FlatAppearance.BorderSize = 0;
+            btnRemover.FlatStyle = FlatStyle.Flat;
+            btnRemover.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnRemover.ForeColor = Color.White;
+            btnRemover.Location = new Point(519, 613);
+            btnRemover.Name = "btnRemover";
+            btnRemover.Size = new Size(150, 75);
+            btnRemover.TabIndex = 10;
+            btnRemover.Text = "Eliminar";
+            btnRemover.UseVisualStyleBackColor = false;
+            btnRemover.Click += btnRemover_Click;
+            // 
+            // btnAlterar
+            // 
+            btnAlterar.BackColor = Color.FromArgb(48, 70, 116);
+            btnAlterar.FlatAppearance.BorderSize = 0;
+            btnAlterar.FlatStyle = FlatStyle.Flat;
+            btnAlterar.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAlterar.ForeColor = Color.White;
+            btnAlterar.Location = new Point(688, 613);
+            btnAlterar.Name = "btnAlterar";
+            btnAlterar.Size = new Size(150, 75);
+            btnAlterar.TabIndex = 11;
+            btnAlterar.Text = "Alterar";
+            btnAlterar.UseVisualStyleBackColor = false;
+            btnAlterar.Click += btnAlterar_Click;
+            // 
+            // btnAtualizaListaVenda
+            // 
+            btnAtualizaListaVenda.BackColor = Color.FromArgb(48, 70, 116);
+            btnAtualizaListaVenda.FlatAppearance.BorderSize = 0;
+            btnAtualizaListaVenda.FlatStyle = FlatStyle.Flat;
+            btnAtualizaListaVenda.Font = new Font("Tahoma", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAtualizaListaVenda.ForeColor = Color.White;
+            btnAtualizaListaVenda.Location = new Point(711, 72);
+            btnAtualizaListaVenda.Margin = new Padding(2);
+            btnAtualizaListaVenda.Name = "btnAtualizaListaVenda";
+            btnAtualizaListaVenda.Size = new Size(127, 24);
+            btnAtualizaListaVenda.TabIndex = 22;
+            btnAtualizaListaVenda.Text = "Atualizar Lista";
+            btnAtualizaListaVenda.UseVisualStyleBackColor = false;
+            btnAtualizaListaVenda.Click += btnAtualizaListaVenda_Click;
             // 
             // Vendas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(198, 211, 227);
-            ClientSize = new Size(700, 390);
+            ClientSize = new Size(850, 700);
             ControlBox = false;
+            Controls.Add(btnAtualizaListaVenda);
+            Controls.Add(btnAlterar);
+            Controls.Add(btnRemover);
+            Controls.Add(btnInserir);
             Controls.Add(btnBack);
             Controls.Add(lstVendas);
             Controls.Add(label2);
@@ -154,5 +222,9 @@
         private ListView lstVendas;
         private Label label2;
         private Button btnBack;
+        private Button btnInserir;
+        private Button btnRemover;
+        private Button btnAlterar;
+        private Button btnAtualizaListaVenda;
     }
 }

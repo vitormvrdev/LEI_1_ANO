@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vitor rocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vitor rocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\removevenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:removevenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vitor rocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vitor rocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\removevenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:removevenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vitor rocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\removeproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:removeproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vitor rocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vitor rocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\removeproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:removeproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vitor rocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\removeproduct.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:removeproduct.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|c:\\users\\vitor rocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\winformsapp1\\removevenda.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80257543-0E3A-4D32-AD0F-4FEF80390CC7}|WinFormsApp1.csproj|solutionrelative:removevenda.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,78 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Vendas.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Vendas.cs",
-              "RelativeDocumentMoniker": "Vendas.cs",
-              "ToolTip": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Vendas.cs [Projeto]",
-              "RelativeToolTip": "Vendas.cs [Projeto]",
+              "DocumentIndex": 2,
+              "Title": "RemoveVenda.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\RemoveVenda.Designer.cs",
+              "RelativeDocumentMoniker": "RemoveVenda.Designer.cs",
+              "ToolTip": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\RemoveVenda.Designer.cs",
+              "RelativeToolTip": "RemoveVenda.Designer.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAwwIkAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T15:32:40.021Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RemoveProduct.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\RemoveProduct.cs",
-              "RelativeDocumentMoniker": "RemoveProduct.cs",
-              "ToolTip": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\RemoveProduct.cs [Projeto]",
-              "RelativeToolTip": "RemoveProduct.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T15:21:42.689Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RemoveProduct.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\RemoveProduct.Designer.cs",
-              "RelativeDocumentMoniker": "RemoveProduct.Designer.cs",
-              "ToolTip": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\RemoveProduct.Designer.cs",
-              "RelativeToolTip": "RemoveProduct.Designer.cs",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAhwHIAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T15:16:15.869Z",
+              "WhenOpened": "2024-06-30T15:26:43.553Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Produtos.cs",
-              "DocumentMoniker": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Produtos.cs",
-              "RelativeDocumentMoniker": "Produtos.cs",
-              "ToolTip": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Produtos.cs",
-              "RelativeToolTip": "Produtos.cs",
-              "ViewState": "AQIAAMYAAAAAAAAAAAAgwL8AAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "RemoveVenda.cs",
+              "DocumentMoniker": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\RemoveVenda.cs",
+              "RelativeDocumentMoniker": "RemoveVenda.cs",
+              "ToolTip": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\RemoveVenda.cs",
+              "RelativeToolTip": "RemoveVenda.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAACkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T15:12:54.978Z",
+              "WhenOpened": "2024-06-30T15:14:27.44Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Produtos.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Produtos.cs",
-              "RelativeDocumentMoniker": "Produtos.cs",
-              "ToolTip": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\Produtos.cs [Projeto]",
-              "RelativeToolTip": "Produtos.cs [Projeto]",
+              "Title": "RemoveVenda.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\RemoveVenda.cs",
+              "RelativeDocumentMoniker": "RemoveVenda.cs",
+              "ToolTip": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\RemoveVenda.cs [Projeto]",
+              "RelativeToolTip": "RemoveVenda.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T15:12:52.753Z",
+              "WhenOpened": "2024-06-30T15:13:52.59Z",
               "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RemoveProduct.cs",
-              "DocumentMoniker": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\RemoveProduct.cs",
-              "RelativeDocumentMoniker": "RemoveProduct.cs",
-              "ToolTip": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\RemoveProduct.cs",
-              "RelativeToolTip": "RemoveProduct.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAwwFoAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T15:12:11.971Z",
-              "EditorCaption": ""
             }
           ]
         }

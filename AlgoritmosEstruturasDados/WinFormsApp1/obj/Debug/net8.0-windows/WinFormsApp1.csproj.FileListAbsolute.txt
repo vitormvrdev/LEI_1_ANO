@@ -80,3 +80,7 @@ C:\Users\Vitor Rocha\Source\Repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsAp
 C:\Users\Vitor Rocha\Source\Repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.RemoveProduct.resources
 C:\Users\Vitor Rocha\Source\Repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Vendas.resources
 C:\Users\Vitor Rocha\Source\Repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinForms.E4050A35.Up2Date
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AlterarProduto.resources
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AddVenda.resources
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.AlterarVenda.resources
+C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.RemoveVenda.resources

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LqvHxjY3Zm0jNmAwVNx758y9aU4TON2xQmY3umWkSPSe9kkJaANNNcW3HUhWf/SOW5j60b9MFHKyCzvU/lft9w==",
+  "dgSpecHash": "0Zg97t9uCQVUOFvt4eXOoTsex1Se7u0b0iU4caCafx4Ij6BsHz6A0AgYeTV9VQEmdH2mnch9zZrhvf2V70eHVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\WinFormsApp1.csproj",
+  "projectFilePath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\WinFormsApp1\\WinFormsApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vitor Rocha\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\Vitor Rocha\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

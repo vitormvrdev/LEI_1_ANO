@@ -54,7 +54,7 @@
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnExit.ForeColor = Color.White;
-            btnExit.Location = new Point(641, 1);
+            btnExit.Location = new Point(788, 0);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(50, 50);
             btnExit.TabIndex = 0;
@@ -71,7 +71,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(700, 50);
+            panel1.Size = new Size(850, 50);
             panel1.TabIndex = 1;
             // 
             // label1
@@ -103,9 +103,9 @@
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(12, 328);
+            btnBack.Location = new Point(12, 613);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(105, 50);
+            btnBack.Size = new Size(142, 75);
             btnBack.TabIndex = 2;
             btnBack.Text = "Voltar";
             btnBack.UseVisualStyleBackColor = false;
@@ -115,11 +115,11 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(198, 211, 227);
-            label2.Font = new Font("Tahoma", 28F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Tahoma", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(48, 70, 116);
-            label2.Location = new Point(151, 53);
+            label2.Location = new Point(199, 59);
             label2.Name = "label2";
-            label2.Size = new Size(191, 46);
+            label2.Size = new Size(187, 45);
             label2.TabIndex = 3;
             label2.Text = "Produtos";
             // 
@@ -133,7 +133,7 @@
             btnInserir.Location = new Point(12, 106);
             btnInserir.Margin = new Padding(2);
             btnInserir.Name = "btnInserir";
-            btnInserir.Size = new Size(105, 48);
+            btnInserir.Size = new Size(142, 75);
             btnInserir.TabIndex = 4;
             btnInserir.Text = "Inserir";
             btnInserir.UseVisualStyleBackColor = false;
@@ -145,10 +145,10 @@
             btnEliminar.FlatStyle = FlatStyle.Flat;
             btnEliminar.Font = new Font("Tahoma", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnEliminar.ForeColor = Color.White;
-            btnEliminar.Location = new Point(12, 209);
+            btnEliminar.Location = new Point(12, 300);
             btnEliminar.Margin = new Padding(2);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(105, 48);
+            btnEliminar.Size = new Size(142, 75);
             btnEliminar.TabIndex = 5;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = false;
@@ -160,10 +160,10 @@
             btnAlterar.FlatStyle = FlatStyle.Flat;
             btnAlterar.Font = new Font("Tahoma", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAlterar.ForeColor = Color.White;
-            btnAlterar.Location = new Point(12, 157);
+            btnAlterar.Location = new Point(12, 203);
             btnAlterar.Margin = new Padding(2);
             btnAlterar.Name = "btnAlterar";
-            btnAlterar.Size = new Size(105, 48);
+            btnAlterar.Size = new Size(142, 75);
             btnAlterar.TabIndex = 6;
             btnAlterar.Text = "Alterar";
             btnAlterar.UseVisualStyleBackColor = false;
@@ -171,22 +171,22 @@
             // 
             // lstProdutos
             // 
-            lstProdutos.Location = new Point(153, 106);
+            lstProdutos.Location = new Point(199, 106);
             lstProdutos.Margin = new Padding(2);
             lstProdutos.Name = "lstProdutos";
-            lstProdutos.Size = new Size(539, 211);
+            lstProdutos.Size = new Size(537, 269);
             lstProdutos.TabIndex = 17;
             lstProdutos.UseCompatibleStateImageBehavior = false;
             lstProdutos.View = View.Details;
             // 
             // cboxCategoria
             // 
-            cboxCategoria.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cboxCategoria.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cboxCategoria.FormattingEnabled = true;
-            cboxCategoria.Location = new Point(155, 352);
+            cboxCategoria.Location = new Point(199, 463);
             cboxCategoria.Margin = new Padding(2);
             cboxCategoria.Name = "cboxCategoria";
-            cboxCategoria.Size = new Size(130, 27);
+            cboxCategoria.Size = new Size(184, 33);
             cboxCategoria.TabIndex = 18;
             cboxCategoria.Text = "Categoria";
             cboxCategoria.SelectedIndexChanged += cboxCategoria_SelectedIndexChanged;
@@ -194,12 +194,12 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Tahoma", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(48, 70, 116);
-            label3.Location = new Point(153, 319);
+            label3.Location = new Point(199, 427);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(339, 29);
+            label3.Size = new Size(376, 33);
             label3.TabIndex = 19;
             label3.Text = "Filtrar e Calcular por Categoria";
             // 
@@ -210,7 +210,7 @@
             btnAtualizaLista.FlatStyle = FlatStyle.Flat;
             btnAtualizaLista.Font = new Font("Tahoma", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnAtualizaLista.ForeColor = Color.White;
-            btnAtualizaLista.Location = new Point(565, 75);
+            btnAtualizaLista.Location = new Point(609, 393);
             btnAtualizaLista.Margin = new Padding(2);
             btnAtualizaLista.Name = "btnAtualizaLista";
             btnAtualizaLista.Size = new Size(127, 24);
@@ -226,9 +226,9 @@
             btnCalcular.FlatStyle = FlatStyle.Flat;
             btnCalcular.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCalcular.ForeColor = Color.White;
-            btnCalcular.Location = new Point(290, 352);
+            btnCalcular.Location = new Point(388, 463);
             btnCalcular.Name = "btnCalcular";
-            btnCalcular.Size = new Size(130, 27);
+            btnCalcular.Size = new Size(184, 33);
             btnCalcular.TabIndex = 22;
             btnCalcular.Text = "Calcular";
             btnCalcular.UseVisualStyleBackColor = false;
@@ -236,10 +236,10 @@
             // 
             // txtBoxResultado
             // 
-            txtBoxResultado.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtBoxResultado.Location = new Point(426, 352);
+            txtBoxResultado.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtBoxResultado.Location = new Point(578, 463);
             txtBoxResultado.Name = "txtBoxResultado";
-            txtBoxResultado.Size = new Size(130, 27);
+            txtBoxResultado.Size = new Size(158, 33);
             txtBoxResultado.TabIndex = 23;
             // 
             // Produtos
@@ -247,7 +247,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(198, 211, 227);
-            ClientSize = new Size(700, 390);
+            ClientSize = new Size(850, 700);
+            ControlBox = false;
             Controls.Add(txtBoxResultado);
             Controls.Add(btnCalcular);
             Controls.Add(btnAtualizaLista);
