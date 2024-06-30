@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Parsing
-build_property.ProjectDir = C:\Users\Vitor Rocha\source\repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\
+build_property.ProjectDir = C:\Users\Vitor Rocha\Source\Repos\LEI_1_ANO\AlgoritmosEstruturasDados\ConsoleApps\MoreTesting\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
