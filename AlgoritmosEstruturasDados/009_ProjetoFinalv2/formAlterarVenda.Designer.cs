@@ -243,6 +243,7 @@
             cboxAlterarCodVenda.Name = "cboxAlterarCodVenda";
             cboxAlterarCodVenda.Size = new Size(204, 31);
             cboxAlterarCodVenda.TabIndex = 45;
+            cboxAlterarCodVenda.SelectedIndexChanged += cboxAlterarCodVenda_SelectedIndexChanged_1;
             // 
             // formAlterarVenda
             // 

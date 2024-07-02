@@ -40,41 +40,6 @@ namespace _009___Projeto_Final
                 MessageBox.Show($"Erro: {ex.Message}", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void cboxAlterarCodVenda_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string codigoVenda = cboxAlterarCodVenda.SelectedItem?.ToString();
-
-            if (!string.IsNullOrEmpty(codigoVenda))
-            {
-                DatabaseManager db = new DatabaseManager();
-
-                try
-                {
-                    // Selecionar os dados da venda pelo código
-                    string query = "SELECT Zona, CodigoVendedor, CodigoProduto, Quantidade, Valor FROM Vendas WHERE Codigo = @Codigo";
-                    DataTable dtVenda = db.SelectDataTableWArgs(query, new SqlParameter("@Codigo", codigoVenda));
-
-                    if (dtVenda.Rows.Count > 0)
-                    {
-                        DataRow row = dtVenda.Rows[0];
-                        cboxAlterarZona.SelectedItem = row["Zona"].ToString();
-                        txtBoxAlterarCodVendedor.Text = row["CodigoVendedor"].ToString();
-                        txtBoxAlterarCodProdVenda.Text = row["CodigoProduto"].ToString();
-                        txtBoxAlterarQuantidadeVenda.Text = row["Quantidade"].ToString();
-                        txtBoxAlterarValorVenda.Text = row["Valor"].ToString();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Venda não encontrada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Erro ao carregar dados da venda: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -153,7 +118,42 @@ namespace _009___Projeto_Final
             catch (Exception ex)
             {
                 MessageBox.Show($"Erro ao alterar venda: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }   
+            }
+        }
+
+        private void cboxAlterarCodVenda_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            string codigoVenda = cboxAlterarCodVenda.SelectedItem?.ToString();
+
+            if (!string.IsNullOrEmpty(codigoVenda))
+            {
+                DatabaseManager db = new DatabaseManager();
+
+                try
+                {
+                    // Selecionar os dados da venda pelo código
+                    string query = "SELECT Zona, CodigoVendedor, CodigoProduto, Quantidade, Valor FROM Vendas WHERE Codigo = @Codigo";
+                    DataTable dtVenda = db.SelectDataTableWArgs(query, new SqlParameter("@Codigo", codigoVenda));
+
+                    if (dtVenda.Rows.Count > 0)
+                    {
+                        DataRow row = dtVenda.Rows[0];
+                        cboxAlterarZona.SelectedItem = row["Zona"].ToString();
+                        txtBoxAlterarCodVendedor.Text = row["CodigoVendedor"].ToString();
+                        txtBoxAlterarCodProdVenda.Text = row["CodigoProduto"].ToString();
+                        txtBoxAlterarQuantidadeVenda.Text = row["Quantidade"].ToString();
+                        txtBoxAlterarValorVenda.Text = row["Valor"].ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Venda não encontrada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao carregar dados da venda: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }
