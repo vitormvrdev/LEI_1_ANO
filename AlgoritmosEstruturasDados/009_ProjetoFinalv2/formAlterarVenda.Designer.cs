@@ -233,6 +233,7 @@
             btnAlterarVenda.TabIndex = 44;
             btnAlterarVenda.Text = "Alterar";
             btnAlterarVenda.UseVisualStyleBackColor = false;
+            btnAlterarVenda.Click += btnAlterarVenda_Click;
             // 
             // cboxAlterarCodVenda
             // 

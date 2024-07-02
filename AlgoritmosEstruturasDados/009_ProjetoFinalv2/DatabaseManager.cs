@@ -116,5 +116,28 @@ namespace _009___Projeto_Final
                 } // A conexão será fechada automaticamente aqui
             }
         }
+
+        public object ExecuteScalar(string query, params SqlParameter[] parameters)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    con.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        if (parameters != null)
+                        {
+                            cmd.Parameters.AddRange(parameters);
+                        }
+                        return cmd.ExecuteScalar();
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    throw new Exception($"Erro ao executar operação escalar: {ex.Message}", ex);
+                }
+            }
+        }
     }
 }

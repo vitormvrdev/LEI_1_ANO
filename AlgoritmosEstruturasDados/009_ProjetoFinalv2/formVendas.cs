@@ -22,6 +22,26 @@ namespace _009___Projeto_Final
         private void Vendas_Load(object sender, EventArgs e)
         {
             AtualizaListaVenda();
+
+            DatabaseManager db = new DatabaseManager();
+
+            //Ver se o utilizador é Administrador para saber se tem acesso aos botoes de inserir/alterar/eliminar
+            string username = VariaveisGlobais.Username; //Valor do Username que está guardado nas variaveis globais
+            string queryAdmin = $"SELECT Administrador FROM Login_Info WHERE Username = '{username}'";
+            bool isAdmin = Convert.ToBoolean(db.SelectDataTable(queryAdmin).Rows[0][0]);
+
+            if (isAdmin)
+            {
+                btnInserir.Enabled = true;
+                btnAlterar.Enabled = true;
+                btnRemover.Enabled = true;
+            }
+            else
+            {
+                btnInserir.Enabled = false;
+                btnAlterar.Enabled = false;
+                btnRemover.Enabled = false;
+            }
         }
 
         private void btnBack_Click(object sender, EventArgs e)

@@ -72,6 +72,25 @@ namespace _009___Projeto_Final
             // Atualizar ComboBox e ListView para exibir os novos itens
             cboxCategoria.Refresh();
             lstProdutos.Refresh();
+
+
+            //Ver se o utilizador é Administrador para saber se tem acesso aos botoes de inserir/alterar/eliminar
+            string username = VariaveisGlobais.Username; //Valor do Username que está guardado nas variaveis globais
+            string queryAdmin = $"SELECT Administrador FROM Login_Info WHERE Username = '{username}'";
+            bool isAdmin = Convert.ToBoolean(db.SelectDataTable(queryAdmin).Rows[0][0]);
+
+            if (isAdmin)
+            {
+                btnInserir.Enabled = true;
+                btnAlterar.Enabled = true;
+                btnEliminar.Enabled = true;
+            }
+            else
+            {
+                btnInserir.Enabled = false;
+                btnAlterar.Enabled = false;
+                btnEliminar.Enabled = false;
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)

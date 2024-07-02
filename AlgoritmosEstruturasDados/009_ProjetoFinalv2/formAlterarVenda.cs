@@ -51,25 +51,33 @@ namespace _009___Projeto_Final
 
                 try
                 {
-                    // Selecionar os dados do produto
-                    string query = "SELECT Zona, CodigoVendador, CodigoProduto, Quantidade, Valor FROM Produtos WHERE Codigo = @Codigo";
+                    // Selecionar os dados da venda pelo código
+                    string query = "SELECT Zona, CodigoVendedor, CodigoProduto, Quantidade, Valor FROM Vendas WHERE Codigo = @Codigo";
                     DataTable dtVenda = db.SelectDataTableWArgs(query, new SqlParameter("@Codigo", codigoVenda));
 
                     if (dtVenda.Rows.Count > 0)
                     {
                         DataRow row = dtVenda.Rows[0];
-                        cboxAlterarZona.Text = row["Zona"].ToString();
+                        cboxAlterarZona.SelectedItem = row["Zona"].ToString();
                         txtBoxAlterarCodVendedor.Text = row["CodigoVendedor"].ToString();
                         txtBoxAlterarCodProdVenda.Text = row["CodigoProduto"].ToString();
                         txtBoxAlterarQuantidadeVenda.Text = row["Quantidade"].ToString();
                         txtBoxAlterarValorVenda.Text = row["Valor"].ToString();
                     }
+                    else
+                    {
+                        MessageBox.Show("Venda não encontrada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Erro ao carregar dados do produto: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Erro ao carregar dados da venda: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void btnAlterarVenda_Click(object sender, EventArgs e)
@@ -110,6 +118,24 @@ namespace _009___Projeto_Final
 
             try
             {
+                // Verificar se o CodigoVendedor existe na tabela Vendedores
+                string queryCheckVendedor = "SELECT COUNT(*) FROM Vendedores WHERE Codigo = @CodigoVendedor";
+                int countVendedor = (int)db.ExecuteScalar(queryCheckVendedor, new SqlParameter("@CodigoVendedor", codigoVendedor));
+                if (countVendedor == 0)
+                {
+                    MessageBox.Show("Código de Vendedor inválido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Verificar se o CodigoProduto existe na tabela Produtos
+                string queryCheckProduto = "SELECT COUNT(*) FROM Produtos WHERE Codigo = @CodigoProduto";
+                int countProduto = (int)db.ExecuteScalar(queryCheckProduto, new SqlParameter("@CodigoProduto", codigoProduto));
+                if (countProduto == 0)
+                {
+                    MessageBox.Show("Código de Produto inválido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 // Atualizar os dados da venda
                 string queryUpdate = "UPDATE Vendas SET Zona = @Zona, CodigoVendedor = @CodigoVendedor, CodigoProduto = @CodigoProduto, Quantidade = @Quantidade, Valor = @Valor WHERE Codigo = @Codigo";
                 SqlParameter[] parameters = {
@@ -127,12 +153,7 @@ namespace _009___Projeto_Final
             catch (Exception ex)
             {
                 MessageBox.Show($"Erro ao alterar venda: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            }   
         }
     }
 }
