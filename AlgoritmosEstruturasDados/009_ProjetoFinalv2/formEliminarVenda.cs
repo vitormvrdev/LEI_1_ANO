@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace _009___Projeto_Final
 {
@@ -99,6 +100,27 @@ namespace _009___Projeto_Final
             catch (Exception ex)
             {
                 MessageBox.Show($"Erro ao eliminar venda: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void formEliminarVenda_Load(object sender, EventArgs e)
+        {
+            // SELECT Codigo FROM Vendas
+            try
+            {
+                DatabaseManager db = new DatabaseManager();
+                DataTable dtVendedores = db.SelectDataTable("SELECT Codigo FROM Vendas");
+
+                cboxNomeEliminarVenda.Items.Clear();
+
+                foreach (DataRow row in dtVendedores.Rows)
+                {
+                    cboxNomeEliminarVenda.Items.Add(row[0].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro: {ex.Message}", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

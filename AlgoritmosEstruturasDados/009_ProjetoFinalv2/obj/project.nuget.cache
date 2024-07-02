@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EjIX6ibKBxXg5ji+zUaGkIiKx7nBQ73Y1LW9PI0JMfwtQMJgHzkez9i9LE9ncgVBwnCtd2znnRk/UE6KGsxadg==",
+  "dgSpecHash": "IapgPXSfqfRfmy4ynUhvJ1GKUw/DvU3/JtbdFItkQ0E909qHjy9eB2E/lhtLIsCUOOOZam4zEDnNLxLakxe/Cg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\009_ProjetoFinalv2.csproj",
+  "projectFilePath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\009_ProjetoFinalv2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vitor Rocha\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Vitor Rocha\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

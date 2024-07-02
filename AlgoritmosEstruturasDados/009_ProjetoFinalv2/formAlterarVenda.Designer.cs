@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formAlterarVenda));
             panel1 = new Panel();
+            pictureBox2 = new PictureBox();
             label1 = new Label();
             btnExit = new Button();
             txtBoxAlterarValorVenda = new TextBox();
@@ -46,7 +47,6 @@
             label = new Label();
             btnAlterarVenda = new Button();
             cboxAlterarCodVenda = new ComboBox();
-            pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -59,21 +59,31 @@
             panel1.Controls.Add(btnExit);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 67);
+            panel1.Size = new Size(700, 50);
             panel1.TabIndex = 2;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.InitialImage = (Image)resources.GetObject("pictureBox2.InitialImage");
+            pictureBox2.Location = new Point(9, 10);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(35, 30);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 5;
+            pictureBox2.TabStop = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(56, 20);
+            label1.Location = new Point(49, 15);
             label1.Name = "label1";
-            label1.Size = new Size(228, 33);
+            label1.Size = new Size(141, 25);
             label1.TabIndex = 3;
-            label1.Text = "Gestão de Vendas";
+            label1.Text = "Alterar Venda";
             // 
             // btnExit
             // 
@@ -81,10 +91,9 @@
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point);
             btnExit.ForeColor = Color.White;
-            btnExit.Location = new Point(901, 0);
-            btnExit.Margin = new Padding(3, 4, 3, 4);
+            btnExit.Location = new Point(788, 0);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(57, 67);
+            btnExit.Size = new Size(50, 50);
             btnExit.TabIndex = 0;
             btnExit.Text = "X";
             btnExit.UseVisualStyleBackColor = true;
@@ -92,29 +101,26 @@
             // txtBoxAlterarValorVenda
             // 
             txtBoxAlterarValorVenda.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtBoxAlterarValorVenda.Location = new Point(389, 347);
-            txtBoxAlterarValorVenda.Margin = new Padding(3, 4, 3, 4);
+            txtBoxAlterarValorVenda.Location = new Point(340, 260);
             txtBoxAlterarValorVenda.Name = "txtBoxAlterarValorVenda";
-            txtBoxAlterarValorVenda.Size = new Size(233, 32);
+            txtBoxAlterarValorVenda.Size = new Size(204, 27);
             txtBoxAlterarValorVenda.TabIndex = 41;
             // 
             // cboxAlterarZona
             // 
             cboxAlterarZona.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             cboxAlterarZona.FormattingEnabled = true;
-            cboxAlterarZona.Location = new Point(389, 137);
-            cboxAlterarZona.Margin = new Padding(3, 4, 3, 4);
+            cboxAlterarZona.Location = new Point(340, 103);
             cboxAlterarZona.Name = "cboxAlterarZona";
-            cboxAlterarZona.Size = new Size(233, 39);
+            cboxAlterarZona.Size = new Size(204, 33);
             cboxAlterarZona.TabIndex = 40;
             // 
             // txtBoxAlterarQuantidadeVenda
             // 
             txtBoxAlterarQuantidadeVenda.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtBoxAlterarQuantidadeVenda.Location = new Point(389, 300);
-            txtBoxAlterarQuantidadeVenda.Margin = new Padding(3, 4, 3, 4);
+            txtBoxAlterarQuantidadeVenda.Location = new Point(340, 225);
             txtBoxAlterarQuantidadeVenda.Name = "txtBoxAlterarQuantidadeVenda";
-            txtBoxAlterarQuantidadeVenda.Size = new Size(233, 32);
+            txtBoxAlterarQuantidadeVenda.Size = new Size(204, 27);
             txtBoxAlterarQuantidadeVenda.TabIndex = 39;
             // 
             // label6
@@ -122,9 +128,9 @@
             label6.AutoSize = true;
             label6.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = Color.FromArgb(48, 70, 116);
-            label6.Location = new Point(178, 347);
+            label6.Location = new Point(156, 260);
             label6.Name = "label6";
-            label6.Size = new Size(195, 33);
+            label6.Size = new Size(156, 25);
             label6.TabIndex = 38;
             label6.Text = "Valor da Venda";
             // 
@@ -133,28 +139,26 @@
             label7.AutoSize = true;
             label7.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.FromArgb(48, 70, 116);
-            label7.Location = new Point(178, 297);
+            label7.Location = new Point(156, 223);
             label7.Name = "label7";
-            label7.Size = new Size(151, 33);
+            label7.Size = new Size(120, 25);
             label7.TabIndex = 37;
             label7.Text = "Quantidade";
             // 
             // txtBoxAlterarCodProdVenda
             // 
             txtBoxAlterarCodProdVenda.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtBoxAlterarCodProdVenda.Location = new Point(389, 243);
-            txtBoxAlterarCodProdVenda.Margin = new Padding(3, 4, 3, 4);
+            txtBoxAlterarCodProdVenda.Location = new Point(340, 182);
             txtBoxAlterarCodProdVenda.Name = "txtBoxAlterarCodProdVenda";
-            txtBoxAlterarCodProdVenda.Size = new Size(233, 32);
+            txtBoxAlterarCodProdVenda.Size = new Size(204, 27);
             txtBoxAlterarCodProdVenda.TabIndex = 36;
             // 
             // txtBoxAlterarCodVendedor
             // 
             txtBoxAlterarCodVendedor.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtBoxAlterarCodVendedor.Location = new Point(389, 193);
-            txtBoxAlterarCodVendedor.Margin = new Padding(3, 4, 3, 4);
+            txtBoxAlterarCodVendedor.Location = new Point(340, 145);
             txtBoxAlterarCodVendedor.Name = "txtBoxAlterarCodVendedor";
-            txtBoxAlterarCodVendedor.Size = new Size(233, 32);
+            txtBoxAlterarCodVendedor.Size = new Size(204, 27);
             txtBoxAlterarCodVendedor.TabIndex = 35;
             // 
             // label5
@@ -162,9 +166,9 @@
             label5.AutoSize = true;
             label5.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(48, 70, 116);
-            label5.Location = new Point(178, 240);
+            label5.Location = new Point(156, 180);
             label5.Name = "label5";
-            label5.Size = new Size(199, 33);
+            label5.Size = new Size(156, 25);
             label5.TabIndex = 34;
             label5.Text = "Código Produto";
             // 
@@ -173,9 +177,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.FromArgb(48, 70, 116);
-            label4.Location = new Point(178, 191);
+            label4.Location = new Point(156, 143);
             label4.Name = "label4";
-            label4.Size = new Size(219, 33);
+            label4.Size = new Size(173, 25);
             label4.TabIndex = 33;
             label4.Text = "Código Vendedor";
             // 
@@ -184,9 +188,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.FromArgb(48, 70, 116);
-            label3.Location = new Point(178, 137);
+            label3.Location = new Point(156, 103);
             label3.Name = "label3";
-            label3.Size = new Size(74, 33);
+            label3.Size = new Size(58, 25);
             label3.TabIndex = 32;
             label3.Text = "Zona";
             // 
@@ -197,10 +201,9 @@
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point);
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(14, 437);
-            btnBack.Margin = new Padding(3, 4, 3, 4);
+            btnBack.Location = new Point(12, 328);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(120, 67);
+            btnBack.Size = new Size(105, 50);
             btnBack.TabIndex = 42;
             btnBack.Text = "Voltar";
             btnBack.UseVisualStyleBackColor = false;
@@ -211,9 +214,9 @@
             label.AutoSize = true;
             label.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             label.ForeColor = Color.FromArgb(48, 70, 116);
-            label.Location = new Point(178, 89);
+            label.Location = new Point(156, 67);
             label.Name = "label";
-            label.Size = new Size(179, 33);
+            label.Size = new Size(142, 25);
             label.TabIndex = 43;
             label.Text = "Código Venda";
             // 
@@ -224,10 +227,9 @@
             btnAlterarVenda.FlatStyle = FlatStyle.Flat;
             btnAlterarVenda.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point);
             btnAlterarVenda.ForeColor = Color.White;
-            btnAlterarVenda.Location = new Point(666, 437);
-            btnAlterarVenda.Margin = new Padding(3, 4, 3, 4);
+            btnAlterarVenda.Location = new Point(583, 328);
             btnAlterarVenda.Name = "btnAlterarVenda";
-            btnAlterarVenda.Size = new Size(120, 67);
+            btnAlterarVenda.Size = new Size(105, 50);
             btnAlterarVenda.TabIndex = 44;
             btnAlterarVenda.Text = "Alterar";
             btnAlterarVenda.UseVisualStyleBackColor = false;
@@ -236,30 +238,17 @@
             // 
             cboxAlterarCodVenda.Font = new Font("Tahoma", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             cboxAlterarCodVenda.FormattingEnabled = true;
-            cboxAlterarCodVenda.Location = new Point(389, 81);
-            cboxAlterarCodVenda.Margin = new Padding(3, 4, 3, 4);
+            cboxAlterarCodVenda.Location = new Point(340, 61);
             cboxAlterarCodVenda.Name = "cboxAlterarCodVenda";
-            cboxAlterarCodVenda.Size = new Size(233, 37);
+            cboxAlterarCodVenda.Size = new Size(204, 31);
             cboxAlterarCodVenda.TabIndex = 45;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.InitialImage = (Image)resources.GetObject("pictureBox2.InitialImage");
-            pictureBox2.Location = new Point(10, 13);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(40, 40);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 5;
-            pictureBox2.TabStop = false;
             // 
             // formAlterarVenda
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(198, 211, 227);
-            ClientSize = new Size(800, 520);
+            ClientSize = new Size(700, 390);
             ControlBox = false;
             Controls.Add(cboxAlterarCodVenda);
             Controls.Add(btnAlterarVenda);
@@ -277,10 +266,10 @@
             Controls.Add(label3);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "formAlterarVenda";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "AlterarVenda";
+            Load += formAlterarVenda_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

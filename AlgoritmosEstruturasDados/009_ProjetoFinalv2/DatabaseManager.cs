@@ -15,14 +15,14 @@ namespace _009___Projeto_Final
 
         public DatabaseManager()
         {
-            connectionString = "Data Source=DESKTOP-DSEV4I4\\SQLEXPRESS;Initial Catalog=ProjAED;Integrated Security=True;Trust Server Certificate=True";
+            connectionString = "Data Source=DESKTOP-DSEV4I4\\SQLEXPRESS;Initial Catalog=ProjAED;Integrated Security=True";
         }
 
 
         //string conString = "Data Source=localhost;Initial Catalog=GestaoVendas-ProjAED;Integrated Security=True";
 
         //String de conexão à base de dados
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-P1MTD1H\\SQLEXPRESS;Initial Catalog=ProjetoAED;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-DSEV4I4\\SQLEXPRESS;Initial Catalog=ProjAED;Integrated Security=True");
 
         public void NonQuery(string query) //Função para inserir/atualizar/apagar dados na base de dados
         {

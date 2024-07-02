@@ -1,15 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Vitor Rocha\\Source\\Repos\\009_ProjetoFinalv2\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E14F0CA7-527F-42CE-9AD8-F4BF4139D2E5}|009_ProjetoFinalv2.csproj|c:\\users\\vitor rocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\009_projetofinalv2\\formalterarvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E14F0CA7-527F-42CE-9AD8-F4BF4139D2E5}|009_ProjetoFinalv2.csproj|solutionrelative:formalterarvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14F0CA7-527F-42CE-9AD8-F4BF4139D2E5}|009_ProjetoFinalv2.csproj|c:\\users\\vitor rocha\\source\\repos\\lei_1_ano\\algoritmosestruturasdados\\009_projetofinalv2\\formalterarvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E14F0CA7-527F-42CE-9AD8-F4BF4139D2E5}|009_ProjetoFinalv2.csproj|solutionrelative:formalterarvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 235,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +27,31 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "formAlterarVenda.cs",
+              "DocumentMoniker": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\formAlterarVenda.cs",
+              "RelativeDocumentMoniker": "formAlterarVenda.cs",
+              "ToolTip": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\formAlterarVenda.cs",
+              "RelativeToolTip": "formAlterarVenda.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAiwGcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T10:33:37.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "formAlterarVenda.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\formAlterarVenda.cs",
+              "RelativeDocumentMoniker": "formAlterarVenda.cs",
+              "ToolTip": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\formAlterarVenda.cs [Projeto]",
+              "RelativeToolTip": "formAlterarVenda.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T10:26:34.711Z",
+              "EditorCaption": " [Projeto]"
             }
           ]
         }

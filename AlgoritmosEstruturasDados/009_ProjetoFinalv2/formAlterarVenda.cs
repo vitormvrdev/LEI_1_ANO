@@ -12,68 +12,63 @@ namespace _009___Projeto_Final
             InitializeComponent();
         }
 
-        private void AlterarVenda_Load(object sender, EventArgs e)
+        private void formAlterarVenda_Load(object sender, EventArgs e)
         {
             // Preencher a ComboBox da Zona
             cboxAlterarZona.Items.Add("N");
             cboxAlterarZona.Items.Add("C");
             cboxAlterarZona.Items.Add("S");
 
-            
-            DatabaseManager db = new DatabaseManager();
-
+            // SELECT Codigo FROM Vendas
             try
             {
-                // Selecionar todos os códigos de venda da tabela "Vendas"
-                DataTable dtVendas = db.SelectDataTable("SELECT Codigo FROM Vendas");
+                DatabaseManager db = new DatabaseManager();
+                DataTable dtVenda = db.SelectDataTable("SELECT Codigo FROM Vendas");
 
-                // Preencher a ComboBox com os códigos de venda
-                foreach (DataRow row in dtVendas.Rows)
-                {
-                    cboxAlterarCodVenda.Items.Add(row["Codigo"].ToString());
-                }
+                // Verificar se a DataTable contém dados
+                Console.WriteLine($"Número de linhas retornadas: {dtVenda.Rows.Count}");
 
-                // Verificação para garantir que há itens na ComboBox
-                if (cboxAlterarCodVenda.Items.Count == 0)
+                cboxAlterarCodVenda.Items.Clear();
+
+                foreach (DataRow row in dtVenda.Rows)
                 {
-                    MessageBox.Show("Nenhuma venda encontrada.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cboxAlterarCodVenda.Items.Add(row[0].ToString());
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Erro ao carregar códigos das vendas: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Erro: {ex.Message}", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void cboxAlterarCodVenda_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string codigoVenda = cboxAlterarCodVenda.SelectedItem.ToString();
+            string codigoVenda = cboxAlterarCodVenda.SelectedItem?.ToString();
 
-            DatabaseManager db = new DatabaseManager();
-
-            try
+            if (!string.IsNullOrEmpty(codigoVenda))
             {
-                // Selecionar os dados da venda pelo código
-                string querySelect = "SELECT Zona, CodigoVendedor, CodigoProduto, Quantidade, Valor FROM Vendas WHERE Codigo = @Codigo";
-                DataTable dtVenda = db.SelectDataTableWArgs(querySelect, new SqlParameter("@Codigo", codigoVenda));
+                DatabaseManager db = new DatabaseManager();
 
-                if (dtVenda.Rows.Count > 0)
+                try
                 {
-                    DataRow row = dtVenda.Rows[0];
-                    cboxAlterarZona.SelectedItem = row["Zona"].ToString();
-                    txtBoxAlterarCodVendedor.Text = row["CodigoVendedor"].ToString();
-                    txtBoxAlterarCodProdVenda.Text = row["CodigoProduto"].ToString();
-                    txtBoxAlterarQuantidadeVenda.Text = row["Quantidade"].ToString();
-                    txtBoxAlterarValorVenda.Text = row["Valor"].ToString();
+                    // Selecionar os dados do produto
+                    string query = "SELECT Zona, CodigoVendador, CodigoProduto, Quantidade, Valor FROM Produtos WHERE Codigo = @Codigo";
+                    DataTable dtVenda = db.SelectDataTableWArgs(query, new SqlParameter("@Codigo", codigoVenda));
+
+                    if (dtVenda.Rows.Count > 0)
+                    {
+                        DataRow row = dtVenda.Rows[0];
+                        cboxAlterarZona.Text = row["Zona"].ToString();
+                        txtBoxAlterarCodVendedor.Text = row["CodigoVendedor"].ToString();
+                        txtBoxAlterarCodProdVenda.Text = row["CodigoProduto"].ToString();
+                        txtBoxAlterarQuantidadeVenda.Text = row["Quantidade"].ToString();
+                        txtBoxAlterarValorVenda.Text = row["Valor"].ToString();
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Venda não encontrada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Erro ao carregar dados do produto: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Erro ao carregar dados da venda: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

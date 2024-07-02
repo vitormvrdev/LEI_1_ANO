@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formEliminarProduto));
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             label1 = new Label();
             btnExit = new Button();
             label2 = new Label();
             btnBack = new Button();
             btnEliminarDados = new Button();
             cboxNomeEliminar = new ComboBox();
-            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -49,21 +49,31 @@
             panel1.Controls.Add(btnExit);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 67);
+            panel1.Size = new Size(700, 50);
             panel1.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
+            pictureBox1.Location = new Point(9, 10);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(35, 30);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(56, 20);
+            label1.Location = new Point(49, 15);
             label1.Name = "label1";
-            label1.Size = new Size(223, 33);
+            label1.Size = new Size(168, 25);
             label1.TabIndex = 3;
-            label1.Text = "Remover Produto";
+            label1.Text = "Eliminar Produto";
             // 
             // btnExit
             // 
@@ -71,10 +81,9 @@
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point);
             btnExit.ForeColor = Color.White;
-            btnExit.Location = new Point(733, 1);
-            btnExit.Margin = new Padding(3, 4, 3, 4);
+            btnExit.Location = new Point(641, 1);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(57, 67);
+            btnExit.Size = new Size(50, 50);
             btnExit.TabIndex = 0;
             btnExit.Text = "X";
             btnExit.UseVisualStyleBackColor = true;
@@ -85,11 +94,11 @@
             label2.AutoSize = true;
             label2.Font = new Font("Tahoma", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(48, 70, 116);
-            label2.Location = new Point(202, 231);
+            label2.Location = new Point(167, 173);
             label2.Name = "label2";
-            label2.Size = new Size(219, 33);
+            label2.Size = new Size(183, 25);
             label2.TabIndex = 11;
-            label2.Text = "Nome a eliminar:";
+            label2.Text = "Codigo a eliminar:";
             // 
             // btnBack
             // 
@@ -98,10 +107,9 @@
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point);
             btnBack.ForeColor = Color.White;
-            btnBack.Location = new Point(14, 437);
-            btnBack.Margin = new Padding(3, 4, 3, 4);
+            btnBack.Location = new Point(12, 328);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(120, 67);
+            btnBack.Size = new Size(105, 50);
             btnBack.TabIndex = 12;
             btnBack.Text = "Voltar";
             btnBack.UseVisualStyleBackColor = false;
@@ -114,10 +122,9 @@
             btnEliminarDados.FlatStyle = FlatStyle.Flat;
             btnEliminarDados.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point);
             btnEliminarDados.ForeColor = Color.White;
-            btnEliminarDados.Location = new Point(666, 437);
-            btnEliminarDados.Margin = new Padding(3, 4, 3, 4);
+            btnEliminarDados.Location = new Point(583, 328);
             btnEliminarDados.Name = "btnEliminarDados";
-            btnEliminarDados.Size = new Size(120, 67);
+            btnEliminarDados.Size = new Size(105, 50);
             btnEliminarDados.TabIndex = 13;
             btnEliminarDados.Text = "Eliminar";
             btnEliminarDados.UseVisualStyleBackColor = false;
@@ -127,30 +134,17 @@
             // 
             cboxNomeEliminar.Font = new Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cboxNomeEliminar.FormattingEnabled = true;
-            cboxNomeEliminar.Location = new Point(407, 233);
-            cboxNomeEliminar.Margin = new Padding(3, 4, 3, 4);
+            cboxNomeEliminar.Location = new Point(356, 175);
             cboxNomeEliminar.Name = "cboxNomeEliminar";
-            cboxNomeEliminar.Size = new Size(172, 32);
+            cboxNomeEliminar.Size = new Size(151, 27);
             cboxNomeEliminar.TabIndex = 14;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-            pictureBox1.Location = new Point(10, 13);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(40, 40);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
             // 
             // formEliminarProduto
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(198, 211, 227);
-            ClientSize = new Size(800, 520);
+            ClientSize = new Size(700, 390);
             ControlBox = false;
             Controls.Add(cboxNomeEliminar);
             Controls.Add(btnEliminarDados);
@@ -158,7 +152,7 @@
             Controls.Add(label2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(2, 3, 2, 3);
+            Margin = new Padding(2);
             Name = "formEliminarProduto";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "RemoveProduct";

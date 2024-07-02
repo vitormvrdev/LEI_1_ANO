@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\009_ProjetoFinalv2.csproj": {}
+    "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\009_ProjetoFinalv2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\009_ProjetoFinalv2.csproj": {
+    "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\009_ProjetoFinalv2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\009_ProjetoFinalv2.csproj",
+        "projectUniqueName": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\009_ProjetoFinalv2.csproj",
         "projectName": "009_ProjetoFinalv2",
-        "projectPath": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\009_ProjetoFinalv2.csproj",
+        "projectPath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\009_ProjetoFinalv2.csproj",
         "packagesPath": "C:\\Users\\Vitor Rocha\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Vitor Rocha\\Source\\Repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\009_ProjetoFinalv2\\obj\\",
         "projectStyle": "PackageReference",
