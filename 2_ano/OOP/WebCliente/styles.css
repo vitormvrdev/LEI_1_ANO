@@ -1,0 +1,99 @@
+.backgroundcolor {
+    background-color: rgb(112, 109, 109);
+}
+
+.tittle {
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0e0e0e;
+    margin: 10px 0;
+    filter: drop-shadow(2px 2px 20px rgb(255, 255, 255));
+    border: #0e0e0e 1px solid; /* Adiciona uma borda */
+}
+
+.photoandtextcontainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Cria duas colunas com o mesmo tamanho */
+    gap: 30px; /* Espaçamento entre a imagem e o texto */
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.card {
+    align-items: start;
+    width: 400px;
+    height: auto;
+    background: beige;
+    margin: 10px;
+    filter: drop-shadow(2px 2px 20px rgb(255, 255, 255));
+    border: #0e0e0e 1px solid; /* Adiciona uma borda */
+}
+
+.aboutmetext {
+    display: flex;
+    justify-content: start; /* Ajusta o texto à esquerda */
+    flex-direction: column; /* Garante que o texto é vertical */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #0e0e0e;
+    margin: 10px 20px;
+    border: #0e0e0e 1px solid; /* Adiciona uma borda */
+    line-height: 1.5; /* Melhor legibilidade */
+}
+
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutmetitle {
+    display: flex;
+    justify-content: center; /* Centraliza o título */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0e0e0e;
+    margin: 10px 0;
+    text-align: center; /* Alinha o texto no centro */
+    width: 100%; /* Garante que ocupa a largura completa */
+    border: #0e0e0e 1px solid; /* Adiciona uma borda */
+}
+
+.aboutmetext {
+    display: flex;
+    justify-content: center; /* Alinha o texto no centro */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #0e0e0e;
+    margin: 10px 20px;
+    text-align: center; /* Centraliza o parágrafo */
+    line-height: 1.5;
+}
+
+
+.img1{
+    object-fit: cover;
+}
+
+.socialmediabuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    filter: drop-shadow(2px 2px 20px rgb(255, 255, 255));
+    border: #0e0e0e 1px solid; /* Adiciona uma borda */
+}
