@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t5gYEMV7iB4udl6VjOgA+rn64TVME3heuCqry3M5rymZwqPyh1F1jYezdnOCG4tfr6wPMg+++u1NKCUnGhyu1Q==",
+  "dgSpecHash": "ey26tDZYT0s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\LoginForm\\LoginForm.csproj",
+  "projectFilePath": "C:\\VisualStudioGit\\1_ano\\AlgoritmosEstruturasDados\\ConsoleApps\\LoginForm\\LoginForm.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ig0/vvn4jf1eyzqRtv/3FDUOXy5qIcx+2wjlV6W64UxP0l7Zfntm5KoqLibCQ+Vtao6dyjroRjurlZy/mAzW0A==",
+  "dgSpecHash": "2zuBqjTXr6U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\BubbleSort\\BubbleSort.csproj",
+  "projectFilePath": "C:\\VisualStudioGit\\1_ano\\AlgoritmosEstruturasDados\\ConsoleApps\\BubbleSort\\BubbleSort.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

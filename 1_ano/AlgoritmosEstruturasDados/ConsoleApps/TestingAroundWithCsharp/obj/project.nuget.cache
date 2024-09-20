@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b4Ppo+3eKWEJCoGkdbVDAgcLW17iEVzzfJGlv6OXH8KLRwVru+R1m7hnkyxtdxJvPFjkc2J6IMwbzqyITOwphA==",
+  "dgSpecHash": "Bbo5BAZsinw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vitor Rocha\\source\\repos\\LEI_1_ANO\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\TernaryOperators.csproj",
+  "projectFilePath": "C:\\VisualStudioGit\\1_ano\\AlgoritmosEstruturasDados\\ConsoleApps\\TestingAroundWithCsharp\\TernaryOperators.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
