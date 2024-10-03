@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\VisualStudioGit\\1_ano\\AlgoritmosEstruturasDados\\ConsoleApps\\EstruturasComArrays\\EstruturasComArrays.csproj": {}
+    "C:\\Users\\vrocha.PBS\\Source\\Repos\\LEI_1_ANO\\1_ano\\AlgoritmosEstruturasDados\\ConsoleApps\\EstruturasComArrays\\EstruturasComArrays.csproj": {}
   },
   "projects": {
-    "C:\\VisualStudioGit\\1_ano\\AlgoritmosEstruturasDados\\ConsoleApps\\EstruturasComArrays\\EstruturasComArrays.csproj": {
+    "C:\\Users\\vrocha.PBS\\Source\\Repos\\LEI_1_ANO\\1_ano\\AlgoritmosEstruturasDados\\ConsoleApps\\EstruturasComArrays\\EstruturasComArrays.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\VisualStudioGit\\1_ano\\AlgoritmosEstruturasDados\\ConsoleApps\\EstruturasComArrays\\EstruturasComArrays.csproj",
+        "projectUniqueName": "C:\\Users\\vrocha.PBS\\Source\\Repos\\LEI_1_ANO\\1_ano\\AlgoritmosEstruturasDados\\ConsoleApps\\EstruturasComArrays\\EstruturasComArrays.csproj",
         "projectName": "EstruturasComArrays",
-        "projectPath": "C:\\VisualStudioGit\\1_ano\\AlgoritmosEstruturasDados\\ConsoleApps\\EstruturasComArrays\\EstruturasComArrays.csproj",
+        "projectPath": "C:\\Users\\vrocha.PBS\\Source\\Repos\\LEI_1_ANO\\1_ano\\AlgoritmosEstruturasDados\\ConsoleApps\\EstruturasComArrays\\EstruturasComArrays.csproj",
         "packagesPath": "C:\\Users\\vrocha.PBS\\.nuget\\packages\\",
-        "outputPath": "C:\\VisualStudioGit\\1_ano\\AlgoritmosEstruturasDados\\ConsoleApps\\EstruturasComArrays\\obj\\",
+        "outputPath": "C:\\Users\\vrocha.PBS\\Source\\Repos\\LEI_1_ANO\\1_ano\\AlgoritmosEstruturasDados\\ConsoleApps\\EstruturasComArrays\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
