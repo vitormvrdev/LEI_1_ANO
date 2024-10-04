@@ -8,5 +8,6 @@ namespace IntroToObjectOrientedProgramming
 {
     internal class User
     {
+
     }
 }
