@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IntroToObjectOrientedProgramming")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b832f6cfb9a0b374864391ae88490195bd807204")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a844b97ba649e6b390d2b63874e495bdf6529cfc")]
 [assembly: System.Reflection.AssemblyProductAttribute("IntroToObjectOrientedProgramming")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IntroToObjectOrientedProgramming")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
