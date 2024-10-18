@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Calculadora")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("IntroToObjectOrientedProgramming")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d4adf3c83cf5cbd71fcad1876eade6a163f9efb")]
-[assembly: System.Reflection.AssemblyProductAttribute("Calculadora")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Calculadora")]
+[assembly: System.Reflection.AssemblyProductAttribute("IntroToObjectOrientedProgramming")]
+[assembly: System.Reflection.AssemblyTitleAttribute("IntroToObjectOrientedProgramming")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
