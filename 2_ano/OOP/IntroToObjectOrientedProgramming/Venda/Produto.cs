@@ -34,6 +34,15 @@ namespace IntroToObjectOrientedProgramming.Venda
 
         #region Propriedades
 
+        private int myVar;
+
+        public int MyProperty
+        {
+            get { return myVar; }
+            set { myVar = value; }
+        }
+
+
         private long id;
 
         public long ID
