@@ -15,6 +15,7 @@ namespace BusinessLayer
         public string NomeFornecedor { get; set; }
 
         public int CodigoFornecedor { get; set; }
+        #endregion
 
         public static Fornecedor ObterCodigoFornecedor(int codigoFornecedor)
         {
@@ -34,9 +35,8 @@ namespace BusinessLayer
                     fornecedor.NomeFornecedor = dataRow.Field<string>("NomeFornecedor");
                 }
             }
+            return fornecedor;
         }
-        #endregion
-
 
     }
 }

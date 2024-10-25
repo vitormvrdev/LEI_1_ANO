@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ProjetoAula.Properties;
 
 namespace ProjetoAula
 {
@@ -56,6 +57,11 @@ namespace ProjetoAula
                     }
                 }
             }
+        }
+
+        private void FormFornecedor_Load(object sender, EventArgs e)
+        {
+            this.codigoFornecedorLabel.Text = Resources.LABEL_CODIGO_FORNECEDOR;
         }
     }
 }
