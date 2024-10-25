@@ -25,7 +25,8 @@ namespace DataLayer.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial " +
+            "Catalog=ProjetoAula;Data Source=megazord\\SQLEXPRESS")]
         public string ConnectionString {
             get {
                 return ((string)(this["ConnectionString"]));
