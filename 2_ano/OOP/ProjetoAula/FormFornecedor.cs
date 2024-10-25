@@ -25,9 +25,37 @@ namespace ProjetoAula
             //lista = ObterLista()
             //
             FornecedorCollection fornecedores = new FornecedorCollection();
+
             //Para cada elemento da lista
             //      Inserir na lista
             //      objeto.Propriedade = elemento
+
+            if (fornecedores != null)
+            {
+                foreach (Fornecedor fornecedor in fornecedores)
+                {
+                    this.fornecedoresListBox.Items.Add(fornecedor.NomeFornecedor);
+                }
+            }
+        }
+
+        private void codigoFornecedorTextBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                int codigoFornecedor = 0;
+                string codigoFornecedorString = this.codigoFornecedorTextBox.Text;
+
+                if (int.TryParse(codigoFornecedorString, out codigoFornecedor))
+                {
+                    Fornecedor fornecedor = Fornecedor.ObterCodigoFornecedor(codigoFornecedor);
+
+                    if (fornecedor != null)
+                    {
+                        this.nomeFornecedorTextBox.Text = codigoFornecedorString;
+                    }
+                }
+            }
         }
     }
 }

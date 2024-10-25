@@ -11,12 +11,32 @@ namespace BusinessLayer
 {
     public class Fornecedor
     {
-        public static FornecedorCollection ObterLista()
-        {
-            string connectionString = Properties.Settings.Default.ConnectionString;
-            SqlConnection sqlConnection = new SqlConnection(connectionString);
+        #region
+        public string NomeFornecedor { get; set; }
 
-            SqlCommand sqlCommand = new SqlCommand();
+        public int CodigoFornecedor { get; set; }
+
+        public static Fornecedor ObterCodigoFornecedor(int codigoFornecedor)
+        {
+            DataTable dataTable = DataLayer.Fornecedor.ObterCodigoFornecedor(codigoFornecedor);
+
+            Fornecedor fornecedor = null;
+
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                DataRow dataRow = dataTable.Rows[0];
+
+                if (dataRow != null)
+                {
+                    Fornecedor fornecedor1 = new Fornecedor();
+
+                    fornecedor.CodigoFornecedor = dataRow.Field<int>("CodigoFornecedor");
+                    fornecedor.NomeFornecedor = dataRow.Field<string>("NomeFornecedor");
+                }
+            }
         }
+        #endregion
+
+
     }
 }
